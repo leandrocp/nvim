@@ -14,7 +14,7 @@
 
     ln -s gvimrc ~/.gvimrc
 
-    ln -s mswin ~/.mswin
+    ln -s mswinrc ~/.mswinrc
 
 ### Windows-only
 
