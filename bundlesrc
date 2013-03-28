@@ -3,4 +3,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'Lokaltog/vim-powerline'
-
+Bundle 'sickill/vim-pasta'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
