@@ -4,6 +4,8 @@
 
     git clone https://github.com/leandrocp/vim.git ~/.vim
 
+    git clone https://github.com/leandrocp/vim.git ~/.vim/bundle/vundle
+
     cd ~/.vim
 
     # ln or cp
