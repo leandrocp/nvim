@@ -18,7 +18,7 @@ endif
 
 " ================ Theme ====================
 set background=dark
-colorscheme wombat
+colorscheme Tomorrow-Night
 
 " ================ General Config ====================
 let mapleader = ","
