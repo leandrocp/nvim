@@ -93,4 +93,8 @@ set sidescroll=1
 
 " ================ Mappings ========================
 imap jj <Esc>
+map <C-k> :MBEbn<CR>
+map <C-j> :MBEbp<CR>
+map <Leader>t :TMiniBufExplorer<CR>
+map <Leader>f :NERDTreeFocus<CR>
 
