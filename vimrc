@@ -62,6 +62,18 @@ set linebreak    "Wrap lines at convenient points
 
 " ================ Filetypes ============================
 au BufRead,BufNewFile *.TMP set filetype=sql
+autocmd BufRead,BufNewFile *.txt setlocal wrap linebreak
+augroup vimrcEx
+  au!
+
+  " When editing a file, always jump to the last known cursor position.
+  " Don't do it when the position is invalid or when inside an event handler
+  " (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+augroup END
 
 " ================ UI ============================
 set showmatch              " brackets/braces that is
@@ -92,9 +104,19 @@ set sidescrolloff=15
 set sidescroll=1
 
 " ================ Mappings ========================
+" TODO: Move to specific pluggin dir
 imap jj <Esc>
-map <C-k> :MBEbn<CR>
-map <C-j> :MBEbp<CR>
-map <Leader>t :TMiniBufExplorer<CR>
-map <Leader>f :NERDTreeFocus<CR>
-
+nnoremap <C-k> :MBEbn<CR>
+nnoremap <C-j> :MBEbp<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
+nnoremap <Leader>f :NERDTreeFocus<CR>
+for buffer_no in range(1, 9)
+  execute "nmap <F" . buffer_no . "> :b" . buffer_no . "\<CR>"
+endfor
+nnoremap <C-n> :m .+1<CR>==
+nnoremap <C-m> :m .-2<CR>==
+inoremap <C-n> <Esc>:m .+1<CR>==gi
+inoremap <C-m> <Esc>:m .-2<CR>==gi
+vnoremap <C-n> :m '>+1<CR>gv=gv
+vnoremap <C-m> :m '<-2<CR>gv=gv
+let g:ctrlp_cmd = 'CtrlPCurWD'
