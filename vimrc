@@ -113,10 +113,10 @@ nnoremap <Leader>f :NERDTreeFocus<CR>
 for buffer_no in range(1, 9)
   execute "nmap <F" . buffer_no . "> :b" . buffer_no . "\<CR>"
 endfor
-nnoremap <C-n> :m .+1<CR>==
-nnoremap <C-m> :m .-2<CR>==
-inoremap <C-n> <Esc>:m .+1<CR>==gi
-inoremap <C-m> <Esc>:m .-2<CR>==gi
-vnoremap <C-n> :m '>+1<CR>gv=gv
-vnoremap <C-m> :m '<-2<CR>gv=gv
+" nnoremap <C-n> :m .+1<CR>==
+" nnoremap <C-m> :m .-2<CR>==
+" inoremap <C-n> <Esc>:m .+1<CR>==gi
+" inoremap <C-m> <Esc>:m .-2<CR>==gi
+" vnoremap <C-n> :m '>+1<CR>gv=gv
+" vnoremap <C-m> :m '<-2<CR>gv=gv
 let g:ctrlp_cmd = 'CtrlPCurWD'
