@@ -120,3 +120,4 @@ endfor
 " vnoremap <C-n> :m '>+1<CR>gv=gv
 " vnoremap <C-m> :m '<-2<CR>gv=gv
 let g:ctrlp_cmd = 'CtrlPCurWD'
+nnoremap <leader>q :bp<cr>:bd #<cr>
