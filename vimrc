@@ -21,7 +21,7 @@ set background=dark
 colorscheme Tomorrow-Night
 
 " ================ General Config ====================
-let mapleader = ","
+let mapleader = " "
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
@@ -120,4 +120,6 @@ endfor
 " vnoremap <C-n> :m '>+1<CR>gv=gv
 " vnoremap <C-m> :m '<-2<CR>gv=gv
 let g:ctrlp_cmd = 'CtrlPCurWD'
-nnoremap <leader>q :bp<cr>:bd #<cr>
+nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
+nnoremap <leader><leader> <c-^> " Switch between the last two files
+noremap <CR> :nohlsearch<CR> " hit enter to cancel searched highlight
