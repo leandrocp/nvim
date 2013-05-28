@@ -13,12 +13,15 @@ filetype plugin indent on
 if has('win32') || has('win64')
   set runtimepath+=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
   source ~/.mswinrc
+  "set term=xterm
+  "let &t_AB="\e[48;5;%dm"
+  "let &t_AF="\e[38;5;%dm"
   behave mswin
 endif
 
 " ================ Theme ====================
 set background=dark
-colorscheme Tomorrow-Night
+colorscheme base16-tomorrow
 set t_Co=256
 set encoding=utf-8
 let g:Powerline_symbols="fancy"
