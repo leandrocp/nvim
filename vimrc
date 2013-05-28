@@ -65,6 +65,7 @@ set linebreak    "Wrap lines at convenient points
 " ================ Filetypes ============================
 au BufRead,BufNewFile *.TMP set filetype=sql
 autocmd BufRead,BufNewFile *.txt setlocal wrap linebreak
+autocmd Filetype gitcommit setlocal spell textwidth=72
 augroup vimrcEx
   au!
 
