@@ -29,3 +29,7 @@
 #### Install bundles
 
     :BundleInstall
+
+### Powerline fonts
+
+    https://github.com/Lokaltog/powerline-fonts

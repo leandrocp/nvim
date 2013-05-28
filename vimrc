@@ -19,6 +19,9 @@ endif
 " ================ Theme ====================
 set background=dark
 colorscheme Tomorrow-Night
+set t_Co=256
+set encoding=utf-8
+let g:Powerline_symbols="fancy"
 
 " ================ General Config ====================
 let mapleader = " "

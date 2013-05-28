@@ -1,4 +1,5 @@
-set guifont=DejaVu_Sans_Mono:h14
+"set guifont=DejaVu_Sans_Mono_for_Powerline:h14
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
 set encoding=utf-8 
 
 set lines=999 columns=999
