@@ -30,6 +30,8 @@ set showmode                    "Show current mode down the bottom
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 set hidden
+set fileformats=unix,dos
+set fileformat=unix
 syntax on
 
 " ================ Search Settings  =================
@@ -123,3 +125,5 @@ let g:ctrlp_cmd = 'CtrlPCurWD'
 nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
 nnoremap <leader><leader> <c-^> " Switch between the last two files
 noremap <CR> :nohlsearch<CR> " hit enter to cancel searched highlight
+nnoremap <leader>q :bp<cr>:bd #<cr>
+nnoremap <leader><leader> <c-^>
