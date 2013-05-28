@@ -125,5 +125,3 @@ let g:ctrlp_cmd = 'CtrlPCurWD'
 nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
 nnoremap <leader><leader> <c-^> " Switch between the last two files
 noremap <CR> :nohlsearch<CR> " hit enter to cancel searched highlight
-nnoremap <leader>q :bp<cr>:bd #<cr>
-nnoremap <leader><leader> <c-^>
