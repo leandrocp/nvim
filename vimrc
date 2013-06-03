@@ -111,22 +111,7 @@ set sidescrolloff=15
 set sidescroll=1
 
 " ================ Mappings ========================
-" TODO: Move to specific pluggin dir
 imap jj <Esc>
-nnoremap <C-k> :MBEbn<CR>
-nnoremap <C-j> :MBEbp<CR>
-nnoremap <Leader>t :NERDTreeToggle<CR>
-nnoremap <Leader>f :NERDTreeFocus<CR>
-for buffer_no in range(1, 9)
-  execute "nmap <F" . buffer_no . "> :b" . buffer_no . "\<CR>"
-endfor
-" nnoremap <C-n> :m .+1<CR>==
-" nnoremap <C-m> :m .-2<CR>==
-" inoremap <C-n> <Esc>:m .+1<CR>==gi
-" inoremap <C-m> <Esc>:m .-2<CR>==gi
-" vnoremap <C-n> :m '>+1<CR>gv=gv
-" vnoremap <C-m> :m '<-2<CR>gv=gv
-let g:ctrlp_cmd = 'CtrlPCurWD'
 nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
 nnoremap <leader><leader> <c-^> " Switch between the last two files
 noremap <CR> :nohlsearch<CR> " hit enter to cancel searched highlight
