@@ -26,23 +26,23 @@ let g:Powerline_symbols="fancy"
 
 " ================ General Config ====================
 let mapleader = " "
-set number                      "Line numbers are good
-set backspace=indent,eol,start  "Allow backspace in insert mode
-set history=1000                "Store lots of :cmdline history
-set showcmd                     "Show incomplete cmds down the bottom
-set showmode                    "Show current mode down the bottom
-set visualbell                  "No sounds
-set autoread                    "Reload files changed outside vim
+set number                     " Line numbers are good
+set backspace=indent,eol,start " Allow backspace in insert mode
+set history=1000               " Store lots of :cmdline history
+set showcmd                    " Show incomplete cmds down the bottom
+set showmode                   " Show current mode down the bottom
+set visualbell                 " No sounds
+set autoread                   " Reload files changed outside vim
 set hidden
 set fileformats=unix,dos
 set fileformat=unix
 syntax on
 
 " ================ Search Settings  =================
-set incsearch        "Find the next match as we type the search
-set hlsearch         "Hilight searches by default
-set viminfo='100,f1  "Save up to 100 marks, enable capital marks
-set ignorecase       " ignore case when searching
+set incsearch       " Find the next match as we type the search
+set hlsearch        " Hilight searches by default
+set viminfo='100,f1 " Save up to 100 marks, enable capital marks
+set ignorecase      " ignore case when searching
 
 " ================ Turn Off Swap Files ==============
 set noswapfile
@@ -62,9 +62,9 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
-set nostartofline          " don't jump to the start of line when scrolling
-set nowrap       "Don't wrap lines
-set linebreak    "Wrap lines at convenient points
+set nostartofline " don't jump to the start of line when scrolling
+set nowrap        " Don't wrap lines
+set linebreak     " Wrap lines at convenient points
 
 " ================ Filetypes ============================
 au BufRead,BufNewFile *.TMP set filetype=sql
@@ -83,18 +83,18 @@ augroup vimrcEx
 augroup END
 
 " ================ UI ============================
-set showmatch              " brackets/braces that is
-set shortmess=atI          " Don’t show the intro message when starting Vim
+set showmatch     " brackets/braces that is
+set shortmess=atI " Don’t show the intro message when starting Vim
 
 " ================ Folds ============================
-set foldmethod=indent   "fold based on indent
-set foldnestmax=3       "deepest fold is 3 levels
-set nofoldenable        "dont fold by default
+set foldmethod=indent " fold based on indent
+set foldnestmax=3     " deepest fold is 3 levels
+set nofoldenable      " dont fold by default
 
 " ================ Completion =======================
 set wildmode=list:longest
-set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+set wildmenu                  " enable ctrl-n and ctrl-p to scroll thru matches
+set wildignore=*.o,*.obj,*~   " stuff to ignore when tab completing
 set wildignore+=*vim/backups*
 set wildignore+=*sass-cache*
 set wildignore+=*DS_Store*
@@ -106,7 +106,7 @@ set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
 " ================ Scrolling ========================
-set scrolloff=8         "Start scrolling when we're 8 lines away from margins
+set scrolloff=8      " Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
@@ -114,7 +114,7 @@ set sidescroll=1
 imap jj <Esc>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>W :wq<cr>
-nnoremap <leader>q :bp<cr>:bd #<cr>   " Close current buffer
-nnoremap <leader><leader> <c-^>       " Switch between the last two files
-noremap <CR> :nohlsearch<CR>          " hit enter to cancel searched highlight
+nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
+nnoremap <leader><leader> <c-^>     " Switch between the last two files
+noremap <CR> :nohlsearch<CR>        " hit enter to cancel searched highlight
 
