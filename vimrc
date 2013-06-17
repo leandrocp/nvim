@@ -112,6 +112,9 @@ set sidescroll=1
 
 " ================ Mappings ========================
 imap jj <Esc>
-nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
-nnoremap <leader><leader> <c-^> " Switch between the last two files
-noremap <CR> :nohlsearch<CR> " hit enter to cancel searched highlight
+nnoremap <leader>w :w<cr>
+nnoremap <leader>W :wq<cr>
+nnoremap <leader>q :bp<cr>:bd #<cr>   " Close current buffer
+nnoremap <leader><leader> <c-^>       " Switch between the last two files
+noremap <CR> :nohlsearch<CR>          " hit enter to cancel searched highlight
+
