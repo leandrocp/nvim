@@ -111,6 +111,7 @@ set sidescrolloff=15
 set sidescroll=1
 
 " ================ Mappings ========================
+cmap w!! %!sudo tee > /dev/null %
 imap jj <Esc>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>W :wq<cr>
