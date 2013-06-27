@@ -36,6 +36,7 @@ set autoread                   " Reload files changed outside vim
 set hidden
 set fileformats=unix,dos
 set fileformat=unix
+set clipboard=unnamed          " Yank,delete,etc to clipboard
 syntax on
 
 " ================ Search Settings  =================
