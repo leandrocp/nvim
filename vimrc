@@ -124,4 +124,8 @@ nnoremap <leader>W :wq<cr>
 nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
 nnoremap <leader><leader> <c-^>     " Switch between the last two files
 noremap <CR> :nohlsearch<CR>        " hit enter to cancel searched highlight
+" Paste mode - http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
