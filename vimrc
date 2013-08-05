@@ -71,7 +71,8 @@ set linebreak     " Wrap lines at convenient points
 " ================ Filetypes ============================
 au BufRead,BufNewFile *.TMP set filetype=sql
 autocmd BufRead,BufNewFile *.txt setlocal wrap linebreak
-autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd Filetype gitcommit setlocal spell textwidth=72    " git commit max 72 cols
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0]) " git commit start on first line
 augroup vimrcEx
   au!
 
