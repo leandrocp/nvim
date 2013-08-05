@@ -37,6 +37,7 @@ set hidden
 set fileformats=unix,dos
 set fileformat=unix
 set clipboard=unnamed          " Yank,delete,etc to clipboard
+set mouse=a
 syntax on
 
 " ================ Search Settings  =================
