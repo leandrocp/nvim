@@ -38,6 +38,7 @@ set fileformats=unix,dos
 set fileformat=unix
 set clipboard=unnamed          " Yank,delete,etc to clipboard
 set mouse=a
+set ttyfast
 syntax on
 
 " ================ Search Settings  =================
@@ -45,6 +46,8 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Hilight searches by default
 set viminfo='100,f1 " Save up to 100 marks, enable capital marks
 set ignorecase      " ignore case when searching
+set gdefault        " global default on
+noremap <CR> :nohlsearch<CR> " hit enter to cancel searched highlight
 
 " ================ Turn Off Swap Files ==============
 set noswapfile
@@ -125,9 +128,16 @@ nnoremap <leader>w :w<cr>
 nnoremap <leader>W :wq<cr>
 nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
 nnoremap <leader><leader> <c-^>     " Switch between the last two files
-noremap <CR> :nohlsearch<CR>        " hit enter to cancel searched highlight
 " Paste mode - http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-set showmode
+au FocusLost * :wa
+
+" ================ Split Windows ====================
+nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>h <C-w>s<C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 

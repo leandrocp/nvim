@@ -1,2 +1,3 @@
-nnoremap <C-k> :MBEbn<CR>
-nnoremap <C-j> :MBEbp<CR>
+" nnoremap <C-k> :MBEbn<CR>
+" nnoremap <C-j> :MBEbp<CR>
+
