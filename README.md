@@ -2,19 +2,13 @@
 
 ## Install
 
-    git clone https://github.com/leandrocp/vim.git ~/.vim
+    git clone git@github.com:leandrocp/vim.git ~/.vim
 
-    git clone https://github.com/leandrocp/vundle.git ~/.vim/bundle/vundle
+    git clone git@github.com:leandrocp/vundle.git ~/.vim/bundle/vundle
 
     cd ~/.vim
-
-    # ln or cp
-
-    ln -s vimrc ~/.vimrc
-
-    ln -s gvimrc ~/.gvimrc
-
-    ln -s mswinrc ~/.mswinrc
+    
+    ./install.sh
 
 ### Windows-only
 
@@ -23,12 +17,6 @@
 #### Copy system gVim config
 
     cp ~/.vim/cygwin_vimrc C:/Apps/vim/_vimrc
-
-### Vim
-
-#### Install bundles
-
-    :BundleInstall
 
 ### Powerline fonts
 
