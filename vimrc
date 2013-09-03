@@ -46,6 +46,7 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Hilight searches by default
 set viminfo='100,f1 " Save up to 100 marks, enable capital marks
 set ignorecase      " ignore case when searching
+set smartcase       " case-sensitive if any caps
 set gdefault        " global default on
 noremap <CR> :nohlsearch<CR> " hit enter to cancel searched highlight
 
@@ -92,6 +93,7 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd VimResized * :wincmd =
 
 " ================ UI ============================
 set showmatch     " brackets/braces that is
