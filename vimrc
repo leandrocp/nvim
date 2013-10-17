@@ -20,12 +20,17 @@ endif
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-tomorrow
-set t_Co=256
-set encoding=utf-8
-let g:Powerline_symbols="fancy"
+"set t_Co=256
+"set encoding=utf-8
+"let g:Powerline_symbols="fancy"
+"set cursorline
 
 " ================ General Config ====================
+syntax on
 let mapleader = " "
+set ttyfast
+set lazyredraw                 " Fix slow relativenumber
+set relativenumber             " Hybrid line numbers
 set number                     " Line numbers are good
 set backspace=indent,eol,start " Allow backspace in insert mode
 set history=1000               " Store lots of :cmdline history
@@ -38,8 +43,6 @@ set fileformats=unix,dos
 set fileformat=unix
 set clipboard=unnamed          " Yank,delete,etc to clipboard
 set mouse=a
-set ttyfast
-syntax on
 
 " ================ Search Settings  =================
 set incsearch       " Find the next match as we type the search
@@ -88,7 +91,6 @@ augroup vimrcEx
     \   exe "normal g`\"" |
     \ endif
 augroup END
-"ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
@@ -145,4 +147,9 @@ nnoremap <C-l> <C-w>l
 nnoremap <silent> <Leader>= :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 nmap <leader>a :Ack
+" terryma/vim-smooth-scroll
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 
