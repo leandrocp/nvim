@@ -1,13 +1,15 @@
 " vimrc config
 
-" =============== Vundle ===============
-set nocompatible               " be iMproved
-filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'leandrocp/vundle'
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" ============ NeoBundle ===============
+call neobundle#rc(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/vimproc'
 source ~/.vim/bundlesrc
-filetype plugin indent on
 
 " =============== Win32 ===============
 if has('win32') || has('win64')
@@ -20,13 +22,15 @@ endif
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-tomorrow
-"set t_Co=256
-"set encoding=utf-8
-"let g:Powerline_symbols="fancy"
-"set cursorline
+set t_Co=256
+set encoding=utf-8
+let g:Powerline_symbols="fancy"
+set cursorline
 
 " ================ General Config ====================
 syntax on
+filetype plugin indent on
+NeoBundleCheck
 let mapleader = " "
 set ttyfast
 set lazyredraw                 " Fix slow relativenumber
