@@ -5,4 +5,5 @@ nnoremap <Leader>t :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFocus<CR>
 
 let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinSize = 50
 
