@@ -17,8 +17,6 @@ function install() {
       ln -s "$PWD/$name" "$target"
     fi
   done
-
-  vim +BundleInstall +qall
 }
 
 read -p "This action will replace all target files. Are you sure? (y/n) " -n 1
