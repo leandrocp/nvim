@@ -19,8 +19,8 @@ function install() {
   done
 }
 
-read -p "This action will replace all target files. Are you sure? (y/n) " -n 1
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-  install
-fi
+#read -p "This action will replace all target files. Are you sure? (y/n) " -n 1
+#echo
+#if [[ $REPLY =~ ^[Yy]$ ]]; then
+install
+#fi
