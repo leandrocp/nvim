@@ -21,3 +21,7 @@
 ### Powerline fonts
 
     https://github.com/Lokaltog/powerline-fonts
+
+#### Inspiration
+
+* tpope, spf13, carlhuda, bling

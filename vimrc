@@ -1,159 +1,211 @@
-" vimrc config
+" vim: fdm=marker ts=2 sts=2 sw=2 fdl=0
 
-if has('vim_starting')
-  set nocompatible               " Be iMproved
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
+set all& "reset everything to their defaults
+set nocompatible "vim
 
-" ============ NeoBundle ===============
-call neobundle#rc(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
-source ~/.vim/bundlesrc
+" detect OS {{{
+  let s:is_windows = has('win32') || has('win64')
+  let s:is_cygwin = has('win32unix')
+  let s:is_macvim = has('gui_macvim')
+"}}}
 
-" =============== Win32 ===============
-if has('win32') || has('win64')
-  set runtimepath+=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
-  source ~/.mswinrc
-  behave mswin
-endif
+" windows {{{
+  if s:is_windows
+    set rtp+=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+    source $HOME/.mswinrc
+    behave mswin
+  endif
+"}}}
 
-" ================ Theme ====================
-set background=dark
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-tomorrow
-set t_Co=256
-set encoding=utf-8
-let g:Powerline_symbols="fancy"
-set cursorline
+" setup & neobundle {{{
+  set rtp+=~/.vim/bundle/neobundle.vim
+  call neobundle#rc(expand('~/.vim/bundle/'))
+  NeoBundleFetch 'Shougo/neobundle.vim'
+  NeoBundle 'Shougo/vimproc'
+"}}}
 
-" ================ General Config ====================
-syntax on
-filetype plugin indent on
-NeoBundleCheck
-let mapleader = " "
-set ttyfast
-set lazyredraw                 " Fix slow relativenumber
-set relativenumber             " Hybrid line numbers
-set number                     " Line numbers are good
-set backspace=indent,eol,start " Allow backspace in insert mode
-set history=1000               " Store lots of :cmdline history
-set showcmd                    " Show incomplete cmds down the bottom
-set showmode                   " Show current mode down the bottom
-set visualbell                 " No sounds
-set autoread                   " Reload files changed outside vim
-set hidden
-set fileformats=unix,dos
-set fileformat=unix
-set clipboard=unnamed          " Yank,delete,etc to clipboard
-set mouse=a
+" functions {{{
+  function! EnsureExists(path) "{{{
+    if !isdirectory(expand(a:path))
+      call mkdir(expand(a:path))
+    endif
+  endfunction "}}}
+"}}}
 
-" ================ Search Settings  =================
-set incsearch       " Find the next match as we type the search
-set hlsearch        " Hilight searches by default
-set viminfo='100,f1 " Save up to 100 marks, enable capital marks
-set ignorecase      " ignore case when searching
-set smartcase       " case-sensitive if any caps
-set gdefault        " global default on
-noremap <CR> :nohlsearch<CR> " hit enter to cancel searched highlight
+" base {{{
+  let mapleader=" "
+  let g:mapleader=" "
+  set encoding=utf-8                                  "set encoding for text
+  set timeoutlen=300                                  "mapping timeout
+  set ttimeoutlen=50                                  "keycode timeout
+  set mouse=a                                         "enable mouse
+  set mousehide                                       "hide when characters are typed
+  set history=1000                                    "number of command lines to remember
+  set ttyfast                                         "assume fast terminal connection
+  set viewoptions=folds,options,cursor,unix,slash     "unix/windows compatibility
+  set hidden                                          "allow buffer switching without saving
+  set autoread                                        "auto reload if file saved externally
+  set fileformats+=mac                                "add mac to auto-detection of file format line endings
+  set fileformat=unix                                 "default file format
+  set nrformats-=octal                                "always assume decimal numbers
+  set showcmd
+  set tags=tags;/
+  set showfulltag
+  set modeline
+  set modelines=5
+  " disable annoying sounds
+  set noerrorbells
+  set novisualbell
+  set t_vb=
+  set display+=lastline
+  " clipboard
+  if exists('$TMUX')
+    set clipboard=
+  else
+    set clipboard=unnamed                             "sync with OS clipboard
+  endif
+"}}}
 
-" ================ Turn Off Swap Files ==============
-set noswapfile
-set nobackup
-set nowb
+" ui {{{
+  set showmatch                                       "automatically highlight matching braces/brackets/etc.
+  set matchtime=2                                     "tens of a second to show matching parentheses
+  set relativenumber                                  "hybrid line numbers
+  set number                                          "line numbers are good
+  set lazyredraw
+  set laststatus=2
+  set showmode
+  set nofoldenable                                    "don´t enable folds by default
+  set foldmethod=syntax                               "fold via syntax of files
+  set foldlevelstart=99                               "open all folds by default
+  let g:xml_syntax_folding=1                          "enable xml folding
+  set scrolloff=8                                     "always show content after scroll
+  set sidescrolloff=15
+  set sidescroll=1
+  set splitbelow
+  set splitright
+  set cursorline
+  autocmd WinLeave * setlocal nocursorline
+  autocmd WinEnter * setlocal cursorline
+  let &colorcolumn=120
 
-" ================ Persistent Undo ==================
-silent !mkdir ~/.vim/backups > /dev/null 2>&1
-set undodir=~/.vim/backups
-set undofile
+  if has('gui_running')
+    " open maximized
+    set lines=999 columns=9999
+    set guioptions+=t                                 "tear off menu items
+    set guioptions-=T                                 "toolbar icons
 
-" ================ Indentation ======================
-set autoindent
-set smartindent
-set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
-set expandtab
-set nostartofline " don't jump to the start of line when scrolling
-set nowrap        " Don't wrap lines
-set linebreak     " Wrap lines at convenient points
+    if s:is_windows
+      autocmd GUIEnter * simalt ~x
+    endif
 
-" ================ Filetypes ============================
-au BufRead,BufNewFile *.TMP set filetype=sql
-autocmd BufRead,BufNewFile *.txt setlocal wrap linebreak
-autocmd Filetype gitcommit setlocal spell textwidth=72    " git commit max 72 cols
-autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0]) " git commit start on first line
-augroup vimrcEx
-  au!
+    if s:is_macvim
+      "set gfn=Ubuntu_Mono:h14
+      "set transparency=2
+    endif
 
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
+    if s:is_windows
+      "set gfn=Ubuntu_Mono:h10
+    endif
+
+    if has('gui_gtk')
+      "set gfn=Ubuntu\ Mono\ 11
+    endif
+  else
+    set t_Co=256 "why you no tell me correct colors?!?!
+    if $TERM_PROGRAM == 'iTerm.app'
+      if exists('$TMUX')
+        let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+        let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+      else
+        let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+        let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+      endif
+    endif
+  endif
+"}}}
+
+" search {{{
+  set hlsearch                                        "highlight searches
+  set incsearch                                       "incremental searching
+  set ignorecase                                      "ignore case for searching
+  set smartcase                                       "do case-sensitive if there's a capital letter
+  set gdefault                                        "global default on
+  noremap <CR> :nohlsearch<CR>
+  if executable('ack')
+    set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
+    set grepformat=%f:%l:%c:%m
+  endif
+  if executable('ag')
+    set grepprg=ag\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow
+    set grepformat=%f:%l:%c:%m
+  endif
+"}}}
+
+" files/folders {{{
+  set undofile
+  set undodir=~/.vim/.cache/undo
+  set backup
+  set backupdir=~/.vim/.cache/backup
+  set directory=~/.vim/.cache/swap
+  set noswapfile
+  call EnsureExists('~/.vim/.cache')
+  call EnsureExists(&undodir)
+  call EnsureExists(&backupdir)
+  call EnsureExists(&directory)
+"}}}
+
+" indent/whitespace {{{
+  set backspace=indent,eol,start                      "allow backspacing everything in insert mode
+  set autoindent
+  set smartindent
+  set smarttab                                        "use shiftwidth to enter tabs
+  set shiftwidth=2
+  set softtabstop=2
+  set tabstop=2
+  set expandtab                                       "spaces instead of tabs
+  set nostartofline                                   "don't jump to the start of line when scrolling
+  set nowrap                                          "don't wrap lines
+  set linebreak                                       "wrap lines at convenient points
+  set list                                            "highlight whitespace
+  set listchars=tab:│\ ,trail:•,extends:❯,precedes:❮
+  set shiftround
+  set linebreak
+  let &showbreak='↪ '
+"}}}
+
+" ignore/complete {{{
+  set wildmenu                                        "show list for autocomplete
+  set wildmode=list:full
+  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store
+  set wildignore=*.o,*.obj,*~
+  set wildignore+=*sass-cache*
+  set wildignore+=*.gem
+  set wildignore+=log/**
+  set wildignore+=tmp/**
+  set wildignore+=*.png,*.jpg,*.gif
+"}}}
+
+" mappings/autocmd {{{
+  source ~/.vim/mappings.vim
+
+  " go back to previous position of cursor if any
   autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
+    \  exe 'normal! g`"zvzz' |
     \ endif
-augroup END
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-autocmd VimResized * :wincmd =
 
-" ================ UI ============================
-set showmatch     " brackets/braces that is
-set shortmess=atI " Don’t show the intro message when starting Vim
+"}}}
 
-" ================ Folds ============================
-set foldmethod=indent " fold based on indent
-set foldnestmax=3     " deepest fold is 3 levels
-set nofoldenable      " dont fold by default
+" finish loading {{{
+  filetype plugin indent on
+  syntax enable
+  source ~/.vim/plugins.vim
+  NeoBundleCheck
+"}}}
 
-" ================ Completion =======================
-set wildmode=list:longest
-set wildmenu                  " enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~   " stuff to ignore when tab completing
-set wildignore+=*vim/backups*
-set wildignore+=*sass-cache*
-set wildignore+=*DS_Store*
-set wildignore+=vendor/rails/**
-set wildignore+=vendor/cache/**
-set wildignore+=*.gem
-set wildignore+=log/**
-set wildignore+=tmp/**
-set wildignore+=*.png,*.jpg,*.gif
-
-" ================ Scrolling ========================
-set scrolloff=8      " Start scrolling when we're 8 lines away from margins
-set sidescrolloff=15
-set sidescroll=1
-
-" ================ Mappings ========================
-cmap w!! %!sudo tee > /dev/null %
-imap jj <Esc>
-nnoremap <leader>w :w<cr>
-nnoremap <leader>W :wq<cr>
-nnoremap <leader>q :bp<cr>:bd #<cr> " Close current buffer
-nnoremap <leader><leader> <c-^>     " Switch between the last two files
-" Paste mode - http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-au FocusLost * :wa
-
-" ================ Split Windows ====================
-nnoremap <leader>v <C-w>v<C-w>l
-nnoremap <leader>h <C-w>s<C-w>j
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-nnoremap <silent> <Leader>= :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
-nnoremap <silent> <Leader>- :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
-nmap <leader>a :Ack
-" terryma/vim-smooth-scroll
-noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
-noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
-noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+" theme {{{
+set background=dark
+let base16colorspace=256                              "access colors present in 256 colorspace
+colorscheme base16-tomorrow
+"}}}
 
