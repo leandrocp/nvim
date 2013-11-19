@@ -21,7 +21,13 @@ set nocompatible "vim
   set rtp+=~/.vim/bundle/neobundle.vim
   call neobundle#rc(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
-  NeoBundle 'Shougo/vimproc'
+  NeoBundleDepends 'Shougo/vimproc.vim', {
+    \ 'build': {
+      \ 'mac': 'make -f make_mac.mak',
+      \ 'unix': 'make -f make_unix.mak',
+      \ 'cygwin': 'make -f make_cygwin.mak'
+    \ },
+  \ }
 "}}}
 
 " functions {{{

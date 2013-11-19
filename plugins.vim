@@ -1,4 +1,5 @@
 NeoBundle 'tpope/vim-sensible'
+NeoBundle 'tpope/vim-dispatch'
 
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'nanotech/jellybeans.vim'
