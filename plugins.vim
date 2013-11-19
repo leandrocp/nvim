@@ -83,6 +83,7 @@ NeoBundleLazy 'gregsexton/gitv', {'depends':['tpope/vim-fugitive'], 'autoload':{
   "let g:signify_update_on_bufenter=0
 "}}}
 
+NeoBundle 'honza/vim-snippets'
 NeoBundle 'Shougo/neosnippet.vim' "{{{
   let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets'
   let g:neosnippet#enable_snipmate_compatibility=1
@@ -99,6 +100,14 @@ NeoBundleLazy 'Shougo/neocomplcache.vim', {'autoload':{'insert':1}} "{{{
   let g:neocomplcache_enable_fuzzy_completion=1
   let g:neocomplcache_snippets_dir='~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets'
 "}}}
+
+NeoBundle 'EasyGrep' "{{{
+  let g:EasyGrepRecursive=1
+  let g:EasyGrepAllOptionsInExplorer=1
+  let g:EasyGrepCommand=1
+  nnoremap <leader>vo :GrepOptions<cr>
+"}}}
+
 
 NeoBundleLazy 'cakebaker/scss-syntax.vim', {'autoload':{'filetypes':['scss','sass']}}
 NeoBundleLazy 'hail2u/vim-css3-syntax', {'autoload':{'filetypes':['css','scss','sass']}}
