@@ -112,6 +112,7 @@ NeoBundleLazy 'maksimr/vim-jsbeautify', {'autoload':{'filetypes':['javascript']}
 NeoBundleLazy 'leshill/vim-json', {'autoload':{'filetypes':['javascript','json']}}
 NeoBundleLazy 'othree/javascript-libraries-syntax.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
 
+NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rake'
@@ -137,6 +138,8 @@ NeoBundleDepends 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-indent'
 NeoBundle 'kana/vim-textobj-entire'
 NeoBundle 'lucapette/vim-textobj-underscore'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-surround'
 
 NeoBundleLazy 'mbbill/undotree', {'autoload':{'commands':'UndotreeToggle'}} "{{{
   let g:undotree_SplitLocation='botright'
@@ -169,8 +172,6 @@ NeoBundle 'scrooloose/syntastic' "{{{
 "NeoBundle 'bling/vim-bufferline'
 "NeoBundle 'sickill/vim-pasta'
 "NeoBundle 'matchit.zip'
-"NeoBundle 'tpope/vim-endwise'
-"NeoBundle 'tpope/vim-surround'
 "NeoBundle 'scrooloose/syntastic'
 "NeoBundle 'tpope/vim-speeddating'
 "NeoBundle 'osyo-manga/vim-over'
