@@ -1,12 +1,14 @@
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-dispatch'
 
+"{{{ Themes
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'zeis/vim-kolor'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'sjl/badwolf'
+"}}}
 
 NeoBundle 'mhinz/vim-startify' "{{{
   let g:startify_session_dir = '~/.vim/.cache/sessions'
@@ -150,6 +152,11 @@ NeoBundle 'kana/vim-textobj-entire'
 NeoBundle 'lucapette/vim-textobj-underscore'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'tyru/open-browser.vim' "{{{
+  let g:netrw_nogx = 1 " disable netrw's gx mapping.
+  nmap gx <Plug>(openbrowser-smart-search)
+  vmap gx <Plug>(openbrowser-smart-search)
+"}}}
 
 NeoBundleLazy 'mbbill/undotree', {'autoload':{'commands':'UndotreeToggle'}} "{{{
   let g:undotree_SplitLocation='botright'
