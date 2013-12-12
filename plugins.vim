@@ -10,11 +10,11 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'sjl/badwolf'
 "}}}
 
-NeoBundle 'mhinz/vim-startify' "{{{
-  let g:startify_session_dir = '~/.vim/.cache/sessions'
-  let g:startify_change_to_vcs_root = 1
-  let g:startify_show_sessions = 1
-  nnoremap <F1> :Startify<cr>
+"NeoBundle 'mhinz/vim-startify' "{{{
+"  let g:startify_session_dir = '~/.vim/.cache/sessions'
+"  let g:startify_change_to_vcs_root = 1
+"  let g:startify_show_sessions = 1
+"  nnoremap <F1> :Startify<cr>
 "}}}
 
 NeoBundle 'bling/vim-airline' "{{{
@@ -77,6 +77,7 @@ NeoBundle 'tpope/vim-fugitive' "{{{
   autocmd FileType gitcommit nmap <buffer> U :Git checkout -- <C-r><C-g><CR>
   autocmd BufReadPost fugitive://* set bufhidden=delete
 "}}}
+
 NeoBundleLazy 'gregsexton/gitv', {'depends':['tpope/vim-fugitive'], 'autoload':{'commands':'Gitv'}} "{{{
   nnoremap <silent> <leader>gv :Gitv<CR>
   nnoremap <silent> <leader>gV :Gitv!<CR>
@@ -179,11 +180,11 @@ NeoBundle 'nathanaelkane/vim-indent-guides' "{{{
   endif
 "}}}
 
-NeoBundle 'scrooloose/syntastic' "{{{
-  let g:syntastic_error_symbol = '✗'
-  let g:syntastic_style_error_symbol = '✠'
-  let g:syntastic_warning_symbol = '∆'
-  let g:syntastic_style_warning_symbol = '≈'
+"NeoBundle 'scrooloose/syntastic' "{{{
+  "let g:syntastic_error_symbol = '✗'
+  "let g:syntastic_style_error_symbol = '✠'
+  "let g:syntastic_warning_symbol = '∆'
+  "let g:syntastic_style_warning_symbol = '≈'
 "}}}
 
 "NeoBundle 'bling/vim-bufferline'

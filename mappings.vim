@@ -28,3 +28,8 @@ vnoremap > >gv
     nnoremap <F12>:Dispatch ctags -R<cr>
   endif
 "}}}
+" buffers {{{
+  map gl :bn<cr>
+  map gh :bp<cr>
+  map gq :bd<cr>
+" }}}
