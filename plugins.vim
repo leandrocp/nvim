@@ -159,6 +159,10 @@ NeoBundle 'tyru/open-browser.vim' "{{{
   vmap gx <Plug>(openbrowser-smart-search)
 "}}}
 
+NeoBundle 'Keithbsmiley/investigate.vim' "{{{
+  nnoremap K :call investigate#Investigate()<cr>
+"}}}
+
 NeoBundleLazy 'mbbill/undotree', {'autoload':{'commands':'UndotreeToggle'}} "{{{
   let g:undotree_SplitLocation='botright'
   let g:undotree_SetFocusWhenToggle=1
