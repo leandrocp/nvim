@@ -29,7 +29,7 @@ vnoremap > >gv
   endif
 "}}}
 " buffers {{{
-  map jl :bn<cr>
-  map jh :bp<cr>
-  map jq :bd<cr>
+  map <leader>l :bn<cr>
+  map <leader>h :bp<cr>
+  map <leader>q :bd<cr>
 " }}}
