@@ -130,6 +130,8 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-rake'
 
+NeoBundle 'elixir-lang/vim-elixir'
+
 NeoBundleLazy 'godlygeek/tabular', {'autoload':{'commands':'Tabularize'}} "{{{
   nmap <Leader>a& :Tabularize /&<CR>
   vmap <Leader>a& :Tabularize /&<CR>
