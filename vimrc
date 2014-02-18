@@ -136,7 +136,7 @@ set nocompatible "vim
   set ignorecase                                      "ignore case for searching
   set smartcase                                       "do case-sensitive if there's a capital letter
   set gdefault                                        "global default on
-  noremap <CR> :nohlsearch<CR>
+  "noremap <CR> :nohlsearch<CR>
   if executable('ack')
     set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
     set grepformat=%f:%l:%c:%m
