@@ -156,11 +156,7 @@ NeoBundle 'gcmt/wildfire.vim'
 NeoBundle 'lucapette/vim-textobj-underscore'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'tyru/open-browser.vim' "{{{
-  let g:netrw_nogx = 1 " disable netrw's gx mapping.
-  nmap gx <Plug>(openbrowser-smart-search)
-  vmap gx <Plug>(openbrowser-smart-search)
-"}}}
+NeoBundle 'papanikge/vim-voogle'
 
 NeoBundle 'Keithbsmiley/investigate.vim' "{{{
   nnoremap K :call investigate#Investigate()<cr>
