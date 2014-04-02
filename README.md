@@ -4,7 +4,9 @@
 
     git clone git@github.com:leandrocp/vim.git ~/.vim
 
-    git clone git@github.com:leandrocp/vundle.git ~/.vim/bundle/vundle
+    mkdir -p ~/.vim/bundle
+    
+    git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
     cd ~/.vim
     
