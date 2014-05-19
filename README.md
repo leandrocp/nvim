@@ -2,7 +2,7 @@
 
 ## Install
 
-    git clone git@github.com:leandrocp/vim.git ~/.vim
+    git clone https://github.com/leandrocp/vim.git ~/.vim
 
     mkdir -p ~/.vim/bundle
     
