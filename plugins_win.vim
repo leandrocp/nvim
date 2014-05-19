@@ -10,13 +10,6 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'sjl/badwolf'
 "}}}
 
-"NeoBundle 'mhinz/vim-startify' "{{{
-"  let g:startify_session_dir = '~/.vim/.cache/sessions'
-"  let g:startify_change_to_vcs_root = 1
-"  let g:startify_show_sessions = 1
-"  nnoremap <F1> :Startify<cr>
-"}}}
-
 NeoBundle 'bling/vim-airline' "{{{
   let g:airline#extensions#tabline#enabled = 1
   let g:airline#extensions#tabline#left_sep=' '
@@ -61,32 +54,6 @@ NeoBundle 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   nnoremap [ctrlp]b :CtrlPBuffer<cr>
 "}}}
 
-NeoBundleLazy 'majutsushi/tagbar', {'autoload':{'commands':'TagbarToggle'}} "{{{
-  nnoremap <silent> <F9> :TagbarToggle<CR>
-"}}}
-
-NeoBundle 'tpope/vim-fugitive' "{{{
-  nnoremap <silent> <leader>gs :Gstatus<CR>
-  nnoremap <silent> <leader>gd :Gdiff<CR>
-  nnoremap <silent> <leader>gc :Gcommit<CR>
-  nnoremap <silent> <leader>gb :Gblame<CR>
-  nnoremap <silent> <leader>gl :Glog<CR>
-  nnoremap <silent> <leader>gp :Git push<CR>
-  nnoremap <silent> <leader>gw :Gwrite<CR>
-  nnoremap <silent> <leader>gr :Gremove<CR>
-  autocmd FileType gitcommit nmap <buffer> U :Git checkout -- <C-r><C-g><CR>
-  autocmd BufReadPost fugitive://* set bufhidden=delete
-"}}}
-
-NeoBundleLazy 'gregsexton/gitv', {'depends':['tpope/vim-fugitive'], 'autoload':{'commands':'Gitv'}} "{{{
-  nnoremap <silent> <leader>gv :Gitv<CR>
-  nnoremap <silent> <leader>gV :Gitv!<CR>
-"}}}
-
-"NeoBundle 'mhinz/vim-signify' "{{{
-  "let g:signify_update_on_bufenter=0
-"}}}
-
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'Shougo/neosnippet.vim' "{{{
   let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets'
@@ -113,7 +80,6 @@ NeoBundle 'EasyGrep' "{{{
 "}}}
 
 
-NeoBundleLazy 'cakebaker/scss-syntax.vim', {'autoload':{'filetypes':['scss','sass']}}
 NeoBundleLazy 'hail2u/vim-css3-syntax', {'autoload':{'filetypes':['css','scss','sass']}}
 NeoBundleLazy 'ap/vim-css-color', {'autoload':{'filetypes':['css','scss','sass','less','styl']}}
 NeoBundleLazy 'othree/html5.vim', {'autoload':{'filetypes':['html']}}
@@ -124,13 +90,6 @@ NeoBundleLazy 'maksimr/vim-jsbeautify', {'autoload':{'filetypes':['javascript']}
 "}}}
 NeoBundleLazy 'leshill/vim-json', {'autoload':{'filetypes':['javascript','json']}}
 NeoBundleLazy 'othree/javascript-libraries-syntax.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
-
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-bundler'
-NeoBundle 'tpope/vim-rake'
-
-NeoBundle 'elixir-lang/vim-elixir'
 
 NeoBundleLazy 'godlygeek/tabular', {'autoload':{'commands':'Tabularize'}} "{{{
   nmap <Leader>a& :Tabularize /&<CR>
@@ -149,7 +108,7 @@ NeoBundleLazy 'godlygeek/tabular', {'autoload':{'commands':'Tabularize'}} "{{{
 
 NeoBundle 'terryma/vim-expand-region'
 NeoBundle 'jiangmiao/auto-pairs'
-NeoBundleDepends 'kana/vim-textobj-user'
+NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-indent'
 NeoBundle 'kana/vim-textobj-entire'
 NeoBundle 'gcmt/wildfire.vim'
@@ -182,33 +141,4 @@ NeoBundle 'nathanaelkane/vim-indent-guides' "{{{
     autocmd VimEnter,Colorscheme * call s:indent_set_console_colors()
   endif
 "}}}
-
-"NeoBundle 'scrooloose/syntastic' "{{{
-  "let g:syntastic_error_symbol = '✗'
-  "let g:syntastic_style_error_symbol = '✠'
-  "let g:syntastic_warning_symbol = '∆'
-  "let g:syntastic_style_warning_symbol = '≈'
-"}}}
-
-"NeoBundle 'bling/vim-bufferline'
-"NeoBundle 'sickill/vim-pasta'
-"NeoBundle 'matchit.zip'
-"NeoBundle 'scrooloose/syntastic'
-"NeoBundle 'tpope/vim-speeddating'
-"NeoBundle 'osyo-manga/vim-over'
-"NeoBundle 'justinmk/vim-sneak'
-"NeoBundle 'monokrome/buffersweeper.vim'
-"NeoBundle 'paradigm/TextObjectify'
-"NeoBundle 'godlygeek/tabular'
-"NeoBundle 'tpope/vim-commentary'
-"NeoBundle 'vim-scripts/greplace.vim'
-"NeoBundle 'nathanaelkane/vim-indent-guides'
-"NeoBundle 'mileszs/ack.vim'
-"NeoBundle 'myusuf3/numbers.vim'
-"NeoBundle 'mattboehm/vim-unstack'
-"NeoBundle 'tpope/vim-repeat'
-"NeoBundle 'tpope/vim-markdown'
-"NeoBundle 'tpope/vim-fugitive'
-"NeoBundle 'othree/html5.vim'
-"NeoBundle 'editorconfig/editorconfig-vim'
 

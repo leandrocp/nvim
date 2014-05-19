@@ -4,8 +4,7 @@ set all& "reset everything to their defaults
 set nocompatible "vim
 
 " detect OS {{{
-  let s:is_windows = has('win32') || has('win64')
-  let s:is_cygwin = has('win32unix')
+  let s:is_windows = has('win32') || has('win64') || has('win32unix')
   let s:is_macvim = has('gui_macvim')
 "}}}
 
@@ -21,13 +20,14 @@ set nocompatible "vim
   set rtp+=~/.vim/bundle/neobundle.vim
   call neobundle#rc(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
-  NeoBundleDepends 'Shougo/vimproc.vim', {
-    \ 'build': {
-      \ 'mac': 'make -f make_mac.mak',
-      \ 'unix': 'make -f make_unix.mak',
-      \ 'cygwin': 'make -f make_cygwin.mak'
-    \ },
-  \ }
+  NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 "}}}
 
 " functions {{{
@@ -209,13 +209,17 @@ set nocompatible "vim
 " finish loading {{{
   filetype plugin indent on
   syntax enable
-  source ~/.vim/plugins.vim
+  if s:is_windows
+    source ~/.vim/plugins_win.vim
+  else
+    source ~/.vim/plugins_nix.vim
+  endif
   NeoBundleCheck
 "}}}
 
 " theme {{{
 set background=dark
-let base16colorspace=256                              "access colors present in 256 colorspace
-colorscheme base16-tomorrow
+"let base16colorspace=256                              "access colors present in 256 colorspace
+colorscheme base16-monokai
 "}}}
 
