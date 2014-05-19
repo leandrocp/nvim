@@ -11,8 +11,8 @@ set nocompatible "vim
 " windows {{{
   if s:is_windows
     set rtp+=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
-    source $HOME/.mswinrc
-    behave mswin
+    "source $HOME/.mswinrc
+    "behave mswin
   endif
 "}}}
 
@@ -219,7 +219,7 @@ set nocompatible "vim
 
 " theme {{{
 set background=dark
-"let base16colorspace=256                              "access colors present in 256 colorspace
-colorscheme base16-monokai
+let base16colorspace=256                              "access colors present in 256 colorspace
+colorscheme base16-tomorrow
 "}}}
 
