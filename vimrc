@@ -65,11 +65,12 @@ set nocompatible "vim
   set t_vb=
   set display+=lastline
   " clipboard
-  if exists('$TMUX')
-    set clipboard=
-  else
-    set clipboard=unnamed                             "sync with OS clipboard
-  endif
+  "if exists('$TMUX')
+    "set clipboard=
+  "else
+    "set clipboard=unnamed                             "sync with OS clipboard
+  "endif
+  set clipboard=unnamed
 "}}}
 
 " ui {{{
@@ -220,6 +221,6 @@ set nocompatible "vim
 " theme {{{
 set background=dark
 let base16colorspace=256                              "access colors present in 256 colorspace
-colorscheme base16-tomorrow
+colorscheme base16-default
 "}}}
 
