@@ -54,23 +54,12 @@ NeoBundle 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   nnoremap [ctrlp]b :CtrlPBuffer<cr>
 "}}}
 
+"NeoBundle 'Shougo/neocomplcache.vim'
+
 NeoBundle 'honza/vim-snippets'
-NeoBundle 'Shougo/neosnippet.vim' "{{{
-  let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets'
-  let g:neosnippet#enable_snipmate_compatibility=1
-
-  imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : (pumvisible() ? "\<C-n>" : "\<TAB>")
-  smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-  imap <expr><S-TAB> pumvisible() ? "\<C-p>" : ""
-  smap <expr><S-TAB> pumvisible() ? "\<C-p>" : ""
-"}}}
-
-NeoBundleLazy 'Shougo/neocomplcache.vim', {'autoload':{'insert':1}} "{{{
-  let g:neocomplcache_enable_at_startup=1
-  let g:neocomplcache_temporary_dir='~/.vim/.cache/neocomplcache'
-  let g:neocomplcache_enable_fuzzy_completion=1
-  let g:neocomplcache_snippets_dir='~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets'
-"}}}
+NeoBundle 'marcweber/vim-addon-mw-utils'
+NeoBundle 'tomtom/tlib_vim'
+NeoBundle 'garbas/vim-snipmate'
 
 NeoBundle 'EasyGrep' "{{{
   let g:EasyGrepRecursive=1
@@ -142,3 +131,4 @@ NeoBundle 'nathanaelkane/vim-indent-guides' "{{{
   endif
 "}}}
 
+NeoBundle 'davejlong/cf-utils.vim'

@@ -4,7 +4,7 @@ nnoremap <leader>W :wq<cr>
 nnoremap <leader>q :bp<cr>:bd #<cr>
 nnoremap <leader><leader> <c-^>
 cmap w!! %!sudo tee > /dev/null %
-map <F2> :set invpaste<CR>:set paste?<CR>
+"map <F2> :set invpaste<CR>:set paste?<CR>
 nnoremap <leader>v <C-w>v<C-w>l
 nnoremap <leader>h <C-w>s<C-w>j
 nnoremap <C-h> <C-w>h

@@ -173,23 +173,23 @@ set nocompatible "vim
   set nostartofline                                   "don't jump to the start of line when scrolling
   set nowrap                                          "don't wrap lines
   set linebreak                                       "wrap lines at convenient points
-  set list                                            "highlight whitespace
-  set listchars=tab:│\ ,trail:•,extends:❯,precedes:❮
+  ""set list                                            "highlight whitespace
+  "set listchars=tab:│\ ,trail:•,extends:❯,precedes:❮
   set shiftround
   set linebreak
-  let &showbreak='↪ '
+  "let &showbreak='↪ '
 "}}}
 
 " ignore/complete {{{
-  set wildmenu                                        "show list for autocomplete
-  set wildmode=list:full
-  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store
-  set wildignore=*.o,*.obj,*~
-  set wildignore+=*sass-cache*
-  set wildignore+=*.gem
-  set wildignore+=log/**
-  set wildignore+=tmp/**
-  set wildignore+=*.png,*.jpg,*.gif
+  "set wildmenu                                        "show list for autocomplete
+  "set wildmode=list:full
+  "set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store
+  "set wildignore=*.o,*.obj,*~
+  "set wildignore+=*sass-cache*
+  "set wildignore+=*.gem
+  "set wildignore+=log/**
+  "set wildignore+=tmp/**
+  "set wildignore+=*.png,*.jpg,*.gif
 "}}}
 
 " mappings/autocmd {{{
