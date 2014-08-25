@@ -210,6 +210,7 @@ set nocompatible "vim
 " finish loading {{{
   filetype plugin indent on
   syntax enable
+  source ~/.vim/plugins.vim
   if s:is_windows
     source ~/.vim/plugins_win.vim
   else
