@@ -11,8 +11,6 @@ set nocompatible "vim
 " windows {{{
   if s:is_windows
     set rtp+=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
-    "source $HOME/.mswinrc
-    "behave mswin
   endif
 "}}}
 
@@ -31,11 +29,11 @@ set nocompatible "vim
 "}}}
 
 " functions {{{
-  function! EnsureExists(path) "{{{
+  function! EnsureExists(path)
     if !isdirectory(expand(a:path))
       call mkdir(expand(a:path))
     endif
-  endfunction "}}}
+  endfunction
 "}}}
 
 " base {{{
@@ -64,12 +62,6 @@ set nocompatible "vim
   set novisualbell
   set t_vb=
   set display+=lastline
-  " clipboard
-  "if exists('$TMUX')
-    "set clipboard=
-  "else
-    "set clipboard=unnamed                             "sync with OS clipboard
-  "endif
   set clipboard=unnamed
 "}}}
 
@@ -103,19 +95,6 @@ set nocompatible "vim
 
     if s:is_windows
       autocmd GUIEnter * simalt ~x
-    endif
-
-    if s:is_macvim
-      "set gfn=Ubuntu_Mono:h14
-      "set transparency=2
-    endif
-
-    if s:is_windows
-      "set gfn=Ubuntu_Mono:h10
-    endif
-
-    if has('gui_gtk')
-      "set gfn=Ubuntu\ Mono\ 11
     endif
   else
     set t_Co=256 "why you no tell me correct colors?!?!
@@ -173,23 +152,8 @@ set nocompatible "vim
   set nostartofline                                   "don't jump to the start of line when scrolling
   set nowrap                                          "don't wrap lines
   set linebreak                                       "wrap lines at convenient points
-  ""set list                                            "highlight whitespace
-  "set listchars=tab:│\ ,trail:•,extends:❯,precedes:❮
   set shiftround
   set linebreak
-  "let &showbreak='↪ '
-"}}}
-
-" ignore/complete {{{
-  "set wildmenu                                        "show list for autocomplete
-  "set wildmode=list:full
-  "set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store
-  "set wildignore=*.o,*.obj,*~
-  "set wildignore+=*sass-cache*
-  "set wildignore+=*.gem
-  "set wildignore+=log/**
-  "set wildignore+=tmp/**
-  "set wildignore+=*.png,*.jpg,*.gif
 "}}}
 
 " mappings/autocmd {{{
@@ -205,6 +169,7 @@ set nocompatible "vim
   autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
   autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
   au BufRead,BufNewFile *.md set filetype=markdown
+  au BufRead,BufNewFile *.scss set filetype=scss.css
 "}}}
 
 " finish loading {{{

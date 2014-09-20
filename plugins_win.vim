@@ -17,7 +17,6 @@ NeoBundleLazy 'mustache/vim-mustache-handlebars', {'autoload':{'filetypes':['jav
   let g:mustache_abbreviations = 1
 "}}}
 
-NeoBundle 'terryma/vim-expand-region'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-indent'
@@ -26,7 +25,6 @@ NeoBundle 'gcmt/wildfire.vim'
 NeoBundle 'lucapette/vim-textobj-underscore'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'papanikge/vim-voogle'
 
 NeoBundle 'Keithbsmiley/investigate.vim' "{{{
   nnoremap K :call investigate#Investigate()<cr>

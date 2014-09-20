@@ -5,11 +5,6 @@ NeoBundle 'marcweber/vim-addon-mw-utils'
 
 "{{{ Themes
 NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'chriskempson/vim-tomorrow-theme'
-NeoBundle 'zeis/vim-kolor'
-NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'sjl/badwolf'
 "}}}
 
 NeoBundle 'bling/vim-airline' "{{{
