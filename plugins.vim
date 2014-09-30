@@ -22,6 +22,10 @@ NeoBundle 'bling/vim-airline' "{{{
   let g:airline_whitespace_symbol               = 'Ξ'
 "}}}
 
+NeoBundle 'mhinz/vim-signify' "{{{
+  let g:signify_vcs_list = [ 'git', 'svn' ]
+"}}}
+
 NeoBundleLazy 'scrooloose/nerdtree', {'autoload':{'commands':['NERDTreeToggle','NERDTreeFind']}} "{{{
   let g:NERDTreeWinPos  = 'right'
   let g:NERDTreeWinSize = 50
