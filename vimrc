@@ -165,14 +165,14 @@ set nocompatible "vim
     \  exe 'normal! g`"zvzz' |
     \ endif
 
-  autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
+  autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
   autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
   autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
   au BufRead,BufNewFile *.md set filetype=markdown
   au BufRead,BufNewFile *.scss set filetype=scss.css
 "}}}
 
-" finish loading {{{
+" plugins {{{
   filetype plugin indent on
   syntax enable
   source ~/.vim/plugins.vim
@@ -185,17 +185,9 @@ set nocompatible "vim
 "}}}
 
 " theme {{{
-set background=dark
-let base16colorspace=256                              "access colors present in 256 colorspace
-colorscheme base16-default
-if has("terminfo")
-  let &t_Co=16
-  let &t_AB="\<Esc>[%?%p1%{8}%<%t%p1%{40}%+%e%p1%{92}%+%;%dm"
-  let &t_AF="\<Esc>[%?%p1%{8}%<%t%p1%{30}%+%e%p1%{82}%+%;%dm"
-else
-  let &t_Co=16
-  let &t_Sf="\<Esc>[3%dm"
-  let &t_Sb="\<Esc>[4%dm"
-endif
+  set background=dark
+  "let base16colorspace=256   "access colors present in 256 colorspace
+  colorscheme base16-default
 "}}}
+
 
