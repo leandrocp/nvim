@@ -5,7 +5,8 @@ set nocompatible "vim
 
 " detect OS {{{
   let s:is_windows = has('win32') || has('win64') || has('win32unix')
-  let s:is_macvim = has('gui_macvim')
+  let s:is_nix     = has('mac') || has('macunix') || has('unix')
+  let s:is_gui     = has('gui_running')
 "}}}
 
 " windows {{{
@@ -87,17 +88,20 @@ set nocompatible "vim
   autocmd WinEnter * setlocal cursorline
   let &colorcolumn=120
 
-  if has('gui_running')
-    " open maximized
+"
+  set t_Co=256
+  if s:is_gui
     set lines=999 columns=9999
     set guioptions+=t                                 "tear off menu items
     set guioptions-=T                                 "toolbar icons
-
     if s:is_windows
       autocmd GUIEnter * simalt ~x
     endif
-  else
-    set t_Co=256 "why you no tell me correct colors?!?!
+	endif
+  if s:is_nix
+    set term=xterm
+    let &t_AB="\e[48;5;%dm"
+    let &t_AF="\e[38;5;%dm"
     if $TERM_PROGRAM == 'iTerm.app'
       if exists('$TMUX')
         let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
@@ -186,7 +190,7 @@ set nocompatible "vim
 
 " theme {{{
   set background=dark
-  "let base16colorspace=256   "access colors present in 256 colorspace
   colorscheme base16-default
+  let base16colorspace=256
 "}}}
 
