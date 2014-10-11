@@ -190,4 +190,3 @@ set nocompatible "vim
   colorscheme base16-default
 "}}}
 
-

@@ -43,7 +43,5 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'sickill/vim-pasta'
 NeoBundle 'osyo-manga/vim-over'
-"NeoBundle 'monokrome/buffersweeper.vim'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'editorconfig/editorconfig-vim'
-
