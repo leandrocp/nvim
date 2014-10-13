@@ -4,6 +4,8 @@ NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'marcweber/vim-addon-mw-utils'
 NeoBundle 'sheerun/vim-polyglot'
 
+NeoBundle 'kana/vim-fakeclip'
+
 "{{{ Themes
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'altercation/vim-colors-solarized'
@@ -35,7 +37,7 @@ NeoBundleLazy 'scrooloose/nerdtree', {'autoload':{'commands':['NERDTreeToggle','
 "}}}
 
 NeoBundle 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
-  let g:ctrlp_cmd                    = 'CtrlP'
+  let g:ctrlp_cmd                    = 'CtrlPCurWD'
   let g:ctrlp_clear_cache_on_exit    = 1
   let g:ctrlp_max_height             = 60
   let g:ctrlp_show_hidden            = 0
@@ -47,9 +49,6 @@ NeoBundle 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   let g:ctrlp_extensions             = ['funky']
   let g:ctrlp_funky_syntax_highlight = 1
   let g:ctrlp_custom_ignore          = 'node_modules\|bower_components\|target\|DS_Store\|git|tmp\'
-  if executable('ag')
-    let g:ctrlp_user_command='ag %s -l --nocolor -g ""'
-  endif
   nnoremap <C-o> :CtrlPBuffer<Cr>
   nnoremap <C-m> :CtrlPFunky<Cr>
 "}}}
