@@ -88,7 +88,6 @@ set nocompatible "vim
   autocmd WinEnter * setlocal cursorline
   let &colorcolumn=120
 
-"
   set t_Co=256
   if s:is_gui
     set lines=999 columns=9999
@@ -99,10 +98,10 @@ set nocompatible "vim
     endif
 	endif
   if s:is_nix
-    set term=xterm
     let &t_AB="\e[48;5;%dm"
     let &t_AF="\e[38;5;%dm"
     if $TERM_PROGRAM == 'iTerm.app'
+      set term=xterm
       if exists('$TMUX')
         let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
         let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
