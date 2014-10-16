@@ -63,7 +63,9 @@ set nocompatible "vim
   set novisualbell
   set t_vb=
   set display+=lastline
-  set clipboard=unnamed
+  if $TMUX == ''
+    set clipboard+=unnamed
+  endif
 "}}}
 
 " ui {{{
