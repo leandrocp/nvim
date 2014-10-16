@@ -4,8 +4,6 @@ NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'marcweber/vim-addon-mw-utils'
 NeoBundle 'sheerun/vim-polyglot'
 
-NeoBundle 'kana/vim-fakeclip'
-
 "{{{ Themes
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'altercation/vim-colors-solarized'
