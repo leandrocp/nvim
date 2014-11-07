@@ -17,7 +17,7 @@ set nocompatible "vim
 
 " setup & neobundle {{{
   set rtp+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
   NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
@@ -27,6 +27,7 @@ set nocompatible "vim
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
+  call neobundle#end()
 "}}}
 
 " functions {{{
