@@ -10,7 +10,7 @@
 
     cd ~/.vim
     
-    ./install.sh
+    bash install.sh
 
 ### Windows-only
 
