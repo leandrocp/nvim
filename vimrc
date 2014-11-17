@@ -76,7 +76,7 @@ set nocompatible "vim
   set number                                          "line numbers are good
   set lazyredraw
   set laststatus=2
-  set showmode
+  set noshowmode
   set nofoldenable                                    "don´t enable folds by default
   set foldmethod=syntax                               "fold via syntax of files
   set foldlevelstart=99                               "open all folds by default

@@ -9,17 +9,21 @@ NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'altercation/vim-colors-solarized'
 "}}}
 
-NeoBundle 'bling/vim-airline' "{{{
-  let g:airline#extensions#tabline#enabled      = 1
-  let g:airline#extensions#tabline#left_sep     = ' '
-  let g:airline#extensions#tabline#left_alt_sep = '¦'
-  let g:airline_theme                           = 'base16'
-  let g:airline_left_sep                        = '»'
-  let g:airline_right_sep                       = '«'
-  let g:airline_linecolumn_prefix               = '¶ '
-  let g:airline_branch_prefix                   = 'ʙ '
-  let g:airline_paste_symbol                    = 'ρ'
-  let g:airline_whitespace_symbol               = 'Ξ'
+"NeoBundle 'bling/vim-airline' "{{{
+  "let g:airline#extensions#tabline#enabled      = 1
+  "let g:airline#extensions#tabline#left_sep     = ' '
+  "let g:airline#extensions#tabline#left_alt_sep = '¦'
+  "let g:airline_theme                           = 'base16'
+  "let g:airline_left_sep                        = '»'
+  "let g:airline_right_sep                       = '«'
+  "let g:airline_linecolumn_prefix               = '¶ '
+  "let g:airline_branch_prefix                   = 'ʙ '
+  "let g:airline_paste_symbol                    = 'ρ'
+  "let g:airline_whitespace_symbol               = 'Ξ'
+"}}}
+
+NeoBundle 'itchyny/lightline.vim' "{{{
+  source ~/.vim/lightline.vim
 "}}}
 
 NeoBundle 'mhinz/vim-signify' "{{{
