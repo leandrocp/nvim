@@ -9,25 +9,40 @@ NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'altercation/vim-colors-solarized'
 "}}}
 
-"NeoBundle 'bling/vim-airline' "{{{
-  "let g:airline#extensions#tabline#enabled      = 1
-  "let g:airline#extensions#tabline#left_sep     = ' '
-  "let g:airline#extensions#tabline#left_alt_sep = '¦'
-  "let g:airline_theme                           = 'base16'
-  "let g:airline_left_sep                        = '»'
-  "let g:airline_right_sep                       = '«'
-  "let g:airline_linecolumn_prefix               = '¶ '
-  "let g:airline_branch_prefix                   = 'ʙ '
-  "let g:airline_paste_symbol                    = 'ρ'
-  "let g:airline_whitespace_symbol               = 'Ξ'
-"}}}
+NeoBundle 'bling/vim-airline' "{{{
+  " extensions
+  let g:airline#extensions#tabline#enabled         = 1
+  let g:airline#extensions#tabline#left_sep        = ' '
+  let g:airline#extensions#tabline#left_alt_sep    = ' '
+  let g:airline#extensions#tabline#buffer_idx_mode = 1
+  let g:airline#extensions#tabline#fnamemod        = ':p:.'
+   let g:airline#extensions#tabline#fnamecollapse  = 0
+  nmap <leader>1 <Plug>AirlineSelectTab1
+  nmap <leader>2 <Plug>AirlineSelectTab2
+  nmap <leader>3 <Plug>AirlineSelectTab3
+  nmap <leader>4 <Plug>AirlineSelectTab4
+  nmap <leader>5 <Plug>AirlineSelectTab5
+  nmap <leader>6 <Plug>AirlineSelectTab6
+  nmap <leader>7 <Plug>AirlineSelectTab7
+  nmap <leader>8 <Plug>AirlineSelectTab8
+  nmap <leader>9 <Plug>AirlineSelectTab9
 
-NeoBundle 'itchyny/lightline.vim' "{{{
-  source ~/.vim/lightline.vim
-"}}}
+  let g:airline#extensions#bufferline#enabled = 0
+  let g:airline#extensions#tagbar#enabled     = 0
+  let g:airline#extensions#csv#enabled        = 0
+  let g:airline#extensions#virtualenv#enabled = 0
+  let g:airline#extensions#eclim#enabled      = 0
+  let g:airline#extensions#nrrwrgn#enabled    = 0
+  let g:airline#extensions#capslock#enabled   = 0
+  let g:airline#extensions#windowswap#enabled = 0
 
-NeoBundle 'ap/vim-buftabline' "{{{
-  let g:buftabline_indicators = 1
+  let g:airline_theme             = 'base16'
+  let g:airline_left_sep          = '»'
+  let g:airline_right_sep         = '«'
+  let g:airline_linecolumn_prefix = '¶'
+  let g:airline_branch_prefix     = 'B'
+  let g:airline_paste_symbol      = 'ρ'
+  let g:airline_whitespace_symbol = 'Ξ'
 "}}}
 
 NeoBundle 'mhinz/vim-signify' "{{{
