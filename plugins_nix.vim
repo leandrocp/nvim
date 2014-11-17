@@ -31,6 +31,8 @@ NeoBundleLazy 'elixir-lang/vim-elixir'
 
 NeoBundleLazy 'tpope/vim-markdown'
 
+NeoBundleLazy 'chase/vim-ansible-yaml'
+
 NeoBundleLazy 'dsawardekar/ember.vim', {'autoload':{'filetypes':['javascript','coffee','typescript']}}
 NeoBundleLazy 'mustache/vim-mustache-handlebars' "{{{
   let g:mustache_abbreviations = 1
