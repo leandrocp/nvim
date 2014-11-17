@@ -26,6 +26,10 @@ NeoBundle 'itchyny/lightline.vim' "{{{
   source ~/.vim/lightline.vim
 "}}}
 
+NeoBundle 'ap/vim-buftabline' "{{{
+  let g:buftabline_indicators = 1
+"}}}
+
 NeoBundle 'mhinz/vim-signify' "{{{
   let g:signify_vcs_list = [ 'git', 'svn' ]
 "}}}
