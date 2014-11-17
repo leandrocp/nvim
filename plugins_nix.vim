@@ -11,6 +11,8 @@ NeoBundle 'tpope/vim-fugitive' "{{{
   autocmd BufReadPost fugitive://* set bufhidden=delete
 "}}}
 
+NeoBundle 'scrooloose/syntastic'
+
 NeoBundleLazy 'cakebaker/scss-syntax.vim', {'autoload':{'filetypes':['scss','sass']}}
 NeoBundleLazy 'hail2u/vim-css3-syntax', {'autoload':{'filetypes':['css','scss','sass']}}
 NeoBundleLazy 'ap/vim-css-color', {'autoload':{'filetypes':['css','scss','sass','less','styl']}}
@@ -20,12 +22,14 @@ NeoBundleLazy 'maksimr/vim-jsbeautify', {'autoload':{'filetypes':['javascript']}
 NeoBundleLazy 'elzr/vim-json', {'autoload':{'filetypes':['javascript','json']}}
 NeoBundleLazy 'othree/javascript-libraries-syntax.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
 
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-bundler'
-NeoBundle 'tpope/vim-rake'
+NeoBundleLazy 'vim-ruby/vim-ruby'
+NeoBundleLazy 'tpope/vim-rails'
+NeoBundleLazy 'tpope/vim-bundler'
+NeoBundleLazy 'tpope/vim-rake'
 
-NeoBundle 'elixir-lang/vim-elixir'
+NeoBundleLazy 'elixir-lang/vim-elixir'
+
+NeoBundleLazy 'tpope/vim-markdown'
 
 NeoBundleLazy 'dsawardekar/ember.vim', {'autoload':{'filetypes':['javascript','coffee','typescript']}}
 NeoBundleLazy 'mustache/vim-mustache-handlebars' "{{{
@@ -43,5 +47,4 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-surround'
 "NeoBundle 'sickill/vim-pasta'
 NeoBundle 'osyo-manga/vim-over'
-NeoBundle 'tpope/vim-markdown'
 NeoBundle 'editorconfig/editorconfig-vim'
