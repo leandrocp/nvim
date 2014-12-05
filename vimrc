@@ -174,8 +174,8 @@ set nocompatible "vim
   autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
   autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
   autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-  au BufRead,BufNewFile *.md set filetype=markdown
   au BufRead,BufNewFile *.scss set filetype=scss.css
+  au BufNewFile,BufRead *.md,*.markdown set filetype=markdown
 "}}}
 
 " plugins {{{
