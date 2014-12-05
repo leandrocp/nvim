@@ -29,7 +29,9 @@ NeoBundleLazy 'tpope/vim-rake'
 
 NeoBundleLazy 'elixir-lang/vim-elixir'
 
-NeoBundleLazy 'tpope/vim-markdown'
+NeoBundleLazy 'plasticboy/vim-markdown' "{{{
+  let g:vim_markdown_frontmatter=1
+"}}}
 
 NeoBundleLazy 'chase/vim-ansible-yaml'
 
