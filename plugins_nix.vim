@@ -20,6 +20,7 @@ NeoBundleLazy 'othree/html5.vim', {'autoload':{'filetypes':['html']}}
 NeoBundleLazy 'pangloss/vim-javascript', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'maksimr/vim-jsbeautify', {'autoload':{'filetypes':['javascript']}}
 NeoBundleLazy 'elzr/vim-json', {'autoload':{'filetypes':['javascript','json']}}
+NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
 NeoBundleLazy 'othree/javascript-libraries-syntax.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
 
 NeoBundleLazy 'vim-ruby/vim-ruby'
@@ -27,11 +28,7 @@ NeoBundleLazy 'tpope/vim-rails'
 NeoBundleLazy 'tpope/vim-bundler'
 NeoBundleLazy 'tpope/vim-rake'
 
-NeoBundleLazy 'elixir-lang/vim-elixir'
-
 NeoBundleLazy 'jtratner/vim-flavored-markdown'
-
-NeoBundleLazy 'chase/vim-ansible-yaml'
 
 NeoBundleLazy 'dsawardekar/ember.vim', {'autoload':{'filetypes':['javascript','coffee','typescript']}}
 NeoBundleLazy 'mustache/vim-mustache-handlebars' "{{{
@@ -39,14 +36,12 @@ NeoBundleLazy 'mustache/vim-mustache-handlebars' "{{{
 "}}}
 
 NeoBundle 'jiangmiao/auto-pairs'
-NeoBundle 'kana/vim-textobj-user'
-NeoBundle 'kana/vim-textobj-indent'
-NeoBundle 'kana/vim-textobj-entire'
-NeoBundle 'paradigm/TextObjectify'
-NeoBundle 'gcmt/wildfire.vim'
-NeoBundle 'lucapette/vim-textobj-underscore'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-surround'
+"NeoBundle 'kana/vim-textobj-user'
+"NeoBundle 'kana/vim-textobj-indent'
+"NeoBundle 'kana/vim-textobj-entire'
+"NeoBundle 'paradigm/TextObjectify'
+"NeoBundle 'gcmt/wildfire.vim'
+"NeoBundle 'lucapette/vim-textobj-underscore'
 "NeoBundle 'sickill/vim-pasta'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'editorconfig/editorconfig-vim'

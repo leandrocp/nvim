@@ -4,9 +4,12 @@ NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'marcweber/vim-addon-mw-utils'
 NeoBundle 'sheerun/vim-polyglot'
 
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'Yggdroot/indentLine'
+
 "{{{ Themes
 NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'altercation/vim-colors-solarized'
 "}}}
 
 NeoBundle 'Shougo/unite.vim'
@@ -51,25 +54,12 @@ NeoBundle 'mhinz/vim-signify' "{{{
   let g:signify_vcs_list = [ 'git', 'svn' ]
 "}}}
 
-"NeoBundleLazy 'scrooloose/nerdtree', {'autoload':{'commands':['NERDTreeToggle','NERDTreeFind']}} "{{{
-  "let g:NERDTreeWinPos  = 'right'
-  "let g:NERDTreeWinSize = 50
-  "let g:NERDTreeIgnore  = ['\.git','\.hg']
-  "nnoremap <Leader>t :NERDTreeToggle<CR>
-  "nnoremap <Leader>f :NERDTreeFocus<CR>
-"}}}
-
-NeoBundle 'Shougo/vimfiler.vim' "{{{
-  let g:vimfiler_as_default_explorer = 1
-  let g:vimfiler_tree_leaf_icon = ' '
-  let g:vimfiler_tree_opened_icon = '▾'
-  let g:vimfiler_tree_closed_icon = '▸'
-  let g:vimfiler_file_icon = ' '
-  let g:vimfiler_marked_file_icon = '*'
-  call vimfiler#custom#profile('default', 'context', {
-    \ 'safe' : 0,
-  \ })
-  nnoremap <Leader>t :VimFilerExplorer<CR>
+NeoBundleLazy 'scrooloose/nerdtree', {'autoload':{'commands':['NERDTreeToggle','NERDTreeFind']}} "{{{
+  let g:NERDTreeWinPos  = 'right'
+  let g:NERDTreeWinSize = 50
+  let g:NERDTreeIgnore  = ['\.git','\.hg']
+  nnoremap <Leader>t :NERDTreeToggle<CR>
+  nnoremap <Leader>f :NERDTreeFocus<CR>
 "}}}
 
 NeoBundle 'Shougo/neocomplete.vim' "{{{
@@ -160,23 +150,7 @@ NeoBundleLazy 'godlygeek/tabular', {'autoload':{'commands':'Tabularize'}} "{{{
   vmap <leader>a :Tabularize /
 "}}}
 
-NeoBundleLazy 'mbbill/undotree', {'autoload':{'commands':'UndotreeToggle'}} "{{{
-  let g:undotree_SplitLocation      = 'botright'
-  let g:undotree_SetFocusWhenToggle = 1
-  nnoremap <silent> <F5> :UndotreeToggle<CR>
+NeoBundleLazy 'sjl/gundo.vim', {'autoload':{'commands':'GundoToggle'}} "{{{
+  nnoremap <F5> :GundoToggle<CR>
 "}}}
 
-NeoBundle 'nathanaelkane/vim-indent-guides' "{{{
-  let g:indent_guides_start_level           = 1
-  let g:indent_guides_guide_size            = 1
-  let g:indent_guides_enable_on_vim_startup = 0
-  let g:indent_guides_color_change_percent  = 3
-  if !has('gui_running')
-    let g:indent_guides_auto_colors = 0
-    function! s:indent_set_console_colors()
-      hi IndentGuidesOdd ctermbg=235
-      hi IndentGuidesEven ctermbg=236
-    endfunction
-    autocmd VimEnter,Colorscheme * call s:indent_set_console_colors()
-  endif
-"}}}

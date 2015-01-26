@@ -18,13 +18,6 @@ NeoBundleLazy 'mustache/vim-mustache-handlebars', {'autoload':{'filetypes':['jav
 "}}}
 
 NeoBundle 'jiangmiao/auto-pairs'
-NeoBundle 'kana/vim-textobj-user'
-NeoBundle 'kana/vim-textobj-indent'
-NeoBundle 'kana/vim-textobj-entire'
-NeoBundle 'gcmt/wildfire.vim'
-NeoBundle 'lucapette/vim-textobj-underscore'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-surround'
 
 NeoBundle 'Keithbsmiley/investigate.vim' "{{{
   nnoremap K :call investigate#Investigate()<cr>
