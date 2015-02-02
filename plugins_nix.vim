@@ -1,3 +1,5 @@
+Glaive codefmt clang_format_executable='/usr/bin/clang-format-3.5'
+
 NeoBundle 'tpope/vim-fugitive' "{{{
   nnoremap <silent> <leader>gs :Gstatus<CR>
   nnoremap <silent> <leader>gd :Gdiff<CR>

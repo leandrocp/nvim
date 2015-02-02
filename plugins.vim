@@ -14,6 +14,16 @@ NeoBundle 'chriskempson/base16-vim'
 
 NeoBundle 'Shougo/unite.vim'
 
+NeoBundle 'google/vim-maktaba'
+NeoBundle 'google/vim-codefmtlib'
+NeoBundle 'google/vim-codefmt'
+NeoBundle 'google/vim-glaive' "{{{
+  unmap <silent> <Leader>=
+  call glaive#Install()
+  Glaive codefmt plugin[mappings]
+  Glaive codefmt clang_format_style='Google'
+"}}}
+
 NeoBundle 'bling/vim-airline' "{{{
   " extensions
   let g:airline#extensions#tabline#enabled         = 1
