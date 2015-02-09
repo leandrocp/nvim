@@ -4,6 +4,8 @@ NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'marcweber/vim-addon-mw-utils'
 NeoBundle 'sheerun/vim-polyglot'
 
+NeoBundle 'tpope/vim-speeddating'
+NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'Yggdroot/indentLine'
