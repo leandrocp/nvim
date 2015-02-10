@@ -53,7 +53,7 @@ NeoBundle 'bling/vim-airline' "{{{
   let g:airline#extensions#capslock#enabled   = 0
   let g:airline#extensions#windowswap#enabled = 0
 
-  let g:airline_theme             = 'base16'
+  let g:airline_theme             = 'sol'
   let g:airline_left_sep          = '»'
   let g:airline_right_sep         = '«'
   let g:airline_linecolumn_prefix = '¶'
