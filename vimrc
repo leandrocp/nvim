@@ -72,7 +72,7 @@ set nocompatible "vim
 " ui {{{
   set showmatch                                       "automatically highlight matching braces/brackets/etc.
   set matchtime=2                                     "tens of a second to show matching parentheses
-  set relativenumber                                  "hybrid line numbers
+  "set relativenumber                                  "hybrid line numbers
   set number                                          "line numbers are good
   set lazyredraw
   set laststatus=2
