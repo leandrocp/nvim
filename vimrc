@@ -177,7 +177,11 @@ set nocompatible "vim
 
 " theme {{{
   set background=dark
-  let base16colorspace=256
+  if $TMUX == ''
+    let base16colorspace=0
+  else
+    let base16colorspace=256
+  endif
   colorscheme base16-tomorrow
 "}}}
 
