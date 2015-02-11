@@ -5,11 +5,11 @@
     git clone https://github.com/leandrocp/vim.git ~/.vim
 
     mkdir -p ~/.vim/bundle
-    
+
     git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
     cd ~/.vim
-    
+
     bash install.sh
 
 ### Windows-only
@@ -23,6 +23,11 @@
 ### Powerline fonts
 
     https://github.com/Lokaltog/powerline-fonts
+
+### Theme
+
+    https://github.com/chriskempson/base16-vim
+    https://github.com/chriskempson/base16-shell
 
 #### Inspiration
 
