@@ -25,10 +25,11 @@ NeoBundleLazy 'elzr/vim-json', {'autoload':{'filetypes':['javascript','json']}}
 NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
 NeoBundleLazy 'othree/javascript-libraries-syntax.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
 
-NeoBundleLazy 'vim-ruby/vim-ruby'
-NeoBundleLazy 'tpope/vim-rails'
-NeoBundleLazy 'tpope/vim-bundler'
-NeoBundleLazy 'tpope/vim-rake'
+NeoBundle 'austintaylor/vim-open'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-bundler'
+NeoBundle 'tpope/vim-rake'
 
 NeoBundleLazy 'jtratner/vim-flavored-markdown'
 
