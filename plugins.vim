@@ -74,6 +74,8 @@ NeoBundleLazy 'scrooloose/nerdtree', {'autoload':{'commands':['NERDTreeToggle','
   nnoremap <Leader>f :NERDTreeFocus<CR>
 "}}}
 
+NeoBundle 'scrooloose/nerdcommenter'
+
 NeoBundle 'Shougo/neocomplete.vim' "{{{
   " enable
   let g:acp_enableAtStartup = 0
