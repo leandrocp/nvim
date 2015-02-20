@@ -1,4 +1,6 @@
 imap jj <Esc>
+nnoremap ; :
+nnoremap : ;
 nnoremap <leader>w :w<cr>
 nnoremap <leader>W :wq<cr>
 nnoremap <leader>q :bp<cr>:bd #<cr>
