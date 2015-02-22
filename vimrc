@@ -19,14 +19,15 @@ set nocompatible "vim
   set rtp+=~/.vim/bundle/neobundle.vim
   call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
-  NeoBundle 'Shougo/vimproc', {
-      \ 'build' : {
-      \     'windows' : 'make -f make_mingw32.mak',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
+  NeoBundle 'Shougo/vimproc.vim', {
+  \ 'build' : {
+  \     'windows' : 'tools\\update-dll-mingw',
+  \     'cygwin' : 'make -f make_cygwin.mak',
+  \     'mac' : 'make -f make_mac.mak',
+  \     'linux' : 'make',
+  \     'unix' : 'gmake',
+  \    },
+  \ }
   call neobundle#end()
 "}}}
 
@@ -166,12 +167,14 @@ set nocompatible "vim
 " plugins {{{
   filetype plugin indent on
   syntax enable
+  call neobundle#begin(expand('~/.vim/bundle/'))
   source ~/.vim/plugins.vim
   if s:is_windows
     source ~/.vim/plugins_win.vim
   else
     source ~/.vim/plugins_nix.vim
   endif
+  call neobundle#end()
   NeoBundleCheck
 "}}}
 
