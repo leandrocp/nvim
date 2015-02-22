@@ -2,7 +2,7 @@
 
 ## Install
 ```
-git clone https://github.com/leandrocp/vim.git ~/.vim
+git clone git@github.com:leandrocp/vim.git ~/.vim
 mkdir -p ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 cd ~/.vim
