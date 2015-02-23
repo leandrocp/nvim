@@ -35,7 +35,6 @@ NeoBundle 'bling/vim-airline' "{{{
   nmap <leader>9 <Plug>AirlineSelectTab9
 
   let g:airline#extensions#bufferline#enabled = 0
-  let g:airline#extensions#tagbar#enabled     = 0
   let g:airline#extensions#csv#enabled        = 0
   let g:airline#extensions#virtualenv#enabled = 0
   let g:airline#extensions#eclim#enabled      = 0
@@ -158,3 +157,8 @@ NeoBundleLazy 'sjl/gundo.vim', {'autoload':{'commands':'GundoToggle'}} "{{{
   nnoremap <F5> :GundoToggle<CR>
 "}}}
 
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-easytags'
+NeoBundle 'majutsushi/tagbar' "{{{
+  nmap <F8> :TagbarToggle<CR>
+"}}}
