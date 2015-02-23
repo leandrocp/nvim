@@ -46,3 +46,5 @@ NeoBundle 'jiangmiao/auto-pairs'
 "NeoBundle 'sickill/vim-pasta'
 NeoBundle 'osyo-manga/vim-over'
 NeoBundle 'editorconfig/editorconfig-vim'
+
+NeoBundle 'christoomey/vim-tmux-navigator'
