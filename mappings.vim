@@ -44,3 +44,5 @@ vnoremap > >gv
   vnoremap <C-j> :m '>+1<CR>gv=gv
   vnoremap <C-k> :m '<-2<CR>gv=gv"
 " }}}
+nnoremap <F1> :noh<CR><CR>
+
