@@ -44,5 +44,8 @@ vnoremap > >gv
   vnoremap <C-j> :m '>+1<CR>gv=gv
   vnoremap <C-k> :m '<-2<CR>gv=gv"
 " }}}
-nnoremap <F1> :noh<CR><CR>
-
+" toogle search highlight {{{
+map  <F1> :set hls!<CR>
+imap <F1> <ESC>:set hls!<CR>a
+vmap <F1> <ESC>:set hls!<CR>gv
+"}}}
