@@ -9,6 +9,7 @@ NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'tpope/vim-repeat'
 
 "{{{ Themes
 NeoBundle 'chriskempson/base16-vim'
