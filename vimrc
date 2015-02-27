@@ -2,6 +2,8 @@
 
 set all& "reset everything to their defaults
 set nocompatible "vim
+filetype plugin indent on
+syntax enable
 
 " detect OS {{{
   let s:is_windows = has('win32') || has('win64') || has('win32unix')
@@ -13,22 +15,6 @@ set nocompatible "vim
   if s:is_windows
     set rtp+=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
   endif
-"}}}
-
-" setup & neobundle {{{
-  set rtp+=~/.vim/bundle/neobundle.vim
-  call neobundle#begin(expand('~/.vim/bundle/'))
-  NeoBundleFetch 'Shougo/neobundle.vim'
-  NeoBundle 'Shougo/vimproc.vim', {
-  \ 'build' : {
-  \     'windows' : 'tools\\update-dll-mingw',
-  \     'cygwin' : 'make -f make_cygwin.mak',
-  \     'mac' : 'make -f make_mac.mak',
-  \     'linux' : 'make',
-  \     'unix' : 'gmake',
-  \    },
-  \ }
-  call neobundle#end()
 "}}}
 
 " functions {{{
@@ -165,17 +151,14 @@ set nocompatible "vim
 "}}}
 
 " plugins {{{
-  filetype plugin indent on
-  syntax enable
-  call neobundle#begin(expand('~/.vim/bundle/'))
+  call plug#begin('~/.vim/plugged')
   source ~/.vim/plugins.vim
   if s:is_windows
     source ~/.vim/plugins_win.vim
   else
     source ~/.vim/plugins_nix.vim
   endif
-  call neobundle#end()
-  NeoBundleCheck
+  call plug#end()
 "}}}
 
 " theme {{{

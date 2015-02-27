@@ -1,23 +1,25 @@
-NeoBundle 'tpope/vim-sensible'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'tomtom/tlib_vim'
-NeoBundle 'marcweber/vim-addon-mw-utils'
-NeoBundle 'sheerun/vim-polyglot'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-dispatch'
+Plug 'tomtom/tlib_vim'
+Plug 'marcweber/vim-addon-mw-utils'
+Plug 'sheerun/vim-polyglot'
+Plug 'mileszs/ack.vim'
 
-NeoBundle 'tpope/vim-speeddating'
-NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'Yggdroot/indentLine'
-NeoBundle 'tpope/vim-repeat'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-surround'
+Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-repeat'
 
 "{{{ Themes
-NeoBundle 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
+Plug 'whatyouhide/vim-gotham'
 "}}}
 
-NeoBundle 'Shougo/unite.vim'
+Plug 'Shougo/unite.vim'
 
-NeoBundle 'bling/vim-airline' "{{{
+Plug 'bling/vim-airline' "{{{
   " extensions
   let g:airline#extensions#tabline#enabled         = 1
   let g:airline#extensions#tabline#left_sep        = ' '
@@ -43,7 +45,7 @@ NeoBundle 'bling/vim-airline' "{{{
   let g:airline#extensions#capslock#enabled   = 0
   let g:airline#extensions#windowswap#enabled = 0
 
-  let g:airline_theme             = 'sol'
+  let g:airline_theme             = 'hybrid'
   let g:airline_left_sep          = '»'
   let g:airline_right_sep         = '«'
   let g:airline_linecolumn_prefix = '¶'
@@ -52,21 +54,21 @@ NeoBundle 'bling/vim-airline' "{{{
   let g:airline_whitespace_symbol = 'Ξ'
 "}}}
 
-NeoBundle 'mhinz/vim-signify' "{{{
+Plug 'mhinz/vim-signify' "{{{
   let g:signify_vcs_list = [ 'git', 'svn' ]
 "}}}
 
-NeoBundleLazy 'scrooloose/nerdtree', {'autoload':{'commands':['NERDTreeToggle','NERDTreeFind']}} "{{{
-  let g:NERDTreeWinPos  = 'right'
-  let g:NERDTreeWinSize = 50
+Plug 'scrooloose/nerdtree'
+  let g:NERDTreeWinPos  = 'left'
+  let g:NERDTreeWinSize = 40
   let g:NERDTreeIgnore  = ['\.git','\.hg']
   nnoremap <Leader>t :NERDTreeToggle<CR>
   nnoremap <Leader>f :NERDTreeFocus<CR>
 "}}}
 
-"NeoBundle 'scrooloose/nerdcommenter'
+"Plug 'scrooloose/nerdcommenter'
 
-NeoBundle 'Shougo/neocomplete.vim' "{{{
+Plug 'Shougo/neocomplete.vim' "{{{
   " enable
   let g:acp_enableAtStartup = 0
   let g:neocomplete#enable_at_startup = 1
@@ -125,7 +127,7 @@ NeoBundle 'Shougo/neocomplete.vim' "{{{
   endif
 "}}}
 
-NeoBundle 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
+Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   let g:ctrlp_cmd                    = 'CtrlPCurWD'
   let g:ctrlp_clear_cache_on_exit    = 1
   let g:ctrlp_max_height             = 60
@@ -142,24 +144,24 @@ NeoBundle 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   nnoremap <C-m> :CtrlPFunky<Cr>
 "}}}
 
-NeoBundle 'EasyGrep' "{{{
+Plug 'EasyGrep' "{{{
   let g:EasyGrepRecursive              = 1
   let g:EasyGrepAllOptionsInExplorer   = 1
   let g:EasyGrepCommand                = 1
   nnoremap <leader>vo :GrepOptions<cr>
 "}}}
 
-NeoBundleLazy 'godlygeek/tabular', {'autoload':{'commands':'Tabularize'}} "{{{
+Plug 'godlygeek/tabular' "{{{
   nnoremap <leader>a <ESC>:Tabularize /
   vmap <leader>a :Tabularize /
 "}}}
 
-NeoBundleLazy 'sjl/gundo.vim', {'autoload':{'commands':'GundoToggle'}} "{{{
+Plug 'sjl/gundo.vim' "{{{
   nnoremap <F5> :GundoToggle<CR>
 "}}}
 
-NeoBundle 'xolox/vim-misc'
-NeoBundle 'xolox/vim-easytags'
-NeoBundle 'majutsushi/tagbar' "{{{
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-easytags'
+Plug 'majutsushi/tagbar' "{{{
   nmap <F8> :TagbarToggle<CR>
 "}}}

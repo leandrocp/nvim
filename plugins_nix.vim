@@ -1,4 +1,4 @@
-NeoBundle 'tpope/vim-fugitive' "{{{
+Plug 'tpope/vim-fugitive' "{{{
   nnoremap <silent> <leader>gs :Gstatus<CR>
   nnoremap <silent> <leader>gd :Gdiff<CR>
   nnoremap <silent> <leader>gc :Gcommit<CR>
@@ -11,40 +11,40 @@ NeoBundle 'tpope/vim-fugitive' "{{{
   autocmd BufReadPost fugitive://* set bufhidden=delete
 "}}}
 
-NeoBundle 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
-NeoBundleLazy 'cakebaker/scss-syntax.vim', {'autoload':{'filetypes':['scss','sass']}}
-NeoBundleLazy 'hail2u/vim-css3-syntax', {'autoload':{'filetypes':['css','scss','sass']}}
-NeoBundleLazy 'ap/vim-css-color', {'autoload':{'filetypes':['css','scss','sass','less','styl']}}
-NeoBundleLazy 'othree/html5.vim', {'autoload':{'filetypes':['html']}}
-NeoBundleLazy 'pangloss/vim-javascript', {'autoload':{'filetypes':['javascript']}}
-NeoBundleLazy 'maksimr/vim-jsbeautify', {'autoload':{'filetypes':['javascript']}}
-NeoBundleLazy 'elzr/vim-json', {'autoload':{'filetypes':['javascript','json']}}
-NeoBundleLazy 'othree/yajs.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
-NeoBundleLazy 'othree/javascript-libraries-syntax.vim', {'autoload':{'filetypes':['javascript','coffee','ls','typescript']}}
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'hail2u/vim-css3-syntax'
+"Plug 'ap/vim-css-color'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'elzr/vim-json'
+Plug 'othree/yajs.vim'
+Plug 'othree/javascript-libraries-syntax.vim'
 
-NeoBundle 'austintaylor/vim-open'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'tpope/vim-bundler'
-NeoBundle 'tpope/vim-rake'
+Plug 'austintaylor/vim-open'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-rake'
 
-NeoBundleLazy 'jtratner/vim-flavored-markdown'
+Plug 'jtratner/vim-flavored-markdown'
 
-NeoBundleLazy 'dsawardekar/ember.vim', {'autoload':{'filetypes':['javascript','coffee','typescript']}}
-NeoBundleLazy 'mustache/vim-mustache-handlebars' "{{{
+Plug 'dsawardekar/ember.vim'
+Plug 'mustache/vim-mustache-handlebars' "{{{
   let g:mustache_abbreviations = 1
 "}}}
 
-NeoBundle 'jiangmiao/auto-pairs'
-"NeoBundle 'kana/vim-textobj-user'
-"NeoBundle 'kana/vim-textobj-indent'
-"NeoBundle 'kana/vim-textobj-entire'
-"NeoBundle 'paradigm/TextObjectify'
-"NeoBundle 'gcmt/wildfire.vim'
-"NeoBundle 'lucapette/vim-textobj-underscore'
-"NeoBundle 'sickill/vim-pasta'
-NeoBundle 'osyo-manga/vim-over'
-NeoBundle 'editorconfig/editorconfig-vim'
+Plug 'jiangmiao/auto-pairs'
+"Plug 'kana/vim-textobj-user'
+"Plug 'kana/vim-textobj-indent'
+"Plug 'kana/vim-textobj-entire'
+"Plug 'paradigm/TextObjectify'
+"Plug 'gcmt/wildfire.vim'
+"Plug 'lucapette/vim-textobj-underscore'
+"Plug 'sickill/vim-pasta'
+Plug 'osyo-manga/vim-over'
+Plug 'editorconfig/editorconfig-vim'
 
-NeoBundle 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'

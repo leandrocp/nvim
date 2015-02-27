@@ -24,11 +24,6 @@ nnoremap <silent> <Leader>- :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 " reselect visual block after indent
 vnoremap < <gv
 vnoremap > >gv
-" ctags {{{
-  if neobundle#is_sourced('vim-dispatch')
-    nnoremap <F12>:Dispatch ctags -R<cr>
-  endif
-"}}}
 " buffers {{{
   map <leader>l :bn<cr>
   map <leader>h :bp<cr>
