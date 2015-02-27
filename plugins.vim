@@ -3,7 +3,6 @@ Plug 'tpope/vim-dispatch'
 Plug 'tomtom/tlib_vim'
 Plug 'marcweber/vim-addon-mw-utils'
 Plug 'sheerun/vim-polyglot'
-Plug 'mileszs/ack.vim'
 
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-eunuch'
@@ -11,6 +10,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-repeat'
+Plug 'gorodinskiy/vim-coloresque'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'

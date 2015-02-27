@@ -1,3 +1,5 @@
+Plug 'mileszs/ack.vim'
+
 Plug 'tpope/vim-fugitive' "{{{
   nnoremap <silent> <leader>gs :Gstatus<CR>
   nnoremap <silent> <leader>gd :Gdiff<CR>
