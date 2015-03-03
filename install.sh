@@ -3,7 +3,7 @@
 # https://github.com/thoughtbot/dotfiles/blob/master/install.sh
 
 function install() {
-  declare -a files=(vimrc gvimrc mswinrc)
+  declare -a files=(nvimrc gvimrc)
 
   for name in ${files[@]}; do
     target="$HOME/.$name"
@@ -17,8 +17,6 @@ function install() {
       ln -s "$PWD/$name" "$target"
     fi
   done
-
-  vim +NeoBundleInstall +qall
 }
 
 install

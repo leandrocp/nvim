@@ -1,21 +1,14 @@
-# Vimfiles
+# Neovim Files
 
 ## Install
 ```
-git clone git@github.com:leandrocp/vim.git ~/.vim
-mkdir -p ~/.vim/bundle
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-cd ~/.vim
+git clone git@github.com:leandrocp/nvim.git ~/.nvim
+
+curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+cd ~/.nvim
+
 bash install.sh
-```
-
-### Windows-only
-
-#### Create a HOME env var pointing to your cygwin user home dir
-
-#### Copy system gVim config
-```
-cp ~/.vim/cygwin_vimrc C:/Apps/vim/_vimrc
 ```
 
 ### Powerline fonts

@@ -66,66 +66,7 @@ Plug 'scrooloose/nerdtree'
   nnoremap <Leader>f :NERDTreeFocus<CR>
 "}}}
 
-"Plug 'scrooloose/nerdcommenter'
-
-Plug 'Shougo/neocomplete.vim' "{{{
-  " enable
-  let g:acp_enableAtStartup = 0
-  let g:neocomplete#enable_at_startup = 1
-
-  " smart case
-  let g:neocomplete#enable_smart_case = 1
-  let g:neocomplete#enable_camel_case = 1
-
-  " minimum syntax keyword length
-  let g:neocomplete#sources#syntax#min_keyword_length = 3
-  let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
-  " use fuzzy completion
-  let g:neocomplete#enable_fuzzy_completion = 1
-
-  " dicts
-  let g:neocomplete#sources#dictionary#dictionaries = {
-      \ 'default' : '',
-      \ 'java' : '~/.vim/dict/java.dict',
-      \ 'ruby' : '~/.vim/dict/ruby.dict',
-      \ }
-
-  " for auto select
-  let g:neocomplete#enable_complete_select = 1
-  try
-    let completeopt_save = &completeopt
-    set completeopt+=noinsert,noselect
-  catch
-    let g:neocomplete#enable_complete_select = 0
-  finally
-    let &completeopt = completeopt_save
-  endtry
-  let g:neocomplete#enable_auto_select = 0
-  let g:neocomplete#enable_refresh_always = 0
-  let g:neocomplete#enable_cursor_hold_i = 0
-
-  " <TAB>: completion.
-  inoremap <silent><expr> <TAB>
-        \ pumvisible() ? "\<C-n>" :
-        \ <SID>check_back_space() ? "\<TAB>" :
-        \ neocomplete#start_manual_complete()
-  function! s:check_back_space() "{{{
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-  endfunction"}}}
-  " <S-TAB>: completion back.
-  inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<C-h>"
-
-  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-  if !exists('g:neocomplete#sources#omni#input_patterns')
-    let g:neocomplete#sources#omni#input_patterns = {}
-  endif
-"}}}
+Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/install.sh' }
 
 Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   let g:ctrlp_cmd                    = 'CtrlPCurWD'

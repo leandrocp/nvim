@@ -13,7 +13,7 @@ syntax enable
 
 " windows {{{
   if s:is_windows
-    set rtp+=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+    set rtp+=$HOME/.nvim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.nvim/after
   endif
 "}}}
 
@@ -107,12 +107,12 @@ syntax enable
 
 " files/folders {{{
   set undofile
-  set undodir=~/.vim/.cache/undo
+  set undodir=~/.nvim/.cache/undo
   set backup
-  set backupdir=~/.vim/.cache/backup
-  set directory=~/.vim/.cache/swap
+  set backupdir=~/.nvim/.cache/backup
+  set directory=~/.nvim/.cache/swap
   set noswapfile
-  call EnsureExists('~/.vim/.cache')
+  call EnsureExists('~/.nvim/.cache')
   call EnsureExists(&undodir)
   call EnsureExists(&backupdir)
   call EnsureExists(&directory)
@@ -135,7 +135,7 @@ syntax enable
 "}}}
 
 " mappings/autocmd {{{
-  source ~/.vim/mappings.vim
+  source ~/.nvim/mappings.vim
 
   " go back to previous position of cursor if any
   autocmd BufReadPost *
@@ -151,12 +151,12 @@ syntax enable
 "}}}
 
 " plugins {{{
-  call plug#begin('~/.vim/plugged')
-  source ~/.vim/plugins.vim
+  call plug#begin('~/.nvim/plugged')
+  source ~/.nvim/plugins.vim
   if s:is_windows
-    source ~/.vim/plugins_win.vim
+    source ~/.nvim/plugins_win.vim
   else
-    source ~/.vim/plugins_nix.vim
+    source ~/.nvim/plugins_nix.vim
   endif
   call plug#end()
 "}}}
