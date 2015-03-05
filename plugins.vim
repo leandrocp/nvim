@@ -106,3 +106,7 @@ Plug 'xolox/vim-easytags'
 Plug 'majutsushi/tagbar' "{{{
   nmap <F8> :TagbarToggle<CR>
 "}}}
+
+Plug 'Chiel92/vim-autoformat' "{{{
+  noremap <F3> :Autoformat<CR><CR>
+"}}}
