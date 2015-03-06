@@ -76,7 +76,7 @@ Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   let g:ctrlp_follow_symlinks        = 1
   let g:ctrlp_working_path_mode      = 'ra'
   let g:ctrlp_max_files              = 20000
-  let g:ctrlp_cache_dir              = '~/.vim/.cache/ctrlp'
+  let g:ctrlp_cache_dir              = '~/.nvim/.cache/ctrlp'
   let g:ctrlp_reuse_window           = 'startify'
   let g:ctrlp_extensions             = ['funky']
   let g:ctrlp_funky_syntax_highlight = 1
