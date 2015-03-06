@@ -41,6 +41,7 @@ syntax enable
   set fileformats+=mac                                "add mac to auto-detection of file format line endings
   set fileformat=unix                                 "default file format
   set nrformats-=octal                                "always assume decimal numbers
+  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/node_modules/*,*/bower_components/*,*/target/*,*/DS_Store/*,*/tmp/*,*/plugged/*
   set showcmd
   set tags=tags;/
   set showfulltag

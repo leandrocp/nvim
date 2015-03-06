@@ -3,6 +3,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tomtom/tlib_vim'
 Plug 'marcweber/vim-addon-mw-utils'
 Plug 'sheerun/vim-polyglot'
+Plug 'mhinz/vim-startify'
 
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-eunuch'
@@ -46,12 +47,15 @@ Plug 'bling/vim-airline' "{{{
   let g:airline#extensions#windowswap#enabled = 0
 
   let g:airline_theme             = 'hybrid'
-  let g:airline_left_sep          = '»'
-  let g:airline_right_sep         = '«'
-  let g:airline_linecolumn_prefix = '¶'
-  let g:airline_branch_prefix     = 'B'
-  let g:airline_paste_symbol      = 'ρ'
-  let g:airline_whitespace_symbol = 'Ξ'
+
+  if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+  let g:airline_left_sep = '▶'
+  let g:airline_right_sep = '◀'
+  let g:airline_symbols.paste = 'ρ'
+  let g:airline_symbols.whitespace = 'Ξ'
+  let g:airline_symbols.branch = 'B'
 "}}}
 
 Plug 'mhinz/vim-signify' "{{{
@@ -69,6 +73,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/install.sh' }
 
 Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
+  if exists("g:ctrl_user_command")
+    unlet g:ctrlp_user_command
+  endif
   let g:ctrlp_cmd                    = 'CtrlPCurWD'
   let g:ctrlp_clear_cache_on_exit    = 1
   let g:ctrlp_max_height             = 60
@@ -80,7 +87,7 @@ Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   let g:ctrlp_reuse_window           = 'startify'
   let g:ctrlp_extensions             = ['funky']
   let g:ctrlp_funky_syntax_highlight = 1
-  let g:ctrlp_custom_ignore          = 'node_modules\|bower_components\|target\|DS_Store\|git|tmp\'
+  let g:ctrlp_custom_ignore          = 'node_modules\|bower_components\|target\|DS_Store\|git|tmp\|plugged\'
   nnoremap <C-o> :CtrlPBuffer<Cr>
   nnoremap <C-m> :CtrlPFunky<Cr>
 "}}}
