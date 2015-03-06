@@ -49,4 +49,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'osyo-manga/vim-over'
 Plug 'editorconfig/editorconfig-vim'
 
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator' "{{{
+  let g:tmux_navigator_save_on_switch = 1
+"}}}

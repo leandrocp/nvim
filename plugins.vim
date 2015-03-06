@@ -110,3 +110,7 @@ Plug 'majutsushi/tagbar' "{{{
 Plug 'Chiel92/vim-autoformat' "{{{
   noremap <F3> :Autoformat<CR><CR>
 "}}}
+
+Plug 'Keithbsmiley/investigate.vim' "{{{
+  nnoremap <leader>K :call investigate#Investigate()<CR>
+"}}}

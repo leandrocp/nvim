@@ -148,6 +148,10 @@ syntax enable
   autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
   au BufRead,BufNewFile *.scss set filetype=scss.css
   au BufNewFile,BufRead *.md,*.markdown set filetype=markdown
+
+  set autoread
+  au FocusGained,BufEnter * :silent! !
+  au FocusLost,WinLeave * :silent! w
 "}}}
 
 " plugins {{{
