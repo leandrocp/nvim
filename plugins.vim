@@ -2,8 +2,10 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-dispatch'
 Plug 'tomtom/tlib_vim'
 Plug 'marcweber/vim-addon-mw-utils'
+
+Plug 'vim-scripts/LargeFile'
+
 Plug 'sheerun/vim-polyglot'
-Plug 'mhinz/vim-startify'
 
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-eunuch'
@@ -19,6 +21,11 @@ Plug 'whatyouhide/vim-gotham'
 "}}}
 
 Plug 'Shougo/unite.vim'
+
+Plug 'tpope/vim-vinegar' "{{{
+  let g:netrw_liststyle=3
+  map <leader>e :Explore<cr>
+"}}}
 
 Plug 'bling/vim-airline' "{{{
   " extensions
@@ -62,12 +69,12 @@ Plug 'mhinz/vim-signify' "{{{
   let g:signify_vcs_list = [ 'git', 'svn' ]
 "}}}
 
-Plug 'scrooloose/nerdtree'
-  let g:NERDTreeWinPos  = 'left'
-  let g:NERDTreeWinSize = 40
-  let g:NERDTreeIgnore  = ['\.git','\.hg']
-  nnoremap <Leader>t :NERDTreeToggle<CR>
-  nnoremap <Leader>f :NERDTreeFocus<CR>
+"Plug 'scrooloose/nerdtree'
+  "let g:NERDTreeWinPos  = 'left'
+  "let g:NERDTreeWinSize = 40
+  "let g:NERDTreeIgnore  = ['\.git','\.hg']
+  "nnoremap <Leader>t :NERDTreeToggle<CR>
+  "nnoremap <Leader>f :NERDTreeFocus<CR>
 "}}}
 
 Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/install.sh' }
@@ -87,7 +94,10 @@ Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   let g:ctrlp_reuse_window           = 'startify'
   let g:ctrlp_extensions             = ['funky']
   let g:ctrlp_funky_syntax_highlight = 1
-  let g:ctrlp_custom_ignore          = 'node_modules\|bower_components\|target\|DS_Store\|git|tmp\|plugged\'
+  let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git\|\.hg\|\.svn\|node_modules\|bower_components\|target\|DS_Store\|tmp\|plugged\',
+  \ 'file': '\.jpg$\|\.exe$\|\.so$\|tags$\|\.dll$'
+  \ }
   nnoremap <C-o> :CtrlPBuffer<Cr>
   nnoremap <C-m> :CtrlPFunky<Cr>
 "}}}
@@ -99,9 +109,9 @@ Plug 'EasyGrep' "{{{
   nnoremap <leader>vo :GrepOptions<cr>
 "}}}
 
-Plug 'godlygeek/tabular' "{{{
-  nnoremap <leader>a <ESC>:Tabularize /
-  vmap <leader>a :Tabularize /
+Plug 'junegunn/vim-easy-align' "{{{
+  vmap <Enter> <Plug>(EasyAlign)
+  nmap ga <Plug>(EasyAlign)
 "}}}
 
 Plug 'sjl/gundo.vim' "{{{

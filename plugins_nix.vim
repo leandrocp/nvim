@@ -38,7 +38,7 @@ Plug 'mustache/vim-mustache-handlebars' "{{{
   let g:mustache_abbreviations = 1
 "}}}
 
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 "Plug 'kana/vim-textobj-user'
 "Plug 'kana/vim-textobj-indent'
 "Plug 'kana/vim-textobj-entire'
