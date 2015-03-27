@@ -47,7 +47,7 @@ Plug 'mustache/vim-mustache-handlebars' "{{{
 "Plug 'lucapette/vim-textobj-underscore'
 "Plug 'sickill/vim-pasta'
 Plug 'osyo-manga/vim-over'
-Plug 'editorconfig/editorconfig-vim'
+"Plug 'editorconfig/editorconfig-vim'
 
 Plug 'christoomey/vim-tmux-navigator' "{{{
   let g:tmux_navigator_save_on_switch = 1

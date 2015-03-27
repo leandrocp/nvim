@@ -118,8 +118,7 @@ Plug 'sjl/gundo.vim' "{{{
   nnoremap <F5> :GundoToggle<CR>
 "}}}
 
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-easytags'
+Plug 'vim-gutentags'
 Plug 'majutsushi/tagbar' "{{{
   nmap <F8> :TagbarToggle<CR>
 "}}}
