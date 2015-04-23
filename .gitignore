@@ -21,3 +21,4 @@ backups/
 bundle/
 .cache/
 plugged/
+autoload/plug.vim
