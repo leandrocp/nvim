@@ -23,7 +23,9 @@ Plug 'pangloss/vim-javascript'
 "Plug 'maksimr/vim-jsbeautify'
 Plug 'elzr/vim-json'
 Plug 'othree/yajs.vim'
-Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/javascript-libraries-syntax.vim' "{{{
+  let g:used_javascript_libs = 'jquery,underscore,requirejs,handlebars'
+"}}}
 
 Plug 'austintaylor/vim-open'
 Plug 'vim-ruby/vim-ruby'
