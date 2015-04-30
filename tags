@@ -1,0 +1,440 @@
+!	/home/leandrocp/.nvim/mappings.vim	/^nnoremap ! :!$/;"	m
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+/	/home/leandrocp/.nvim/mappings.vim	/^  nnoremap \/ \/\\v$/;"	m
+/	/home/leandrocp/.nvim/mappings.vim	/^  vnoremap \/ \/\\v$/;"	m
+:s/	/home/leandrocp/.nvim/mappings.vim	/^  nnoremap :s\/ :s\/\\v$/;"	m
+<	/home/leandrocp/.nvim/mappings.vim	/^vnoremap < <gv$/;"	m
+<C-h>	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <C-h> <C-w>h$/;"	m
+<C-j>	/home/leandrocp/.nvim/mappings.vim	/^  inoremap <C-j> <ESC>:m .+1<CR>==gi$/;"	m
+<C-j>	/home/leandrocp/.nvim/mappings.vim	/^  vnoremap <C-j> :m '>+1<CR>gv=gv$/;"	m
+<C-j>	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <C-j> <C-w>j$/;"	m
+<C-k>	/home/leandrocp/.nvim/mappings.vim	/^  inoremap <C-k> <ESC>:m .-2<CR>==gi$/;"	m
+<C-k>	/home/leandrocp/.nvim/mappings.vim	/^  vnoremap <C-k> :m '<-2<CR>gv=gv"$/;"	m
+<C-k>	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <C-k> <C-w>k$/;"	m
+<C-l>	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <C-l> <C-w>l$/;"	m
+<C-m>	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <C-m> :CtrlPFunky<Cr>$/;"	m
+<C-o>	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <C-o> :CtrlPBuffer<Cr>$/;"	m
+<Enter>	/home/leandrocp/.nvim/plugins.vim	/^  vmap <Enter> <Plug>(EasyAlign)$/;"	m
+<F1>	/home/leandrocp/.nvim/mappings.vim	/^imap <F1> <ESC>:set hls!<CR>a$/;"	m
+<F1>	/home/leandrocp/.nvim/mappings.vim	/^map  <F1> :set hls!<CR>$/;"	m
+<F1>	/home/leandrocp/.nvim/mappings.vim	/^vmap <F1> <ESC>:set hls!<CR>gv$/;"	m
+<F2>	/home/leandrocp/.nvim/mappings.vim	/^map <F2> :set invpaste<CR>:set paste?<CR>$/;"	m
+<F3>	/home/leandrocp/.nvim/plugins.vim	/^  noremap <F3> :Autoformat<CR><CR>$/;"	m
+<F5>	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <F5> :GundoToggle<CR>$/;"	m
+<F8>	/home/leandrocp/.nvim/plugins.vim	/^  nmap <F8> :TagbarToggle<CR>$/;"	m
+<Leader>-	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <silent> <Leader>- :exe "vertical resize " . (winwidth(0) * 2\/3)<CR>$/;"	m
+<Leader>=	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <silent> <Leader>= :exe "vertical resize " . (winwidth(0) * 3\/2)<CR>$/;"	m
+<Plug>NormalLineDown	/home/leandrocp/.nvim/mappings.vim	/^  nnoremap <silent> <Plug>NormalLineDown :m .+1<CR>==$/;"	m
+<Plug>NormalLineUp	/home/leandrocp/.nvim/mappings.vim	/^  nnoremap <silent> <Plug>NormalLineUp :m .-2<CR>==$/;"	m
+<leader>1	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>1 <Plug>AirlineSelectTab1$/;"	m
+<leader>2	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>2 <Plug>AirlineSelectTab2$/;"	m
+<leader>3	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>3 <Plug>AirlineSelectTab3$/;"	m
+<leader>4	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>4 <Plug>AirlineSelectTab4$/;"	m
+<leader>5	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>5 <Plug>AirlineSelectTab5$/;"	m
+<leader>6	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>6 <Plug>AirlineSelectTab6$/;"	m
+<leader>7	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>7 <Plug>AirlineSelectTab7$/;"	m
+<leader>8	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>8 <Plug>AirlineSelectTab8$/;"	m
+<leader>9	/home/leandrocp/.nvim/plugins.vim	/^  nmap <leader>9 <Plug>AirlineSelectTab9$/;"	m
+<leader><leader>	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader><leader> <c-^>$/;"	m
+<leader>K	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <leader>K :call investigate#Investigate()<CR>$/;"	m
+<leader>W	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader>W :wq<cr>$/;"	m
+<leader>bjs	/home/leandrocp/.nvim/plugins_win.vim	/^  nnoremap <leader>bjs :call JsBeautify()<cr>$/;"	m
+<leader>e	/home/leandrocp/.nvim/plugins.vim	/^  map <leader>e :Explore<cr>$/;"	m
+<leader>gb	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gb :Gblame<CR>$/;"	m
+<leader>gc	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gc :Gcommit<CR>$/;"	m
+<leader>gd	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gd :Gdiff<CR>$/;"	m
+<leader>gl	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gl :Glog<CR>$/;"	m
+<leader>gp	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gp :Git push<CR>$/;"	m
+<leader>gr	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gr :Gremove<CR>$/;"	m
+<leader>gs	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gs :Gstatus<CR>$/;"	m
+<leader>gw	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gw :Gwrite<CR>$/;"	m
+<leader>h	/home/leandrocp/.nvim/mappings.vim	/^  map <leader>h :bp<cr>$/;"	m
+<leader>h	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader>h <C-w>s<C-w>j$/;"	m
+<leader>j	/home/leandrocp/.nvim/mappings.vim	/^  nmap <leader>j <Plug>NormalLineDown$/;"	m
+<leader>k	/home/leandrocp/.nvim/mappings.vim	/^  nmap <leader>k <Plug>NormalLineUp$/;"	m
+<leader>l	/home/leandrocp/.nvim/mappings.vim	/^  map <leader>l :bn<cr>$/;"	m
+<leader>q	/home/leandrocp/.nvim/mappings.vim	/^  map <leader>q :bd<cr>$/;"	m
+<leader>q	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader>q :bp<cr>:bd #<cr>$/;"	m
+<leader>v	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader>v <C-w>v<C-w>l$/;"	m
+<leader>vo	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <leader>vo :GrepOptions<cr>$/;"	m
+<leader>w	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader>w :w<cr>$/;"	m
+>	/home/leandrocp/.nvim/mappings.vim	/^vnoremap > >gv$/;"	m
+?	/home/leandrocp/.nvim/mappings.vim	/^  nnoremap ? ?\\v$/;"	m
+?	/home/leandrocp/.nvim/mappings.vim	/^  vnoremap ? ?\\v$/;"	m
+AutoSyntastic	/home/leandrocp/.nvim/lightline.vim	/^augroup AutoSyntastic$/;"	a
+CtrlPMark	/home/leandrocp/.nvim/lightline.vim	/^function! CtrlPMark()$/;"	f
+CtrlPStatusFunc_1	/home/leandrocp/.nvim/lightline.vim	/^function! CtrlPStatusFunc_1(focus, byfname, regex, prev, item, next, marked)$/;"	f
+CtrlPStatusFunc_2	/home/leandrocp/.nvim/lightline.vim	/^function! CtrlPStatusFunc_2(str)$/;"	f
+K	/home/leandrocp/.nvim/plugins_win.vim	/^  nnoremap K :call investigate#Investigate()<cr>$/;"	m
+MyFileencoding	/home/leandrocp/.nvim/lightline.vim	/^function! MyFileencoding()$/;"	f
+MyFileformat	/home/leandrocp/.nvim/lightline.vim	/^function! MyFileformat()$/;"	f
+MyFilename	/home/leandrocp/.nvim/lightline.vim	/^function! MyFilename()$/;"	f
+MyFiletype	/home/leandrocp/.nvim/lightline.vim	/^function! MyFiletype()$/;"	f
+MyFugitive	/home/leandrocp/.nvim/lightline.vim	/^function! MyFugitive()$/;"	f
+MyMode	/home/leandrocp/.nvim/lightline.vim	/^function! MyMode()$/;"	f
+MyModified	/home/leandrocp/.nvim/lightline.vim	/^function! MyModified()$/;"	f
+MyReadonly	/home/leandrocp/.nvim/lightline.vim	/^function! MyReadonly()$/;"	f
+SID_PREFIX	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:SID_PREFIX()$/;"	f
+VimProcBang	/home/leandrocp/.nvim/plugins/vimproc/plugin/vimproc.vim	/^command! -nargs=+ -complete=shellcmd VimProcBang call s:bang(<q-args>)$/;"	c
+VimProcRead	/home/leandrocp/.nvim/plugins/vimproc/plugin/vimproc.vim	/^command! -nargs=+ -complete=shellcmd VimProcRead call s:read(<q-args>)$/;"	c
+add	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:add(repo, ...)$/;"	f
+assign_name	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+assoc	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+bang	/home/leandrocp/.nvim/plugins/vimproc/plugin/vimproc.vim	/^function! s:bang(cmdline) "{{{$/;"	f
+bar	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
+call5	/home/leandrocp/.nvim/.cache/undo/%home%leandrocp%code%rh-api%app%models%calculo_irrf_service.rb	/^  def call5Å_–/;"	f
+clean	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+close	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:close() dict "{{{$/;"	f
+close_all	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:close_all(self) "{{{$/;"	f
+closed_fdopen	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:closed_fdopen(f_close, f_read, f_write) "{{{$/;"	f
+cmd.close	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/cmd.vim	/^function! s:cmd.close() "{{{$/;"	f
+cmd.open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/cmd.vim	/^function! s:cmd.open() "{{{$/;"	f
+cmd.system	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/cmd.vim	/^function! s:cmd.system(cmd) "{{{$/;"	f
+compare_git_uri	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+convert_args	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:convert_args(args) "{{{$/;"	f
+define_commands	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+define_signals	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:define_signals()$/;"	f
+diff	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:diff()$/;"	f
+dirname	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:dirname(path)$/;"	f
+dirpath	/home/leandrocp/.nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+do	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+err	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+esc	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+escrtp	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+extract_name	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+fdopen	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:fdopen(fd, f_close, f_read, f_write) "{{{$/;"	f
+fdopen_pgroup	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:fdopen_pgroup(proc, fd, f_close, f_read, f_write) "{{{$/;"	f
+fdopen_pipes	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:fdopen_pipes(fd, f_close, f_read, f_write) "{{{$/;"	f
+fdopen_pty	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:fdopen_pty(fd_stdin, fd_stdout, f_close, f_read, f_write) "{{{$/;"	f
+finalize	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:finalize()$/;"	f
+find_name	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+finish	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+format_message	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+funcref	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:funcref(funcname)$/;"	f
+g:EasyGrepAllOptionsInExplorer	/home/leandrocp/.nvim/plugins.vim	/^  let g:EasyGrepAllOptionsInExplorer   = 1$/;"	v
+g:EasyGrepCommand	/home/leandrocp/.nvim/plugins.vim	/^  let g:EasyGrepCommand                = 1$/;"	v
+g:EasyGrepRecursive	/home/leandrocp/.nvim/plugins.vim	/^  let g:EasyGrepRecursive              = 1$/;"	v
+g:airline#extensions#bufferline#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#bufferline#enabled = 0$/;"	v
+g:airline#extensions#capslock#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#capslock#enabled   = 0$/;"	v
+g:airline#extensions#csv#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#csv#enabled        = 0$/;"	v
+g:airline#extensions#eclim#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#eclim#enabled      = 0$/;"	v
+g:airline#extensions#nrrwrgn#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#nrrwrgn#enabled    = 0$/;"	v
+g:airline#extensions#tabline#buffer_idx_mode	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#tabline#buffer_idx_mode = 1$/;"	v
+g:airline#extensions#tabline#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#tabline#enabled         = 1$/;"	v
+g:airline#extensions#tabline#fnamecollapse	/home/leandrocp/.nvim/plugins.vim	/^   let g:airline#extensions#tabline#fnamecollapse  = 0$/;"	v
+g:airline#extensions#tabline#fnamemod	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#tabline#fnamemod        = ':p:.'$/;"	v
+g:airline#extensions#tabline#left_alt_sep	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#tabline#left_alt_sep    = ' '$/;"	v
+g:airline#extensions#tabline#left_sep	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#tabline#left_sep        = ' '$/;"	v
+g:airline#extensions#virtualenv#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#virtualenv#enabled = 0$/;"	v
+g:airline#extensions#windowswap#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#windowswap#enabled = 0$/;"	v
+g:airline_left_sep	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline_left_sep = '‚ñ∂'$/;"	v
+g:airline_right_sep	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline_right_sep = '‚óÄ'$/;"	v
+g:airline_symbols	/home/leandrocp/.nvim/plugins.vim	/^    let g:airline_symbols = {}$/;"	v
+g:airline_symbols	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline_symbols.branch = 'B'$/;"	v
+g:airline_symbols	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline_symbols.paste = 'œÅ'$/;"	v
+g:airline_symbols	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline_symbols.whitespace = 'Œû'$/;"	v
+g:airline_theme	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline_theme             = 'hybrid'$/;"	v
+g:ctrlp_cache_dir	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_cache_dir              = '~\/.nvim\/.cache\/ctrlp'$/;"	v
+g:ctrlp_clear_cache_on_exit	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_clear_cache_on_exit    = 1$/;"	v
+g:ctrlp_cmd	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_cmd                    = 'CtrlPCurWD'$/;"	v
+g:ctrlp_custom_ignore	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_custom_ignore = {$/;"	v
+g:ctrlp_extensions	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_extensions             = ['funky']$/;"	v
+g:ctrlp_follow_symlinks	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_follow_symlinks        = 1$/;"	v
+g:ctrlp_funky_syntax_highlight	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_funky_syntax_highlight = 1$/;"	v
+g:ctrlp_max_files	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_max_files              = 20000$/;"	v
+g:ctrlp_max_height	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_max_height             = 60$/;"	v
+g:ctrlp_reuse_window	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_reuse_window           = 'startify'$/;"	v
+g:ctrlp_show_hidden	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_show_hidden            = 0$/;"	v
+g:ctrlp_status_func	/home/leandrocp/.nvim/lightline.vim	/^let g:ctrlp_status_func = {$/;"	v
+g:ctrlp_working_path_mode	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_working_path_mode      = 'ra'$/;"	v
+g:lightline	/home/leandrocp/.nvim/lightline.vim	/^let g:lightline = {$/;"	v
+g:loaded_plug	/home/leandrocp/.nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:loaded_vimproc	/home/leandrocp/.nvim/plugins/vimproc/plugin/vimproc.vim	/^let g:loaded_vimproc = 1$/;"	v
+g:mustache_abbreviations	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:mustache_abbreviations = 1$/;"	v
+g:mustache_abbreviations	/home/leandrocp/.nvim/plugins_win.vim	/^  let g:mustache_abbreviations = 1$/;"	v
+g:netrw_liststyle	/home/leandrocp/.nvim/plugins.vim	/^  let g:netrw_liststyle=3$/;"	v
+g:plugs_order	/home/leandrocp/.nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:signify_vcs_list	/home/leandrocp/.nvim/plugins.vim	/^  let g:signify_vcs_list = [ 'git', 'svn' ]$/;"	v
+g:tmux_navigator_save_on_switch	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:tmux_navigator_save_on_switch = 1$/;"	v
+g:used_javascript_libs	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:used_javascript_libs = 'jquery,underscore,requirejs,handlebars'$/;"	v
+g:vimproc#dll_path	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^let g:vimproc#dll_path =$/;"	v
+g:vimproc#lexer#token_type	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^let g:vimproc#lexer#token_type = {$/;"	v
+g:vimproc_password_pattern	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^let g:vimproc_password_pattern = g:vimproc#password_pattern$/;"	v
+ga	/home/leandrocp/.nvim/plugins.vim	/^  nmap ga <Plug>(EasyAlign)$/;"	m
+garbage_collect	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:garbage_collect(is_force) "{{{$/;"	f
+git_valid	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:git_valid(spec, check_branch)$/;"	f
+git_version_requirement	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+glob_dir	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+hd2list	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:hd2list(hd)$/;"	f
+hd2str	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:hd2str(hd)$/;"	f
+hd2str_lua	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:hd2str_lua(hd)$/;"	f
+infer_properties	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+install	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+install	/home/leandrocp/.nvim/install.sh	/^function install() {$/;"	f
+is_absolute	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^  function! s:is_absolute(path)$/;"	f
+is_case_tolerant	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:is_case_tolerant()$/;"	f
+is_local_plug	/home/leandrocp/.nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+is_managed	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+is_null_device	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:is_null_device(filename)$/;"	f
+is_preview_window_open	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+is_pseudo_device	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:is_pseudo_device(filename) "{{{$/;"	f
+jj	/home/leandrocp/.nvim/mappings.vim	/^imap jj <Esc>$/;"	m
+job_abort	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+job_handler	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:job_handler(job_id, data, event) abort$/;"	f
+join	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:join(...)$/;"	f
+lastline	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+lexer.advance	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! s:lexer.advance()$/;"	f
+lexer.lex_digit	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! s:lexer.lex_digit()$/;"	f
+lexer.skip_spaces	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! s:lexer.skip_spaces()$/;"	f
+lexer.token	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! s:lexer.token()$/;"	f
+lexer.value	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! s:lexer.value()$/;"	f
+libcall	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:libcall(func, args) "{{{$/;"	f
+lines	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+list2hd	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:list2hd(lis)$/;"	f
+list2str	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:list2str(lis)$/;"	f
+loaded_names	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+lod	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:lod(names, types)$/;"	f
+lod_cmd	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+lod_ft	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+lod_map	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:lod_map(map, names, prefix)$/;"	f
+log	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+logpos	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+lpad	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+names	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+new_window	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+parse_back_quote	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_back_quote(script, i) "{{{$/;"	f
+parse_block	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_block(script) "{{{$/;"	f
+parse_cmdline	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_cmdline(cmdline) "{{{$/;"	f
+parse_double_quote	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_double_quote(script, i) "{{{$/;"	f
+parse_equal	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_equal(script) "{{{$/;"	f
+parse_options	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+parse_redirection	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_redirection(script) "{{{$/;"	f
+parse_single_quote	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_single_quote(script, i) "{{{$/;"	f
+parse_tilde	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_tilde(script) "{{{$/;"	f
+parse_variables	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_variables(script) "{{{$/;"	f
+parse_wildcard	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:parse_wildcard(script) "{{{$/;"	f
+path	/home/leandrocp/.nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+path_extensions	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:path_extensions()$/;"	f
+path_separator	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:path_separator()$/;"	f
+pgroup_open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:pgroup_open(statements, is_pty, npipe) "{{{$/;"	f
+plineopen	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:plineopen(npipe, commands, is_pty) "{{{$/;"	f
+plug#begin	/home/leandrocp/.nvim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	/home/leandrocp/.nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	/home/leandrocp/.nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	/home/leandrocp/.nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug_window_exists	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+prepare	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:prepare()$/;"	f
+preview_commit	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+print_error	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:print_error(string)$/;"	f
+progress_bar	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+progress_opt	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+quote_arg	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:quote_arg(arg)$/;"	f
+read	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:read(...) dict "{{{$/;"	f
+read	/home/leandrocp/.nvim/plugins/vimproc/plugin/vimproc.vim	/^function! s:read(cmdline) "{{{$/;"	f
+read_line	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:read_line(...) dict "{{{$/;"	f
+read_lines	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:read_lines(...) dict "{{{$/;"	f
+read_pgroup	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:read_pgroup(...) dict "{{{$/;"	f
+read_pipes	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:read_pipes(...) dict "{{{$/;"	f
+reader.read	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! s:reader.read()$/;"	f
+reader.unread	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! s:reader.unread()$/;"	f
+reap	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+reload	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:reload()$/;"	f
+remove_last_separator	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:remove_last_separator(path)$/;"	f
+remove_rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+remove_triggers	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+reorg_rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+retry	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
+revert	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^  function! s:rtp(spec)$/;"	f
+s:TYPE	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:base_spec	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': 'master', 'frozen': 0 }$/;"	v
+s:bg_processes	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^let s:bg_processes = {}$/;"	v
+s:cmd	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/cmd.vim	/^let s:cmd = {}$/;"	v
+s:cpo_save	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:dll_handle	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:dll_handle = s:vp_dlopen(g:vimproc#dll_path)$/;"	v
+s:first_rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:first_rtp = s:escrtp(get(s:split_rtp(), 0, ''))$/;"	v
+s:is_case_tolerant	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^let s:is_case_tolerant = filereadable(expand('<sfile>:r') . '.VIM')$/;"	v
+s:is_cygwin	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^let s:is_cygwin = has('win32unix')$/;"	v
+s:is_cygwin	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^let s:is_cygwin = has('win32unix')$/;"	v
+s:is_mac	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^let s:is_mac = !s:is_windows && !s:is_cygwin$/;"	v
+s:is_mac	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^let s:is_mac = !s:is_windows$/;"	v
+s:is_win	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:is_win = has('win32') || has('win64')$/;"	v
+s:is_windows	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^let s:is_windows = has('win16') || has('win32') || has('win64')$/;"	v
+s:is_windows	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^let s:is_windows = has('win32')$/;"	v
+s:last_errmsg	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:last_errmsg = ''$/;"	v
+s:last_rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(get(s:split_rtp(), -1, ''))$/;"	v
+s:last_status	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:last_status = 0$/;"	v
+s:lasterr	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^let s:lasterr = []$/;"	v
+s:lexer	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^let s:lexer = {}$/;"	v
+s:loaded	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:mac_gui	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:me	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:null_device	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^let s:null_device = vimproc#util#is_windows() ? 'NUL' : '\/dev\/null'$/;"	v
+s:nvim	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:nvim = has('nvim') && !exists('##JobActivity') && !s:is_win$/;"	v
+s:path_sep_pattern	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^let s:path_sep_pattern = (exists('+shellslash') ? '[\\\\\/]' : '\/') . '\\+'$/;"	v
+s:path_separator	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^let s:path_separator = s:is_windows ? ';' : ':'$/;"	v
+s:plug_buf	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_src	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/raw.githubusercontent.com\/junegunn\/vim-plug\/master\/plug.vim'$/;"	v
+s:plug_tab	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:py2	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:py2 = has('python') && !has('nvim') && !s:is_win && !has('win32unix')$/;"	v
+s:read_timeout	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^let s:read_timeout = 1$/;"	v
+s:reader	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^let s:reader = {}$/;"	v
+s:ruby	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:ruby = has('ruby') && !has('nvim') && (v:version >= 703 || v:version == 702 && has('patch374'))$/;"	v
+s:save_cpo	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/cmd.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	/home/leandrocp/.nvim/plugins/vimproc/plugin/vimproc.vim	/^let s:save_cpo = &cpo$/;"	v
+s:triggers	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:vimproc_dll_basename	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:vimproc_dll_basename = 'vimproc_cygwin.dll'$/;"	v
+s:vimproc_dll_basename	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:vimproc_dll_basename = 'vimproc_linux32.so'$/;"	v
+s:vimproc_dll_basename	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:vimproc_dll_basename = 'vimproc_linux64.so'$/;"	v
+s:vimproc_dll_basename	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:vimproc_dll_basename = 'vimproc_mac.so'$/;"	v
+s:vimproc_dll_basename	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:vimproc_dll_basename = 'vimproc_unix.so'$/;"	v
+s:vimproc_dll_basename	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  let s:vimproc_dll_basename = has('win64') ?$/;"	v
+s:write_timeout	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^let s:write_timeout = 100$/;"	v
+section	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+separator	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:separator()$/;"	f
+shellesc	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:shellesc(arg)$/;"	f
+skip_back_quote	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:skip_back_quote(script, i) "{{{$/;"	f
+skip_double_quote	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:skip_double_quote(script, i) "{{{$/;"	f
+skip_else	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:skip_else(args, script, i) "{{{$/;"	f
+skip_single_quote	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! s:skip_single_quote(script, i) "{{{$/;"	f
+snapshot	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:snapshot(...) abort$/;"	f
+source	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+spawn	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+split	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  function! s:split(str, sep)$/;"	f
+split	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:split(path)$/;"	f
+split_rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+status	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:status()$/;"	f
+status_load	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+status_update	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+str2hd	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:str2hd(str)$/;"	f
+str2list	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:str2list(str)$/;"	f
+switch_in	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+switch_out	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+syntastic	/home/leandrocp/.nvim/lightline.vim	/^function! s:syntastic()$/;"	f
+syntax	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+system	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+system	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:system(cmdline, is_passwd, input, timeout, is_pty) "{{{$/;"	f
+system_chomp	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+teto5	/home/leandrocp/.nvim/.cache/undo/%home%leandrocp%code%rh-api%app%services%incidencia_irrf_service.rb	/^  def teto5Å_–/;"	f
+tick	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
+to_a	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+to_s	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+trim	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+unify_separator	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:unify_separator(path)$/;"	f
+update	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+update_finish	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+update_impl	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+update_python	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+update_ruby	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+update_vim	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+upgrade	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+upgrade_specs	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+upgrade_using_python	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:upgrade_using_python(new)$/;"	f
+upgrade_using_ruby	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:upgrade_using_ruby(new)$/;"	f
+version_requirement	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+vimproc	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^augroup vimproc$/;"	a
+vimproc	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/cmd.vim	/^augroup vimproc$/;"	a
+vimproc#_get_bg_processes	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#_get_bg_processes() "{{{$/;"	f
+vimproc#analyze_shebang	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#analyze_shebang(filename) "{{{$/;"	f
+vimproc#cmd#system	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/cmd.vim	/^  function! vimproc#cmd#system(expr)$/;"	f
+vimproc#cmd#system	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/cmd.vim	/^function! vimproc#cmd#system(expr)$/;"	f
+vimproc#decode_signal	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#decode_signal(signal) "{{{$/;"	f
+vimproc#delete_trash	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#delete_trash(filename) "{{{$/;"	f
+vimproc#dll_version	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#dll_version() "{{{$/;"	f
+vimproc#filepath#which	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! vimproc#filepath#which(command, path, maxcount)$/;"	f
+vimproc#fopen	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#fopen(path, flags, ...) "{{{$/;"	f
+vimproc#get_command_name	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#get_command_name(command, ...) "{{{$/;"	f
+vimproc#get_last_errmsg	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  function! vimproc#get_last_errmsg()$/;"	f
+vimproc#get_last_errmsg	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#get_last_errmsg() "{{{$/;"	f
+vimproc#get_last_status	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  function! vimproc#get_last_status()$/;"	f
+vimproc#get_last_status	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#get_last_status() "{{{$/;"	f
+vimproc#host_exists	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#host_exists(host) "{{{$/;"	f
+vimproc#kill	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#kill(pid, sig) "{{{$/;"	f
+vimproc#lexer#init_lexer	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! vimproc#lexer#init_lexer(text)$/;"	f
+vimproc#lexer#init_reader	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/lexer.vim	/^function! vimproc#lexer#init_reader(text)$/;"	f
+vimproc#open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#open(filename) "{{{$/;"	f
+vimproc#parser#expand_wildcard	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! vimproc#parser#expand_wildcard(wildcard) "{{{$/;"	f
+vimproc#parser#parse_pipe	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! vimproc#parser#parse_pipe(statement) "{{{$/;"	f
+vimproc#parser#parse_statements	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! vimproc#parser#parse_statements(script) "{{{$/;"	f
+vimproc#parser#split_args	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! vimproc#parser#split_args(script) "{{{$/;"	f
+vimproc#parser#split_args_through	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! vimproc#parser#split_args_through(script) "{{{$/;"	f
+vimproc#parser#split_commands	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! vimproc#parser#split_commands(script) "{{{$/;"	f
+vimproc#parser#split_pipe	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! vimproc#parser#split_pipe(script) "{{{$/;"	f
+vimproc#parser#split_statements	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/parser.vim	/^function! vimproc#parser#split_statements(script) "{{{$/;"	f
+vimproc#pgroup_open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#pgroup_open(statements, ...) "{{{$/;"	f
+vimproc#plineopen2	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#plineopen2(commands, ...) "{{{$/;"	f
+vimproc#plineopen3	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#plineopen3(commands, ...) "{{{$/;"	f
+vimproc#popen2	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#popen2(args) "{{{$/;"	f
+vimproc#popen3	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#popen3(args) "{{{$/;"	f
+vimproc#ptyopen	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#ptyopen(commands, ...) "{{{$/;"	f
+vimproc#readdir	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#readdir(dirname) "{{{$/;"	f
+vimproc#shellescape	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#shellescape(string) "{{{$/;"	f
+vimproc#socket_open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#socket_open(host, port) "{{{$/;"	f
+vimproc#system	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^  function! vimproc#system(...)$/;"	f
+vimproc#system	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#system(cmdline, ...) "{{{$/;"	f
+vimproc#system2	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#system2(...) "{{{$/;"	f
+vimproc#system_bg	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#system_bg(cmdline) "{{{$/;"	f
+vimproc#system_gui	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#system_gui(cmdline) "{{{$/;"	f
+vimproc#system_passwd	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#system_passwd(cmdline, ...) "{{{$/;"	f
+vimproc#test_readdir	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#test_readdir(dirname) "{{{$/;"	f
+vimproc#util#expand	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#expand(path) "{{{$/;"	f
+vimproc#util#has_lua	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#has_lua() "{{{$/;"	f
+vimproc#util#iconv	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#iconv(expr, from, to) "{{{$/;"	f
+vimproc#util#is_cygwin	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#is_cygwin() "{{{$/;"	f
+vimproc#util#is_mac	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#is_mac() "{{{$/;"	f
+vimproc#util#is_windows	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#is_windows() "{{{$/;"	f
+vimproc#util#set_default	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#set_default(var, val, ...)  "{{{$/;"	f
+vimproc#util#stderrencoding	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#stderrencoding() "{{{$/;"	f
+vimproc#util#stdinencoding	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#stdinencoding() "{{{$/;"	f
+vimproc#util#stdoutencoding	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#stdoutencoding() "{{{$/;"	f
+vimproc#util#substitute_path_separator	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#substitute_path_separator(path) "{{{$/;"	f
+vimproc#util#systemencoding	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#systemencoding() "{{{$/;"	f
+vimproc#util#termencoding	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#termencoding() "{{{$/;"	f
+vimproc#util#uniq	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/util.vim	/^function! vimproc#util#uniq(list, ...) "{{{$/;"	f
+vimproc#version	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#version() "{{{$/;"	f
+vimproc#write	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! vimproc#write(filename, string, ...) "{{{$/;"	f
+vp_checkpid	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_checkpid() dict$/;"	f
+vp_dlclose	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_dlclose(handle)$/;"	f
+vp_dlopen	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_dlopen(path)$/;"	f
+vp_file_close	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_file_close() dict$/;"	f
+vp_file_open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_file_open(path, flags, mode)$/;"	f
+vp_file_read	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_file_read(number, timeout) dict$/;"	f
+vp_file_write	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_file_write(hd, timeout) dict$/;"	f
+vp_get_winsize	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_get_winsize() dict$/;"	f
+vp_host_exists	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_host_exists(host)$/;"	f
+vp_kill	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_kill(...) dict$/;"	f
+vp_pgroup_close	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pgroup_close() dict$/;"	f
+vp_pgroup_kill	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pgroup_kill(...) dict$/;"	f
+vp_pgroup_waitpid	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pgroup_waitpid() dict$/;"	f
+vp_pipe_close	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pipe_close() dict$/;"	f
+vp_pipe_open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pipe_open(npipe, hstdin, hstdout, hstderr, argv) "{{{$/;"	f
+vp_pipe_read	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pipe_read(number, timeout) dict$/;"	f
+vp_pipe_write	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pipe_write(hd, timeout) dict$/;"	f
+vp_pipes_close	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pipes_close() dict$/;"	f
+vp_pty_close	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pty_close() dict$/;"	f
+vp_pty_open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pty_open(npipe, width, height, hstdin, hstdout, hstderr, argv)$/;"	f
+vp_pty_read	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pty_read(number, timeout) dict$/;"	f
+vp_pty_write	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_pty_write(hd, timeout) dict$/;"	f
+vp_set_winsize	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_set_winsize(width, height) dict$/;"	f
+vp_socket_close	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_socket_close() dict$/;"	f
+vp_socket_open	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_socket_open(host, port)$/;"	f
+vp_socket_read	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_socket_read(number, timeout) dict$/;"	f
+vp_socket_write	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_socket_write(hd, timeout) dict$/;"	f
+vp_waitpid	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:vp_waitpid() dict$/;"	f
+w!!	/home/leandrocp/.nvim/mappings.vim	/^cmap w!! %!sudo tee > \/dev\/null %$/;"	m
+waitpid	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:waitpid(pid)$/;"	f
+which	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:which(command, ...)$/;"	f
+with_cd	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f
+write	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:write(str, ...) dict "{{{$/;"	f
+write_pgroup	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:write_pgroup(str, ...) dict "{{{$/;"	f
+write_pipes	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function! s:write_pipes(str, ...) dict "{{{$/;"	f

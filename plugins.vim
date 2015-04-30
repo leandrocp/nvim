@@ -10,6 +10,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-endwise'
+Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-repeat'
@@ -118,7 +119,7 @@ Plug 'sjl/gundo.vim' "{{{
   nnoremap <F5> :GundoToggle<CR>
 "}}}
 
-Plug 'vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar' "{{{
   nmap <F8> :TagbarToggle<CR>
 "}}}
