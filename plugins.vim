@@ -3,6 +3,8 @@ Plug 'tpope/vim-dispatch'
 Plug 'tomtom/tlib_vim'
 Plug 'marcweber/vim-addon-mw-utils'
 
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+
 Plug 'vim-scripts/LargeFile'
 
 Plug 'sheerun/vim-polyglot'

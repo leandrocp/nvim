@@ -13,7 +13,9 @@ Plug 'tpope/vim-fugitive' "{{{
   autocmd BufReadPost fugitive://* set bufhidden=delete
 "}}}
 
-Plug 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic' "{{{
+  let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+"}}}
 
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
