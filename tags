@@ -176,6 +176,8 @@ hd2str_lua	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc.vim	/^function
 infer_properties	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
 install	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
 install	/home/leandrocp/.nvim/install.sh	/^function install() {$/;"	f
+irrfC	/home/leandrocp/.nvim/.cache/undo/%home%leandrocp%code%rh-api%app%services%calculo_irrf_service.rb	/^  def irrf/;"	f
+irrfR	/home/leandrocp/.nvim/.cache/undo/%home%leandrocp%code%rh-api%app%services%calculo_irrf_service.rb	/^  def irrf/;"	f
 is_absolute	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^  function! s:is_absolute(path)$/;"	f
 is_case_tolerant	/home/leandrocp/.nvim/plugins/vimproc/autoload/vimproc/filepath.vim	/^function! s:is_case_tolerant()$/;"	f
 is_local_plug	/home/leandrocp/.nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
