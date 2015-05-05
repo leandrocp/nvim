@@ -144,6 +144,7 @@ g:syntastic_always_populate_loc_list	/home/leandrocp/.nvim/plugins_nix.vim	/^  l
 g:syntastic_auto_loc_list	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_auto_loc_list = 1$/;"	v
 g:syntastic_check_on_open	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_check_on_open = 1$/;"	v
 g:syntastic_check_on_wq	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_check_on_wq = 1$/;"	v
+g:syntastic_loc_list_height	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_loc_list_height = 5$/;"	v
 g:syntastic_ruby_checkers	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_ruby_checkers = ['rubocop', 'mri']$/;"	v
 g:tmux_navigator_save_on_switch	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:tmux_navigator_save_on_switch = 1$/;"	v
 g:used_javascript_libs	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:used_javascript_libs = 'jquery,underscore,requirejs,handlebars'$/;"	v
