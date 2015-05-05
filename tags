@@ -100,6 +100,10 @@ format_message	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:format_mess
 g:EasyGrepAllOptionsInExplorer	/home/leandrocp/.nvim/plugins.vim	/^  let g:EasyGrepAllOptionsInExplorer   = 1$/;"	v
 g:EasyGrepCommand	/home/leandrocp/.nvim/plugins.vim	/^  let g:EasyGrepCommand                = 1$/;"	v
 g:EasyGrepRecursive	/home/leandrocp/.nvim/plugins.vim	/^  let g:EasyGrepRecursive              = 1$/;"	v
+g:UltiSnipsExpandTrigger	/home/leandrocp/.nvim/plugins.vim	/^  let g:UltiSnipsExpandTrigger='<c-k>'$/;"	v
+g:UltiSnipsJumpBackwardTrigger	/home/leandrocp/.nvim/plugins.vim	/^  let g:UltiSnipsJumpBackwardTrigger='<c-s-k>'$/;"	v
+g:UltiSnipsJumpForwardTrigger	/home/leandrocp/.nvim/plugins.vim	/^  let g:UltiSnipsJumpForwardTrigger='<c-k>'$/;"	v
+g:UltiSnipsSnippetsDir	/home/leandrocp/.nvim/plugins.vim	/^  let g:UltiSnipsSnippetsDir='~\/.nvim\/plugged\/vim-snippets\/UltiSnips'$/;"	v
 g:airline#extensions#bufferline#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#bufferline#enabled = 0$/;"	v
 g:airline#extensions#capslock#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#capslock#enabled   = 0$/;"	v
 g:airline#extensions#csv#enabled	/home/leandrocp/.nvim/plugins.vim	/^  let g:airline#extensions#csv#enabled        = 0$/;"	v
@@ -140,14 +144,12 @@ g:mustache_abbreviations	/home/leandrocp/.nvim/plugins_win.vim	/^  let g:mustach
 g:netrw_liststyle	/home/leandrocp/.nvim/plugins.vim	/^  let g:netrw_liststyle=3$/;"	v
 g:plugs_order	/home/leandrocp/.nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
 g:signify_vcs_list	/home/leandrocp/.nvim/plugins.vim	/^  let g:signify_vcs_list = [ 'git', 'svn' ]$/;"	v
-g:syntastic_always_populate_loc_list	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_always_populate_loc_list = 1$/;"	v
-g:syntastic_auto_loc_list	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_auto_loc_list = 1$/;"	v
-g:syntastic_check_on_open	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_check_on_open = 1$/;"	v
-g:syntastic_check_on_wq	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_check_on_wq = 1$/;"	v
-g:syntastic_loc_list_height	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_loc_list_height = 5$/;"	v
 g:syntastic_ruby_checkers	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_ruby_checkers = ['rubocop', 'mri']$/;"	v
 g:tmux_navigator_save_on_switch	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:tmux_navigator_save_on_switch = 1$/;"	v
 g:used_javascript_libs	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:used_javascript_libs = 'jquery,underscore,requirejs,handlebars'$/;"	v
+g:ycm_autoclose_preview_window_after_completion	/home/leandrocp/.nvim/plugins.vim	/^  let g:ycm_autoclose_preview_window_after_completion = 1$/;"	v
+g:ycm_filetype_blacklist	/home/leandrocp/.nvim/plugins.vim	/^  let g:ycm_filetype_blacklist={'unite': 1}$/;"	v
+g:ycm_min_num_of_chars_for_completion	/home/leandrocp/.nvim/plugins.vim	/^  let g:ycm_min_num_of_chars_for_completion = 1$/;"	v
 ga	/home/leandrocp/.nvim/plugins.vim	/^  nmap ga <Plug>(EasyAlign)$/;"	m
 git_valid	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:git_valid(spec, check_branch)$/;"	f
 git_version_requirement	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f

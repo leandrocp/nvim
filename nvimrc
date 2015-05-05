@@ -5,6 +5,10 @@ set nocompatible "vim
 filetype plugin indent on
 syntax enable
 
+if has('nvim')
+  runtime! python_setup.vim
+endif
+
 " detect OS {{{
   let s:is_windows = has('win32') || has('win64') || has('win32unix')
   let s:is_nix     = has('mac') || has('macunix') || has('unix')

@@ -80,7 +80,20 @@ Plug 'mhinz/vim-signify' "{{{
   "nnoremap <Leader>f :NERDTreeFocus<CR>
 "}}}
 
-Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/install.sh' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/install.sh' } "{{{
+  let g:ycm_autoclose_preview_window_after_completion = 1
+  let g:ycm_filetype_blacklist={'unite': 1}
+  let g:ycm_min_num_of_chars_for_completion = 1
+"}}}
+
+Plug 'sirver/ultisnips' "{{{
+  let g:UltiSnipsExpandTrigger='<c-k>'
+  let g:UltiSnipsJumpForwardTrigger='<c-k>'
+  let g:UltiSnipsJumpBackwardTrigger='<c-s-k>'
+  let g:UltiSnipsSnippetsDir='~/.nvim/plugged/vim-snippets/UltiSnips'
+"}}}
+
+Plug 'honza/vim-snippets'
 
 Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   if exists("g:ctrl_user_command")
