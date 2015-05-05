@@ -140,6 +140,10 @@ g:mustache_abbreviations	/home/leandrocp/.nvim/plugins_win.vim	/^  let g:mustach
 g:netrw_liststyle	/home/leandrocp/.nvim/plugins.vim	/^  let g:netrw_liststyle=3$/;"	v
 g:plugs_order	/home/leandrocp/.nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
 g:signify_vcs_list	/home/leandrocp/.nvim/plugins.vim	/^  let g:signify_vcs_list = [ 'git', 'svn' ]$/;"	v
+g:syntastic_always_populate_loc_list	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_always_populate_loc_list = 1$/;"	v
+g:syntastic_auto_loc_list	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_auto_loc_list = 1$/;"	v
+g:syntastic_check_on_open	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_check_on_open = 1$/;"	v
+g:syntastic_check_on_wq	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_check_on_wq = 1$/;"	v
 g:syntastic_ruby_checkers	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_ruby_checkers = ['rubocop', 'mri']$/;"	v
 g:tmux_navigator_save_on_switch	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:tmux_navigator_save_on_switch = 1$/;"	v
 g:used_javascript_libs	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:used_javascript_libs = 'jquery,underscore,requirejs,handlebars'$/;"	v
