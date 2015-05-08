@@ -23,7 +23,8 @@ Plug 'whatyouhide/vim-gotham'
 
 Plug 'tpope/vim-vinegar' "{{{
   let g:netrw_liststyle=3
-  map <leader>e :Explore<cr>
+  let g:netrw_keepdir=0
+  map <leader>e :Explore<CR>
 "}}}
 
 "Plug 'scrooloose/nerdtree'
