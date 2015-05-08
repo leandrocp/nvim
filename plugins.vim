@@ -22,17 +22,8 @@ Plug 'whatyouhide/vim-gotham'
 "}}}
 
 Plug 'tpope/vim-vinegar' "{{{
-  let g:netrw_liststyle=3
-  let g:netrw_keepdir=0
+  let g:netrw_liststyle = 3
   map <leader>e :Explore<CR>
-"}}}
-
-"Plug 'scrooloose/nerdtree'
-  "let g:NERDTreeWinPos  = 'left'
-  "let g:NERDTreeWinSize = 40
-  "let g:NERDTreeIgnore  = ['\.git','\.hg']
-  "nnoremap <Leader>t :NERDTreeToggle<CR>
-  "nnoremap <Leader>f :NERDTreeFocus<CR>
 "}}}
 
 Plug 'christoomey/vim-tmux-navigator' "{{{
