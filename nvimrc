@@ -21,11 +21,7 @@ endif
 "}}}
 
 " functions {{{
-  function! EnsureExists(path)
-    if !isdirectory(expand(a:path))
-      call mkdir(expand(a:path))
-    endif
-  endfunction
+  source ~/.nvim/functions.vim
 "}}}
 
 " base {{{
