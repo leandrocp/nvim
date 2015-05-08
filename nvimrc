@@ -9,16 +9,15 @@ if has('nvim')
   runtime! python_setup.vim
 endif
 
-" detect OS {{{
-  let s:is_windows = has('win32') || has('win64') || has('win32unix')
-  let s:is_nix     = has('mac') || has('macunix') || has('unix')
-  let s:is_gui     = has('gui_running')
-"}}}
-
-" windows {{{
-  if s:is_windows
-    set rtp+=$HOME/.nvim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.nvim/after
+" plugins {{{
+  if empty(glob('~/.nvim/autoload/plug.vim'))
+    silent !curl -fLo ~/.nvim/autoload/plug.vim --create-dirs
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall
   endif
+  call plug#begin('~/.nvim/plugged')
+  source ~/.nvim/plugins.vim
+  call plug#end()
 "}}}
 
 " functions {{{
@@ -82,15 +81,6 @@ endif
   autocmd WinLeave * setlocal nocursorline
   autocmd WinEnter * setlocal cursorline
   let &colorcolumn=120
-
-  if s:is_gui
-    set lines=999 columns=9999
-    set guioptions+=t                                 "tear off menu items
-    set guioptions-=T                                 "toolbar icons
-    if s:is_windows
-      autocmd GUIEnter * simalt ~x
-    endif
-	endif
 "}}}
 
 " search {{{
@@ -159,16 +149,6 @@ endif
   au FocusLost,WinLeave * :silent! w
 "}}}
 
-" plugins {{{
-  if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall
-  endif
-  call plug#begin('~/.nvim/plugged')
-  source ~/.nvim/plugins.vim
-  call plug#end()
-"}}}
 
 " theme {{{
   set background=dark
