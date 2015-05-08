@@ -160,13 +160,13 @@ endif
 "}}}
 
 " plugins {{{
+  if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall
+  endif
   call plug#begin('~/.nvim/plugged')
   source ~/.nvim/plugins.vim
-  if s:is_windows
-    source ~/.nvim/plugins_win.vim
-  else
-    source ~/.nvim/plugins_nix.vim
-  endif
   call plug#end()
 "}}}
 

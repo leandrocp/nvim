@@ -43,16 +43,15 @@
 <leader><leader>	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader><leader> <c-^>$/;"	m
 <leader>K	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <leader>K :call investigate#Investigate()<CR>$/;"	m
 <leader>W	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader>W :wq<cr>$/;"	m
-<leader>bjs	/home/leandrocp/.nvim/plugins_win.vim	/^  nnoremap <leader>bjs :call JsBeautify()<cr>$/;"	m
 <leader>e	/home/leandrocp/.nvim/plugins.vim	/^  map <leader>e :Explore<cr>$/;"	m
-<leader>gb	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gb :Gblame<CR>$/;"	m
-<leader>gc	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gc :Gcommit<CR>$/;"	m
-<leader>gd	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gd :Gdiff<CR>$/;"	m
-<leader>gl	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gl :Glog<CR>$/;"	m
-<leader>gp	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gp :Git push<CR>$/;"	m
-<leader>gr	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gr :Gremove<CR>$/;"	m
-<leader>gs	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gs :Gstatus<CR>$/;"	m
-<leader>gw	/home/leandrocp/.nvim/plugins_nix.vim	/^  nnoremap <silent> <leader>gw :Gwrite<CR>$/;"	m
+<leader>gb	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <silent> <leader>gb :Gblame<CR>$/;"	m
+<leader>gc	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <silent> <leader>gc :Gcommit<CR>$/;"	m
+<leader>gd	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <silent> <leader>gd :Gdiff<CR>$/;"	m
+<leader>gl	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <silent> <leader>gl :Glog<CR>$/;"	m
+<leader>gp	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <silent> <leader>gp :Git push<CR>$/;"	m
+<leader>gr	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <silent> <leader>gr :Gremove<CR>$/;"	m
+<leader>gs	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <silent> <leader>gs :Gstatus<CR>$/;"	m
+<leader>gw	/home/leandrocp/.nvim/plugins.vim	/^  nnoremap <silent> <leader>gw :Gwrite<CR>$/;"	m
 <leader>h	/home/leandrocp/.nvim/mappings.vim	/^  map <leader>h :bp<cr>$/;"	m
 <leader>h	/home/leandrocp/.nvim/mappings.vim	/^nnoremap <leader>h <C-w>s<C-w>j$/;"	m
 <leader>j	/home/leandrocp/.nvim/mappings.vim	/^  nmap <leader>j <Plug>NormalLineDown$/;"	m
@@ -70,7 +69,6 @@ AutoSyntastic	/home/leandrocp/.nvim/lightline.vim	/^augroup AutoSyntastic$/;"	a
 CtrlPMark	/home/leandrocp/.nvim/lightline.vim	/^function! CtrlPMark()$/;"	f
 CtrlPStatusFunc_1	/home/leandrocp/.nvim/lightline.vim	/^function! CtrlPStatusFunc_1(focus, byfname, regex, prev, item, next, marked)$/;"	f
 CtrlPStatusFunc_2	/home/leandrocp/.nvim/lightline.vim	/^function! CtrlPStatusFunc_2(str)$/;"	f
-K	/home/leandrocp/.nvim/plugins_win.vim	/^  nnoremap K :call investigate#Investigate()<cr>$/;"	m
 MyFileencoding	/home/leandrocp/.nvim/lightline.vim	/^function! MyFileencoding()$/;"	f
 MyFileformat	/home/leandrocp/.nvim/lightline.vim	/^function! MyFileformat()$/;"	f
 MyFilename	/home/leandrocp/.nvim/lightline.vim	/^function! MyFilename()$/;"	f
@@ -84,6 +82,7 @@ assign_name	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:assign_name()$
 assoc	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
 bar	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
 call5	/home/leandrocp/.nvim/.cache/undo/%home%leandrocp%code%rh-api%app%models%calculo_irrf_service.rb	/^  def call5Å_–/;"	f
+cast5	/home/leandrocp/.nvim/.cache/undo/%share%projetos%sisprev_code%rh-api%app%types%money_range_type.rb	/^  def cast5Å_–/;"	f
 clean	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
 compare_git_uri	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
 define_commands	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
@@ -139,14 +138,13 @@ g:ctrlp_status_func	/home/leandrocp/.nvim/lightline.vim	/^let g:ctrlp_status_fun
 g:ctrlp_working_path_mode	/home/leandrocp/.nvim/plugins.vim	/^  let g:ctrlp_working_path_mode      = 'ra'$/;"	v
 g:lightline	/home/leandrocp/.nvim/lightline.vim	/^let g:lightline = {$/;"	v
 g:loaded_plug	/home/leandrocp/.nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
-g:mustache_abbreviations	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:mustache_abbreviations = 1$/;"	v
-g:mustache_abbreviations	/home/leandrocp/.nvim/plugins_win.vim	/^  let g:mustache_abbreviations = 1$/;"	v
+g:mustache_abbreviations	/home/leandrocp/.nvim/plugins.vim	/^  let g:mustache_abbreviations = 1$/;"	v
 g:netrw_liststyle	/home/leandrocp/.nvim/plugins.vim	/^  let g:netrw_liststyle=3$/;"	v
 g:plugs_order	/home/leandrocp/.nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
 g:signify_vcs_list	/home/leandrocp/.nvim/plugins.vim	/^  let g:signify_vcs_list = [ 'git', 'svn' ]$/;"	v
-g:syntastic_ruby_checkers	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:syntastic_ruby_checkers = ['rubocop', 'mri']$/;"	v
-g:tmux_navigator_save_on_switch	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:tmux_navigator_save_on_switch = 1$/;"	v
-g:used_javascript_libs	/home/leandrocp/.nvim/plugins_nix.vim	/^  let g:used_javascript_libs = 'jquery,underscore,requirejs,handlebars'$/;"	v
+g:syntastic_ruby_checkers	/home/leandrocp/.nvim/plugins.vim	/^  let g:syntastic_ruby_checkers = ['rubocop', 'mri']$/;"	v
+g:tmux_navigator_save_on_switch	/home/leandrocp/.nvim/plugins.vim	/^  let g:tmux_navigator_save_on_switch = 1$/;"	v
+g:used_javascript_libs	/home/leandrocp/.nvim/plugins.vim	/^  let g:used_javascript_libs = 'jquery,underscore,requirejs,handlebars'$/;"	v
 g:ycm_autoclose_preview_window_after_completion	/home/leandrocp/.nvim/plugins.vim	/^  let g:ycm_autoclose_preview_window_after_completion = 1$/;"	v
 g:ycm_filetype_blacklist	/home/leandrocp/.nvim/plugins.vim	/^  let g:ycm_filetype_blacklist={'unite': 1}$/;"	v
 g:ycm_min_num_of_chars_for_completion	/home/leandrocp/.nvim/plugins.vim	/^  let g:ycm_min_num_of_chars_for_completion = 1$/;"	v
@@ -195,6 +193,7 @@ remove_triggers	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:remove_tri
 reorg_rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
 retry	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
 revert	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+rm_rf	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
 rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^  function! s:rtp(spec)$/;"	f
 s:TYPE	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
 s:base_spec	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': 'master', 'frozen': 0 }$/;"	v
@@ -205,11 +204,12 @@ s:last_rtp	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:last_rtp  = s:escrtp(
 s:loaded	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
 s:mac_gui	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
 s:me	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:me = resolve(expand('<sfile>:p'))$/;"	v
-s:nvim	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:nvim = has('nvim') && !exists('##JobActivity') && !s:is_win$/;"	v
+s:nvim	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:nvim = has('nvim') && exists('*jobwait') && !s:is_win$/;"	v
 s:plug_buf	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
-s:plug_src	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/raw.githubusercontent.com\/junegunn\/vim-plug\/master\/plug.vim'$/;"	v
+s:plug_src	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
 s:plug_tab	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
-s:py2	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:py2 = has('python') && !has('nvim') && !s:is_win && !has('win32unix')$/;"	v
+s:py	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:py = (has('python') || has('python3')) && !has('nvim') && !s:is_win && !has('win32unix')$/;"	v
+s:py_exe	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:py_exe = has('python3') ? 'python3' : 'python'$/;"	v
 s:ruby	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:ruby = has('ruby') && !has('nvim') && (v:version >= 703 || v:version == 702 && has('patch374'))$/;"	v
 s:triggers	/home/leandrocp/.nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
 section	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
@@ -232,6 +232,8 @@ tick	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
 to_a	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
 to_s	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
 trim	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+type5	/home/leandrocp/.nvim/.cache/undo/%share%projetos%sisprev_code%rh-api%app%types%money_range_type.rb	/^  def type5Å_–/;"	f	class:cast5
+type5	/home/leandrocp/.nvim/.cache/undo/%share%projetos%sisprev_code%rh-api%app%types%money_range_type.rb	/^  def type5Å_–/;"	f	class:cast5.type5
 update	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
 update_finish	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
 update_impl	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
@@ -240,8 +242,6 @@ update_ruby	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_ruby()$
 update_vim	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
 upgrade	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
 upgrade_specs	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
-upgrade_using_python	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:upgrade_using_python(new)$/;"	f
-upgrade_using_ruby	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:upgrade_using_ruby(new)$/;"	f
 version_requirement	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
 w!!	/home/leandrocp/.nvim/mappings.vim	/^cmap w!! %!sudo tee > \/dev\/null %$/;"	m
 with_cd	/home/leandrocp/.nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir)$/;"	f

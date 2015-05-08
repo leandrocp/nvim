@@ -2,13 +2,11 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-dispatch'
 Plug 'tomtom/tlib_vim'
 Plug 'marcweber/vim-addon-mw-utils'
-
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-
+Plug 'Shougo/unite.vim'
+Plug 'mileszs/ack.vim'
 Plug 'vim-scripts/LargeFile'
-
 Plug 'sheerun/vim-polyglot'
-
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-endwise'
@@ -23,11 +21,45 @@ Plug 'chriskempson/base16-vim'
 Plug 'whatyouhide/vim-gotham'
 "}}}
 
-Plug 'Shougo/unite.vim'
-
 Plug 'tpope/vim-vinegar' "{{{
   let g:netrw_liststyle=3
   map <leader>e :Explore<cr>
+"}}}
+
+"Plug 'scrooloose/nerdtree'
+  "let g:NERDTreeWinPos  = 'left'
+  "let g:NERDTreeWinSize = 40
+  "let g:NERDTreeIgnore  = ['\.git','\.hg']
+  "nnoremap <Leader>t :NERDTreeToggle<CR>
+  "nnoremap <Leader>f :NERDTreeFocus<CR>
+"}}}
+
+Plug 'christoomey/vim-tmux-navigator' "{{{
+  let g:tmux_navigator_save_on_switch = 1
+"}}}
+
+Plug 'scrooloose/syntastic' "{{{
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+  let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+"}}}
+
+Plug 'tpope/vim-fugitive' "{{{
+  nnoremap <silent> <leader>gs :Gstatus<CR>
+  nnoremap <silent> <leader>gd :Gdiff<CR>
+  nnoremap <silent> <leader>gc :Gcommit<CR>
+  nnoremap <silent> <leader>gb :Gblame<CR>
+  nnoremap <silent> <leader>gl :Glog<CR>
+  nnoremap <silent> <leader>gp :Git push<CR>
+  nnoremap <silent> <leader>gw :Gwrite<CR>
+  nnoremap <silent> <leader>gr :Gremove<CR>
+  autocmd FileType gitcommit nmap <buffer> U :Git checkout -- <C-r><C-g><CR>
+  autocmd BufReadPost fugitive://* set bufhidden=delete
+"}}}
+
+Plug 'mhinz/vim-signify' "{{{
+  let g:signify_vcs_list = [ 'git', 'svn' ]
 "}}}
 
 Plug 'bling/vim-airline' "{{{
@@ -66,18 +98,6 @@ Plug 'bling/vim-airline' "{{{
   let g:airline_symbols.paste = 'ρ'
   let g:airline_symbols.whitespace = 'Ξ'
   let g:airline_symbols.branch = 'B'
-"}}}
-
-Plug 'mhinz/vim-signify' "{{{
-  let g:signify_vcs_list = [ 'git', 'svn' ]
-"}}}
-
-"Plug 'scrooloose/nerdtree'
-  "let g:NERDTreeWinPos  = 'left'
-  "let g:NERDTreeWinSize = 40
-  "let g:NERDTreeIgnore  = ['\.git','\.hg']
-  "nnoremap <Leader>t :NERDTreeToggle<CR>
-  "nnoremap <Leader>f :NERDTreeFocus<CR>
 "}}}
 
 Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/install.sh' } "{{{
@@ -146,3 +166,26 @@ Plug 'Chiel92/vim-autoformat' "{{{
 Plug 'Keithbsmiley/investigate.vim' "{{{
   nnoremap <leader>K :call investigate#Investigate()<CR>
 "}}}
+
+Plug 'osyo-manga/vim-over'
+Plug 'austintaylor/vim-open'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'elzr/vim-json'
+Plug 'othree/yajs.vim'
+Plug 'othree/javascript-libraries-syntax.vim' "{{{
+  let g:used_javascript_libs = 'jquery,underscore,requirejs,handlebars'
+"}}}
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-rake'
+Plug 'sunaku/vim-ruby-minitest'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'dsawardekar/ember.vim'
+Plug 'mustache/vim-mustache-handlebars' "{{{
+  let g:mustache_abbreviations = 1
+"}}}
+Plug 'ekalinin/Dockerfile.vim'
