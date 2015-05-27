@@ -15,6 +15,7 @@ Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-repeat'
 Plug 'gorodinskiy/vim-coloresque'
+Plug 'tpope/vim-obsession'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
@@ -27,7 +28,7 @@ Plug 'tpope/vim-vinegar' "{{{
 "}}}
 
 Plug 'christoomey/vim-tmux-navigator' "{{{
-  let g:tmux_navigator_save_on_switch = 1
+  "let g:tmux_navigator_save_on_switch = 1
 "}}}
 
 Plug 'scrooloose/syntastic' "{{{
