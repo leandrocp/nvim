@@ -40,9 +40,7 @@ endif
   set novisualbell
   set t_vb=
   set display+=lastline
-  if $TMUX == ''
-    set clipboard+=unnamed
-  endif
+  set clipboard+=unnamedplus
 "}}}
 
 " ui {{{

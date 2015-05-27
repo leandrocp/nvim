@@ -22,17 +22,17 @@ nnoremap <silent> <Leader>- :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
   vnoremap ? ?\v
   nnoremap :s/ :s/\v
 "}}}
-"
+
 " reselect visual block after indent {{{
-vnoremap < <gv
-vnoremap > >gv
+  vnoremap < <gv
+  vnoremap > >gv
 "}}}
 
 " buffers {{{
   map <leader>l :bn<cr>
   map <leader>h :bp<cr>
   map <leader>q :bd<cr>
-" }}}
+"}}}
 
 " move lines
 " http://reefpoints.dockyard.com/2013/09/26/vim-moving-lines-aint-hard.html
@@ -50,11 +50,13 @@ vnoremap > >gv
   nnoremap <silent> <Plug>NormalLineUp :m .-2<CR>==
   \:call repeat#set("\<Plug>NormalLineUp")<CR>
   nmap <leader>k <Plug>NormalLineUp
-" }}}
-
-" toogle search highlight {{{
-map  <F1> :set hls!<CR>
-imap <F1> <ESC>:set hls!<CR>a
-vmap <F1> <ESC>:set hls!<CR>gv
 "}}}
 
+" toogle search highlight {{{
+  map  <F1> :set hls!<CR>
+  imap <F1> <ESC>:set hls!<CR>a
+  vmap <F1> <ESC>:set hls!<CR>gv
+"}}}
+
+vmap <silent> <leader>c "+y
+nmap <silent> <leader>p "+p
