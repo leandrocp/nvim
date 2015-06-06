@@ -17,6 +17,8 @@ Plug 'tpope/vim-repeat'
 Plug 'gorodinskiy/vim-coloresque'
 Plug 'tpope/vim-obsession'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'wellle/targets.vim'
+Plug 'gcmt/wildfire.vim'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
