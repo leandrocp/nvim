@@ -16,6 +16,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-repeat'
 Plug 'gorodinskiy/vim-coloresque'
 Plug 'tpope/vim-obsession'
+Plug 'AndrewRadev/splitjoin.vim'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
