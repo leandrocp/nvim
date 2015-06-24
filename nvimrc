@@ -152,4 +152,5 @@ endif
     let base16colorspace=256
   endif
   colorscheme base16-twilight
+  hi Search cterm=NONE ctermfg=black ctermbg=blue
 "}}}
