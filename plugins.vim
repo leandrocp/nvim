@@ -10,6 +10,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-sleuth'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
@@ -115,7 +116,17 @@ Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   if exists("g:ctrl_user_command")
     unlet g:ctrlp_user_command
   endif
+  if executable('ag')
+    set grepprg=ag\ --nogroup\ --nocolor
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  else
+    let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co', 'find %s -type f']
+    let g:ctrlp_prompt_mappings = {
+      \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
+    \ }
+  endif
   let g:ctrlp_cmd                    = 'CtrlPCurWD'
+  let g:ctrlp_use_caching = 0
   let g:ctrlp_clear_cache_on_exit    = 1
   let g:ctrlp_max_height             = 60
   let g:ctrlp_show_hidden            = 0
@@ -130,8 +141,8 @@ Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   \ 'dir':  '\.git\|\.hg\|\.svn\|node_modules\|bower_components\|target\|DS_Store\|tmp\|plugged\',
   \ 'file': '\.jpg$\|\.exe$\|\.so$\|tags$\|\.dll$'
   \ }
-  nnoremap <C-o> :CtrlPBuffer<Cr>
-  nnoremap <C-m> :CtrlPFunky<Cr>
+  nnoremap <Leader>o :CtrlPCurWD<CR>
+  nnoremap <Leader>b :CtrlPBuffer<Cr>
 "}}}
 
 Plug 'EasyGrep' "{{{
@@ -184,4 +195,10 @@ Plug 'dsawardekar/ember.vim'
 Plug 'mustache/vim-mustache-handlebars' "{{{
   let g:mustache_abbreviations = 1
 "}}}
-Plug 'ekalinin/Dockerfile.vim'
+Plug 'docker/docker' , { 'rtp': '/contrib/syntax/vim/' }
+Plug 'fatih/vim-go'
+
+Plug 'terryma/vim-expand-region' "{{{
+  map K <Plug>(expand_region_expand)
+  map J <Plug>(expand_region_shrink)
+"}}}
