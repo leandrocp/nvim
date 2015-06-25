@@ -3,15 +3,13 @@
 set all& "reset everything to their defaults
 set nocompatible "vim
 filetype plugin indent on
+runtime macros/matchit.vim
 syntax enable
+source ~/.nvim/functions.vim
 
 if has('nvim')
   runtime! python_setup.vim
 endif
-
-" functions {{{
-  source ~/.nvim/functions.vim
-"}}}
 
 " base {{{
   let mapleader=" "
@@ -41,6 +39,9 @@ endif
   set t_vb=
   set display+=lastline
   set clipboard+=unnamedplus
+  set iskeyword-=.                    " '.' is an end of word designator
+  set iskeyword-=#                    " '#' is an end of word designator
+  set iskeyword-=-                    " '-' is an end of word designator
 "}}}
 
 " ui {{{
@@ -64,6 +65,8 @@ endif
   autocmd WinLeave * setlocal nocursorline
   autocmd WinEnter * setlocal cursorline
   let &colorcolumn=120
+  autocmd BufEnter * let &titlestring = '' . expand("%:t")
+  set title
 "}}}
 
 " search {{{
@@ -114,12 +117,6 @@ endif
 
 " mappings/autocmd {{{
   source ~/.nvim/mappings.vim
-
-  " go back to previous position of cursor if any
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \  exe 'normal! g`"zvzz' |
-    \ endif
 
   autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
   autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1

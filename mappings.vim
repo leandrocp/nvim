@@ -2,7 +2,8 @@ imap jj <Esc>
 nnoremap ! :!
 nnoremap <leader>w :w<cr>
 nnoremap <leader>W :wq<cr>
-nnoremap <leader>q :bp<cr>:bd #<cr>
+nnoremap <silent> <leader>q :Sbd<CR>
+nnoremap <silent> <leader>qq :Sbdm<CR>
 nnoremap <leader><leader> <c-^>
 cmap w!! %!sudo tee > /dev/null %
 map <F2> :set invpaste<CR>:set paste?<CR>
@@ -38,18 +39,18 @@ nnoremap <silent> <Leader>- :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 " http://reefpoints.dockyard.com/2013/09/26/vim-moving-lines-aint-hard.html
 " http://vimcasts.org/episodes/creating-repeatable-mappings-with-repeat-vim/
 " {{{
-  inoremap <C-k> <ESC>:m .-2<CR>==gi
-  inoremap <C-j> <ESC>:m .+1<CR>==gi
-  vnoremap <C-j> :m '>+1<CR>gv=gv
-  vnoremap <C-k> :m '<-2<CR>gv=gv"
+  "inoremap <C-k> <ESC>:m .-2<CR>==gi
+  "inoremap <C-j> <ESC>:m .+1<CR>==gi
+  "vnoremap <C-j> :m '>+1<CR>gv=gv
+  "vnoremap <C-k> :m '<-2<CR>gv=gv"
 
-  nnoremap <silent> <Plug>NormalLineDown :m .+1<CR>==
-  \:call repeat#set("\<Plug>NormalLineDown")<CR>
-  nmap <leader>j <Plug>NormalLineDown
+  "nnoremap <silent> <Plug>NormalLineDown :m .+1<CR>==
+  "\:call repeat#set("\<Plug>NormalLineDown")<CR>
+  "nmap <leader>j <Plug>NormalLineDown
 
-  nnoremap <silent> <Plug>NormalLineUp :m .-2<CR>==
-  \:call repeat#set("\<Plug>NormalLineUp")<CR>
-  nmap <leader>k <Plug>NormalLineUp
+  "nnoremap <silent> <Plug>NormalLineUp :m .-2<CR>==
+  "\:call repeat#set("\<Plug>NormalLineUp")<CR>
+  "nmap <leader>k <Plug>NormalLineUp
 "}}}
 
 " toogle search highlight {{{
