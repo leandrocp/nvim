@@ -11,7 +11,9 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'myusuf3/numbers.vim'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
