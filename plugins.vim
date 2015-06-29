@@ -193,6 +193,8 @@ Plug 'othree/javascript-libraries-syntax.vim' "{{{
 Plug 'wellle/targets.vim'
 Plug 'tmhedberg/matchit'
 Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-line'
+Plug 'kana/vim-textobj-entire'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
