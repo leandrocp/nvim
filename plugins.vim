@@ -3,7 +3,6 @@ Plug 'tpope/vim-dispatch'
 Plug 'tomtom/tlib_vim'
 Plug 'marcweber/vim-addon-mw-utils'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'mileszs/ack.vim'
 Plug 'vim-scripts/LargeFile'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-speeddating'
@@ -20,7 +19,15 @@ Plug 'myusuf3/numbers.vim'
 Plug 'chriskempson/base16-vim'
 "}}}
 
+Plug 'mileszs/ack.vim'
+Plug 'rking/ag.vim' "{{{
+  if executable('ag')
+    let g:ackprg = 'ag --nogroup --nocolor --column'
+  endif
+"}}}
+
 Plug 'scrooloose/nerdtree' | Plug 'cespare/vim-sbd' "{{{
+  map <leader>t :NERDTreeToggle<CR>
   map <leader>e :NERDTreeFind<CR>
   nnoremap <silent> <leader>q :Sbd<CR>
   nnoremap <silent> <leader>qq :Sbdm<CR>
@@ -64,8 +71,9 @@ Plug 'bling/vim-airline' "{{{
   let g:airline#extensions#tabline#left_sep        = ' '
   let g:airline#extensions#tabline#left_alt_sep    = ' '
   let g:airline#extensions#tabline#buffer_idx_mode = 1
-  let g:airline#extensions#tabline#fnamemod        = ':p:.'
-  let g:airline#extensions#tabline#fnamecollapse   = 0
+  let g:airline#extensions#tabline#formatter       = 'unique_tail'
+  " let g:airline#extensions#tabline#fnamemod        = ':p:.'
+  " let g:airline#extensions#tabline#fnamecollapse   = 0
   nmap <leader>1 <Plug>AirlineSelectTab1
   nmap <leader>2 <Plug>AirlineSelectTab2
   nmap <leader>3 <Plug>AirlineSelectTab3
@@ -77,7 +85,6 @@ Plug 'bling/vim-airline' "{{{
   nmap <leader>9 <Plug>AirlineSelectTab9
 
   let g:airline#extensions#bufferline#enabled = 0
-  let g:airline#extensions#csv#enabled        = 0
   let g:airline#extensions#virtualenv#enabled = 0
   let g:airline#extensions#eclim#enabled      = 0
   let g:airline#extensions#nrrwrgn#enabled    = 0
@@ -206,6 +213,7 @@ Plug 'dsawardekar/ember.vim'
 Plug 'mustache/vim-mustache-handlebars' "{{{
   let g:mustache_abbreviations = 1
 "}}}
+Plug 'chrisbra/csv.vim'
 
 Plug 'terryma/vim-expand-region' "{{{
   let g:expand_region_text_objects_ruby = {
