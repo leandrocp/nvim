@@ -214,6 +214,7 @@ Plug 'mustache/vim-mustache-handlebars' "{{{
   let g:mustache_abbreviations = 1
 "}}}
 Plug 'chrisbra/csv.vim'
+Plug 'ekalinin/Dockerfile.vim'
 
 Plug 'terryma/vim-expand-region' "{{{
   let g:expand_region_text_objects_ruby = {
