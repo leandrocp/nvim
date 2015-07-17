@@ -124,6 +124,7 @@ endif
   au BufRead,BufNewFile *.scss set filetype=scss.css
   au BufRead,BufNewFile *.md,*.markdown set filetype=markdown
   au BufRead,BufNewFile *.ctmpl set filetype=go 
+  au BufRead,BufNewFile *.prod set filetype=dockerfile
 
   set autoread
   au FocusGained,BufEnter * :silent! !
@@ -137,7 +138,7 @@ endif
     autocmd VimEnter * PlugInstall
   endif
   call plug#begin('~/.nvim/plugged')
-  source ~/.nvim/plugins.vim
+  source ~/.nvim/plugins-base.vim
   call plug#end()
 "}}}
 
