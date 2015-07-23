@@ -133,12 +133,7 @@ Plug 'terryma/vim-expand-region' "{{{
   map J <Plug>(expand_region_shrink)
 "}}}
 
-Plug 'Chiel92/vim-autoformat' "{{{
-  noremap <leader>f :Autoformat<CR><CR>
-"}}}
-
 Plug 'junegunn/vim-easy-align' "{{{
   vmap <Enter> <Plug>(EasyAlign)
   nmap ga <Plug>(EasyAlign)
 "}}}
-
