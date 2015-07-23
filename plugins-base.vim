@@ -12,6 +12,8 @@ Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-entire'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'myusuf3/numbers.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
@@ -37,7 +39,6 @@ Plug 'scrooloose/nerdtree' | Plug 'cespare/vim-sbd' "{{{
   let NERDTreeWinSize=40
   let NERDTreeDirArrows=1
 "}}}
-
 
 Plug 'bling/vim-airline' "{{{
   let g:airline#extensions#tabline#enabled         = 1
@@ -74,6 +75,17 @@ Plug 'bling/vim-airline' "{{{
   let g:airline_symbols.paste = 'ρ'
   let g:airline_symbols.whitespace = 'Ξ'
   let g:airline_symbols.branch = 'B'
+"}}}
+
+Plug 'mhinz/vim-signify' "{{{
+  let g:signify_vcs_list = [ 'git', 'svn' ]
+"}}}
+
+Plug 'scrooloose/syntastic' "{{{
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+  let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 "}}}
 
 Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
@@ -120,3 +132,13 @@ Plug 'terryma/vim-expand-region' "{{{
   map K <Plug>(expand_region_expand)
   map J <Plug>(expand_region_shrink)
 "}}}
+
+Plug 'Chiel92/vim-autoformat' "{{{
+  noremap <leader>f :Autoformat<CR><CR>
+"}}}
+
+Plug 'junegunn/vim-easy-align' "{{{
+  vmap <Enter> <Plug>(EasyAlign)
+  nmap ga <Plug>(EasyAlign)
+"}}}
+
