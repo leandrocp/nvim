@@ -14,6 +14,7 @@ Plug 'rhysd/vim-textobj-ruby'
 Plug 'myusuf3/numbers.vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
@@ -77,8 +78,26 @@ Plug 'bling/vim-airline' "{{{
   let g:airline_symbols.branch = 'B'
 "}}}
 
+Plug 'tpope/vim-fugitive' "{{{
+  nnoremap <silent> <leader>gs :Gstatus<CR>
+  nnoremap <silent> <leader>gd :Gdiff<CR>
+  nnoremap <silent> <leader>gc :Gcommit<CR>
+  nnoremap <silent> <leader>gb :Gblame<CR>
+  nnoremap <silent> <leader>gl :Glog<CR>
+  nnoremap <silent> <leader>gp :Git push<CR>
+  nnoremap <silent> <leader>gw :Gwrite<CR>
+  nnoremap <silent> <leader>gr :Gremove<CR>
+  autocmd FileType gitcommit nmap <buffer> U :Git checkout -- <C-r><C-g><CR>
+  autocmd BufReadPost fugitive://* set bufhidden=delete
+"}}}
+
 Plug 'mhinz/vim-signify' "{{{
   let g:signify_vcs_list = [ 'git', 'svn' ]
+"}}}
+
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'majutsushi/tagbar' "{{{
+  nmap <C-t> :TagbarToggle<CR>
 "}}}
 
 Plug 'scrooloose/syntastic' "{{{
@@ -136,4 +155,18 @@ Plug 'terryma/vim-expand-region' "{{{
 Plug 'junegunn/vim-easy-align' "{{{
   vmap <Enter> <Plug>(EasyAlign)
   nmap ga <Plug>(EasyAlign)
+"}}}
+
+Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/install.sh' } "{{{
+  let g:acp_enableAtStartup = 0
+  let g:ycm_autoclose_preview_window_after_completion = 1
+  let g:ycm_min_num_of_chars_for_completion = 3
+  let g:ycm_collect_identifiers_from_tags_files = 1
+
+  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+  autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 "}}}

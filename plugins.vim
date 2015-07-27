@@ -107,7 +107,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/insta
   let g:acp_enableAtStartup = 0
   let g:ycm_autoclose_preview_window_after_completion = 1
   let g:ycm_filetype_blacklist={'unite': 1}
-  let g:ycm_min_num_of_chars_for_completion = 1
+  let g:ycm_min_num_of_chars_for_completion = 3
   let g:ycm_collect_identifiers_from_tags_files = 1
 
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
