@@ -16,6 +16,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'wakatime/vim-wakatime'
+Plug 'unblevable/quick-scope'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
