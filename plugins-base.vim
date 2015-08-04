@@ -15,7 +15,6 @@ Plug 'myusuf3/numbers.vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
-
 Plug 'wakatime/vim-wakatime'
 
 "{{{ Themes
@@ -42,6 +41,7 @@ Plug 'scrooloose/nerdtree' | Plug 'cespare/vim-sbd' "{{{
   let NERDTreeWinSize=40
   let NERDTreeDirArrows=1
 "}}}
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'bling/vim-airline' "{{{
   let g:airline#extensions#tabline#enabled         = 1
