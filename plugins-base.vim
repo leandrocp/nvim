@@ -16,6 +16,8 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 
+Plug 'wakatime/vim-wakatime'
+
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
 "}}}
@@ -91,9 +93,7 @@ Plug 'tpope/vim-fugitive' "{{{
   autocmd BufReadPost fugitive://* set bufhidden=delete
 "}}}
 
-Plug 'mhinz/vim-signify' "{{{
-  let g:signify_vcs_list = [ 'git', 'svn' ]
-"}}}
+Plug 'airblade/vim-gitgutter'
 
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar' "{{{
@@ -155,18 +155,4 @@ Plug 'terryma/vim-expand-region' "{{{
 Plug 'junegunn/vim-easy-align' "{{{
   vmap <Enter> <Plug>(EasyAlign)
   nmap ga <Plug>(EasyAlign)
-"}}}
-
-Plug 'Valloric/YouCompleteMe', { 'do': 'bash ~/.nvim/plugged/YouCompleteMe/install.sh' } "{{{
-  let g:acp_enableAtStartup = 0
-  let g:ycm_autoclose_preview_window_after_completion = 1
-  let g:ycm_min_num_of_chars_for_completion = 3
-  let g:ycm_collect_identifiers_from_tags_files = 1
-
-  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-  autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 "}}}
