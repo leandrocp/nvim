@@ -12,7 +12,6 @@ Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-entire'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'myusuf3/numbers.vim'
-Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
@@ -21,6 +20,10 @@ Plug 'tpope/vim-endwise'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
+"}}}
+
+Plug 'vim-ruby/vim-ruby' "{{{
+  let g:ruby_indent_access_modifier_style = "indent"
 "}}}
 
 Plug 'mileszs/ack.vim'
