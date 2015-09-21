@@ -17,6 +17,9 @@ Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-endwise'
+Plug 'nathanaelkane/vim-indent-guides' "{{{
+  let g:indent_guides_guide_size = 1
+"}}}
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
