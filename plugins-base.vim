@@ -17,6 +17,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
 Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-endwise'
 
 "{{{ Themes
 Plug 'chriskempson/base16-vim'
@@ -27,6 +28,11 @@ Plug 'rking/ag.vim' "{{{
   if executable('ag')
     let g:ackprg = 'ag --nogroup --nocolor --column'
   endif
+"}}}
+
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } "{{{
+  let g:ycm_collect_identifiers_from_tags_files = 1
+  let g:ycm_min_num_of_chars_for_completion = 4
 "}}}
 
 Plug 'scrooloose/nerdtree' | Plug 'cespare/vim-sbd' "{{{
@@ -96,9 +102,8 @@ Plug 'tpope/vim-fugitive' "{{{
 
 Plug 'airblade/vim-gitgutter'
 
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'majutsushi/tagbar' "{{{
-  nmap <C-t> :TagbarToggle<CR>
+Plug 'ludovicchabant/vim-gutentags' "{{{
+  let g:gutentags_ctags_executable = 'ctags --fields=+l'
 "}}}
 
 Plug 'scrooloose/syntastic' "{{{
