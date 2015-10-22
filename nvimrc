@@ -101,13 +101,13 @@ endif
 
 " indent/whitespace {{{
   set backspace=indent,eol,start                      "allow backspacing everything in insert mode
-  "set autoindent
-  "set smartindent
-  "set smarttab                                        "use shiftwidth to enter tabs
-  "set shiftwidth=2
-  "set softtabstop=2
-  "set tabstop=2
-  "set expandtab                                       "spaces instead of tabs
+  set autoindent
+  set smartindent
+  set smarttab                                        "use shiftwidth to enter tabs
+  set shiftwidth=2
+  set softtabstop=2
+  set tabstop=2
+  set expandtab                                       "spaces instead of tabs
   set nostartofline                                   "don't jump to the start of line when scrolling
   set nowrap                                          "don't wrap lines
   set linebreak                                       "wrap lines at convenient points

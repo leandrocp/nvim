@@ -61,3 +61,5 @@ nnoremap <C-l> <C-w>l
 
 vmap <silent> <leader>c "+y
 nmap <silent> <leader>p "+p
+
+map <leader>= mzgg=G`z

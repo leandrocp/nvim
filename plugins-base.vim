@@ -2,7 +2,7 @@ Plug 'tpope/vim-sensible'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'vim-scripts/LargeFile'
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-sleuth'
+" Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
@@ -14,9 +14,30 @@ Plug 'rhysd/vim-textobj-ruby'
 Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
-Plug 'unblevable/quick-scope'
+" Plug 'unblevable/quick-scope'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-endwise'
+Plug 'elixir-lang/vim-elixir'
+Plug 'othree/html5.vim'
+Plug 'mjbrownie/html-textobjects'
+Plug 'matchit.zip'
+Plug 'docunext/closetag.vim'
+Plug 'amirh/HTML-AutoCloseTag'
+
+Plug 'mustache/vim-mustache-handlebars' "{{{
+  let g:mustache_abbreviations = 1
+"}}}
+
+Plug 'Valloric/MatchTagAlways' "{{{
+  let g:mta_filetypes = {
+      \ 'html' : 1,
+      \ 'html.handlebars' : 1,
+      \ 'handlebars' : 1,
+      \ 'hbs' : 1,
+      \ 'xml' : 1
+      \}
+"}}}
+
 Plug 'nathanaelkane/vim-indent-guides' "{{{
   let g:indent_guides_guide_size = 1
 "}}}
@@ -36,9 +57,12 @@ Plug 'rking/ag.vim' "{{{
   endif
 "}}}
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } "{{{
-  let g:ycm_collect_identifiers_from_tags_files = 1
-  let g:ycm_min_num_of_chars_for_completion = 4
+Plug 'ervandew/supertab' "{{{
+  let g:SuperTabDefaultCompletionType = "<c-n>"
+"}}}
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } "{{{
+  " let g:ycm_collect_identifiers_from_tags_files = 1
+  " let g:ycm_min_num_of_chars_for_completion = 4
 "}}}
 
 Plug 'scrooloose/nerdtree' | Plug 'cespare/vim-sbd' "{{{
@@ -167,4 +191,8 @@ Plug 'terryma/vim-expand-region' "{{{
 Plug 'junegunn/vim-easy-align' "{{{
   vmap <Enter> <Plug>(EasyAlign)
   nmap ga <Plug>(EasyAlign)
+"}}}
+
+Plug 'Keithbsmiley/investigate.vim' "{{{
+  nnoremap <leader>d :call investigate#Investigate()<CR>
 "}}}

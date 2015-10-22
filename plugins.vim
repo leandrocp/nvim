@@ -185,10 +185,6 @@ Plug 'Chiel92/vim-autoformat' "{{{
   noremap <leader>f :Autoformat<CR><CR>
 "}}}
 
-Plug 'Keithbsmiley/investigate.vim' "{{{
-  nnoremap <leader>K :call investigate#Investigate()<CR>
-"}}}
-
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'othree/html5.vim'
