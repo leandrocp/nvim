@@ -169,7 +169,7 @@ Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
   let g:ctrlp_extensions             = ['funky']
   let g:ctrlp_funky_syntax_highlight = 1
   let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git\|\.hg\|\.svn\|node_modules\|bower_components\|dist\|target\|DS_Store\|tmp\|plugged\',
+  \ 'dir':  '\.git\|\.hg\|\.svn\|node_modules\|bower_components\|dist\|target\|DS_Store\|tmp\|plugged\|_build\|deps\',
   \ 'file': '\.jpg$\|\.exe$\|\.so$\|tags$\|\.dll$'
   \ }
   nnoremap <Leader>o :CtrlPCurWD<CR>
