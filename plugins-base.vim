@@ -2,7 +2,6 @@ Plug 'tpope/vim-sensible'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'vim-scripts/LargeFile'
 Plug 'sheerun/vim-polyglot'
-" Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
@@ -12,17 +11,15 @@ Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-entire'
 Plug 'rhysd/vim-textobj-ruby'
 Plug 'myusuf3/numbers.vim'
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
-" Plug 'unblevable/quick-scope'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-endwise'
 Plug 'elixir-lang/vim-elixir'
 Plug 'othree/html5.vim'
 Plug 'mjbrownie/html-textobjects'
 Plug 'matchit.zip'
-Plug 'docunext/closetag.vim'
 Plug 'amirh/HTML-AutoCloseTag'
+Plug 'Townk/vim-autoclose'
 
 Plug 'mustache/vim-mustache-handlebars' "{{{
   let g:mustache_abbreviations = 1
@@ -60,10 +57,6 @@ Plug 'rking/ag.vim' "{{{
 Plug 'ervandew/supertab' "{{{
   let g:SuperTabDefaultCompletionType = "<c-n>"
 "}}}
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } "{{{
-  " let g:ycm_collect_identifiers_from_tags_files = 1
-  " let g:ycm_min_num_of_chars_for_completion = 4
-"}}}
 
 Plug 'scrooloose/nerdtree' | Plug 'cespare/vim-sbd' "{{{
   map <leader>t :NERDTreeToggle<CR>
@@ -81,13 +74,28 @@ Plug 'scrooloose/nerdtree' | Plug 'cespare/vim-sbd' "{{{
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'bling/vim-airline' "{{{
+  if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+  let g:airline_theme = 'base16'
+  let g:airline_left_sep = '›'
+  let g:airline_right_sep = '‹'
+  let g:airline_symbols.paste = 'ρ'
+  let g:airline_symbols.whitespace = 'Ξ'
+  let g:airline_symbols.branch = '⎇ '
+
   let g:airline#extensions#tabline#enabled         = 1
   let g:airline#extensions#tabline#left_sep        = ' '
   let g:airline#extensions#tabline#left_alt_sep    = ' '
   let g:airline#extensions#tabline#buffer_idx_mode = 1
   let g:airline#extensions#tabline#formatter       = 'unique_tail'
-  " let g:airline#extensions#tabline#fnamemod        = ':p:.'
-  " let g:airline#extensions#tabline#fnamecollapse   = 0
+  let g:airline#extensions#bufferline#enabled = 0
+  let g:airline#extensions#virtualenv#enabled = 0
+  let g:airline#extensions#eclim#enabled      = 0
+  let g:airline#extensions#nrrwrgn#enabled    = 0
+  let g:airline#extensions#capslock#enabled   = 0
+  let g:airline#extensions#windowswap#enabled = 0
+
   nmap <leader>1 <Plug>AirlineSelectTab1
   nmap <leader>2 <Plug>AirlineSelectTab2
   nmap <leader>3 <Plug>AirlineSelectTab3
@@ -97,24 +105,6 @@ Plug 'bling/vim-airline' "{{{
   nmap <leader>7 <Plug>AirlineSelectTab7
   nmap <leader>8 <Plug>AirlineSelectTab8
   nmap <leader>9 <Plug>AirlineSelectTab9
-
-  let g:airline#extensions#bufferline#enabled = 0
-  let g:airline#extensions#virtualenv#enabled = 0
-  let g:airline#extensions#eclim#enabled      = 0
-  let g:airline#extensions#nrrwrgn#enabled    = 0
-  let g:airline#extensions#capslock#enabled   = 0
-  let g:airline#extensions#windowswap#enabled = 0
-
-  let g:airline_theme             = 'hybrid'
-
-  if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
-  let g:airline_left_sep = '›'
-  let g:airline_right_sep = '‹'
-  let g:airline_symbols.paste = 'ρ'
-  let g:airline_symbols.whitespace = 'Ξ'
-  let g:airline_symbols.branch = 'B'
 "}}}
 
 Plug 'tpope/vim-fugitive' "{{{
@@ -140,22 +130,20 @@ Plug 'scrooloose/syntastic' "{{{
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
   set statusline+=%*
+  let g:syntastic_shell = "/usr/local/bin/zsh"
+  let g:syntastic_enable_elixir_checker = 1
+  let g:syntastic_elixir_checkers = ['elixir']
   let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 "}}}
 
-Plug 'kien/ctrlp.vim', { 'depends': 'tacahiroy/ctrlp-funky' } "{{{
-  " if exists("g:ctrl_user_command")
-  "   unlet g:ctrlp_user_command
-  " endif
-  " if executable('ag')
-  "   set grepprg=ag\ --nogroup\ --nocolor
-  "   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  " else
-  "   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co', 'find %s -type f']
-  "   let g:ctrlp_prompt_mappings = {
-  "     \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
-  "   \ }
-  " endif
+Plug 'kien/ctrlp.vim' "{{{
+  let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
   let g:ctrlp_cmd                    = 'CtrlPCurWD'
   let g:ctrlp_use_caching            = 0
   let g:ctrlp_clear_cache_on_exit    = 1
@@ -195,4 +183,6 @@ Plug 'junegunn/vim-easy-align' "{{{
 
 Plug 'Keithbsmiley/investigate.vim' "{{{
   nnoremap <leader>d :call investigate#Investigate()<CR>
+   let g:investigate_url_for_ruby="http://devdocs.io/#q=ruby%20^s"
+   let g:investigate_url_for_elixir="http://devdocs.io/#q=elixir%20^s"
 "}}}
