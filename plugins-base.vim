@@ -19,7 +19,7 @@ Plug 'othree/html5.vim'
 Plug 'mjbrownie/html-textobjects'
 Plug 'matchit.zip'
 Plug 'amirh/HTML-AutoCloseTag'
-Plug 'Townk/vim-autoclose'
+" Plug 'Townk/vim-autoclose'
 
 Plug 'mustache/vim-mustache-handlebars' "{{{
   let g:mustache_abbreviations = 1
@@ -131,9 +131,10 @@ Plug 'scrooloose/syntastic' "{{{
   set statusline+=%{SyntasticStatuslineFlag()}
   set statusline+=%*
   let g:syntastic_shell = "/usr/local/bin/zsh"
-  let g:syntastic_enable_elixir_checker = 1
-  let g:syntastic_elixir_checkers = ['elixir']
+  " let g:syntastic_enable_elixir_checker = 1
+  " let g:syntastic_elixir_checkers = ['elixir']
   let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+  " let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 "}}}
 
 Plug 'kien/ctrlp.vim' "{{{
@@ -143,6 +144,8 @@ Plug 'kien/ctrlp.vim' "{{{
       \ --ignore .hg
       \ --ignore .DS_Store
       \ --ignore "**/*.pyc"
+      \ --ignore node_modules
+      \ --ignore bower_components
       \ -g ""'
   let g:ctrlp_cmd                    = 'CtrlPCurWD'
   let g:ctrlp_use_caching            = 0
@@ -181,8 +184,6 @@ Plug 'junegunn/vim-easy-align' "{{{
   nmap ga <Plug>(EasyAlign)
 "}}}
 
-Plug 'Keithbsmiley/investigate.vim' "{{{
-  nnoremap <leader>d :call investigate#Investigate()<CR>
-   let g:investigate_url_for_ruby="http://devdocs.io/#q=ruby%20^s"
-   let g:investigate_url_for_elixir="http://devdocs.io/#q=elixir%20^s"
+Plug 'rizzatti/dash.vim' "{{{
+  nmap <silent> <leader>d <Plug>DashSearch
 "}}}
