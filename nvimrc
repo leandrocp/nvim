@@ -149,5 +149,5 @@ endif
   else
     let base16colorspace=256
   endif
-  colorscheme base16-twilight
+  colorscheme base16-eighties
 "}}}
