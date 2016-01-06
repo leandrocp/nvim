@@ -2,13 +2,11 @@
 
 ## Install
 ```
-git clone git@github.com:leandrocp/nvim.git ~/.nvim
+git clone git@github.com:leandrocp/nvim.git ~/.config/nvim
 
-curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-cd ~/.nvim
-
-bash install.sh
+nvim
 ```
 
 ### Powerline fonts
