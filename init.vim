@@ -1,5 +1,7 @@
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0
 
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
 set all& "reset everything to their defaults
 set nocompatible "vim
 filetype plugin indent on
@@ -144,10 +146,10 @@ endif
 
 " theme {{{
   set background=dark
-  if $TMUX == ''
-    let base16colorspace=0
-  else
-    let base16colorspace=256
-  endif
+  " if $TMUX == ''
+  "  let base16colorspace=0
+  " else
+  "  let base16colorspace=256
+  " endif
   colorscheme base16-eighties
 "}}}
