@@ -3,7 +3,6 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'thinca/vim-quickrun'
 Plug 'vim-scripts/LargeFile'
 Plug 'sheerun/vim-polyglot'
-Plug 'osyo-manga/shabadou.vim'
 Plug 'jceb/vim-hier'
 Plug 'dannyob/quickfixstatus'
 Plug 'thinca/vim-ref'
@@ -50,11 +49,6 @@ Plug 'chriskempson/base16-vim'
 
 Plug 'vim-ruby/vim-ruby' "{{{
   let g:ruby_indent_access_modifier_style = "indent"
-"}}}
-
-Plug 'liquidz/vivi.vim' "{{{
-  let g:vivi_enable_auto_syntax_checking = 1
-  let g:vivi_enable_auto_warm_up_iex = 1
 "}}}
 
 Plug 'mileszs/ack.vim'
@@ -147,7 +141,7 @@ Plug 'ludovicchabant/vim-gutentags' "{{{
 "  let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 "}}}
 
-Plug 'osyo-manga/vim-watchdogs'
+Plug 'osyo-manga/vim-watchdogs' | Plug 'osyo-manga/shabadou.vim'
 
 Plug 'kien/ctrlp.vim' "{{{
   let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
