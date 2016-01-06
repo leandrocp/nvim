@@ -7,7 +7,7 @@ set nocompatible "vim
 filetype plugin indent on
 runtime macros/matchit.vim
 syntax enable
-source ~/.nvim/functions.vim
+source ~/.config/nvim/functions.vim
 
 if has('nvim')
   runtime! python_setup.vim
@@ -90,12 +90,12 @@ endif
 
 " files/folders {{{
   set undofile
-  set undodir=~/.nvim/.cache/undo
+  set undodir=~/.config/nvim/.cache/undo
   set backup
-  set backupdir=~/.nvim/.cache/backup
-  set directory=~/.nvim/.cache/swap
+  set backupdir=~/.config/nvim/.cache/backup
+  set directory=~/.config/nvim/.cache/swap
   set noswapfile
-  call EnsureExists('~/.nvim/.cache')
+  call EnsureExists('~/.config/nvim/.cache')
   call EnsureExists(&undodir)
   call EnsureExists(&backupdir)
   call EnsureExists(&directory)
@@ -118,7 +118,7 @@ endif
 "}}}
 
 " mappings/autocmd {{{
-  source ~/.nvim/mappings.vim
+  source ~/.config/nvim/mappings.vim
 
   autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
   autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
@@ -134,22 +134,17 @@ endif
 "}}}
 
 " plugins {{{
-  if empty(glob('~/.nvim/autoload/plug.vim'))
-    silent !curl -fLo ~/.nvim/autoload/plug.vim --create-dirs
+  if empty(glob('~/.config/nvim/autoload/plug.vim'))
+    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
       \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall
   endif
-  call plug#begin('~/.nvim/plugged')
-  source ~/.nvim/plugins-base.vim
+  call plug#begin('~/.config/nvim/plugged')
+  source ~/.config/nvim/plugins-base.vim
   call plug#end()
 "}}}
 
 " theme {{{
   set background=dark
-  " if $TMUX == ''
-  "  let base16colorspace=0
-  " else
-  "  let base16colorspace=256
-  " endif
   colorscheme base16-eighties
 "}}}
