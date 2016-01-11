@@ -50,12 +50,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-expand-region'
-  let g:expand_region_text_objects_ruby = {
-      \ 'im' :0,
-      \ 'am' :0,
-      \ 'ir' :0,
-      \ 'ar' :0,
-      \ }
   map K <Plug>(expand_region_expand)
   map J <Plug>(expand_region_shrink)
 
